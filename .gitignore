@@ -33,3 +33,5 @@ php_test_results*
 build2/generated_lists
 buildmk.stamp
 config.h.in
+
+main/php_gtk_ext.c
