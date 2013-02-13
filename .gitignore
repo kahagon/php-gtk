@@ -29,3 +29,7 @@ ltmain.sh
 *.la
 tmp-php.ini
 php_test_results*
+
+build2/generated_lists
+buildmk.stamp
+config.h.in
