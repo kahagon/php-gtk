@@ -9,7 +9,6 @@ if (!isset($argv[1]) || !file_exists($argv[1])) {
 
 
 $tmpl_block_arginfo = <<<EOD
-static
 ZEND_BEGIN_ARG_INFO(%s, 0)
 %s
 ZEND_END_ARG_INFO();
@@ -17,7 +16,6 @@ ZEND_END_ARG_INFO();
 
 EOD;
 $tmpl_block_arginfoex = <<<EOD
-static
 ZEND_BEGIN_ARG_INFO_EX(%s, 0, 0, 1)
 %s
 ZEND_END_ARG_INFO();

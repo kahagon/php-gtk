@@ -63,7 +63,6 @@ ignore
 %% {{{ GtkCellLayout
 %%
 add-arginfo GtkCellLayout set_attributes
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_INFO(0, cell)
     ZEND_ARG_INFO(0, attribute)
@@ -121,7 +120,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkCellLayout set_cell_data_func
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, cellrenderer, GtkCellRenderer, 1)
     ZEND_ARG_INFO(0, callback)
@@ -171,7 +169,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkCellRenderer get_size
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, widget)
 ZEND_END_ARG_INFO();
@@ -226,7 +223,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkCellView get_size_of_row
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
@@ -262,7 +258,6 @@ PHP_METHOD
 %% {{{ GtkListStore
 %%
 add-arginfo GtkListStore __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, type_col_0)
     ZEND_ARG_INFO(0, type_col_1)
@@ -347,7 +342,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkListStore append
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, items)
 ZEND_END_ARG_INFO();
@@ -374,7 +368,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkListStore prepend
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, items)
 ZEND_END_ARG_INFO();
@@ -401,7 +394,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkListStore insert
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_INFO(0, position)
     ZEND_ARG_INFO(0, items)
@@ -582,7 +574,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkListStore set
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 3)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, column)
@@ -753,7 +744,6 @@ static void phpg_gtkliststore_unset_dimension_handler(zval *object, zval *offset
 %% {{{ GtkTreeStore
 %%
 add-arginfo GtkTreeStore __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_INFO(0, type_col_0)
     ZEND_ARG_INFO(0, type_col_1)
@@ -838,7 +828,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeStore append
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, items)
@@ -873,7 +862,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeStore insert
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_INFO(0, position)
     ZEND_ARG_OBJ_INFO(0, parent, GtkTreeIter, 1)
@@ -910,7 +898,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeStore insert_before
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, parent, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, sibling, GtkTreeIter, 1)
@@ -949,7 +936,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeStore insert_after
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, parent, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, sibling, GtkTreeIter, 1)
@@ -988,7 +974,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeStore prepend
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, items)
@@ -1022,7 +1007,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeStore set
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 3)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, column)
@@ -1128,7 +1112,6 @@ static void phpg_gtktreestore_unset_dimension_handler(zval *object, zval *offset
 
 %%
 add-arginfo GtkTreeModel get_iter
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, treepath)
 ZEND_END_ARG_INFO();
@@ -1178,7 +1161,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModel get_iter_from_string
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
@@ -1204,7 +1186,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModel get_value
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, column)
@@ -1242,7 +1223,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModel iter_children
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, parent_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
@@ -1273,7 +1253,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModel iter_nth_child
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, parent_iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, n)
@@ -1306,7 +1285,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModel iter_parent
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
@@ -1338,7 +1316,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModel iter_next
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
@@ -1366,7 +1343,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModel foreach
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -1566,7 +1542,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModelFilter __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, model, GtkTreeModel, 1)
     ZEND_ARG_INFO(0, root)
@@ -1606,7 +1581,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModelFilter convert_child_iter_to_iter
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, child_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
@@ -1638,7 +1612,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModelFilter convert_iter_to_child_iter
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, filter_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
@@ -1670,7 +1643,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModelFilter set_visible_func
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -1745,7 +1717,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModelSort convert_child_iter_to_iter
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, child_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
@@ -1777,7 +1748,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeModelSort convert_iter_to_child_iter
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, sort_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
@@ -1877,7 +1847,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeSelection selected_foreach
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -1947,7 +1916,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeSelection set_select_function
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -2058,7 +2026,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeSortable set_default_sort_func
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -2089,7 +2056,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeSortable set_sort_func
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, callback)
@@ -2172,7 +2138,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeView enable_model_drag_source
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, sbmask)
     ZEND_ARG_INFO(0, targets)
@@ -2210,7 +2175,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeView enable_model_drag_dest
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, targets)
     ZEND_ARG_INFO(0, actions)
@@ -2263,7 +2227,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeView set_column_drag_function
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -2349,7 +2312,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeView set_row_separator_func
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -2429,7 +2391,6 @@ PHP_METHOD
 }
 
 %%add-arginfo GtkTreeView insert_column_with_data_func
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, position)
     ZEND_ARG_INFO(0, title)
@@ -2511,7 +2472,6 @@ PHP_METHOD
 
 
 %%add-arginfo GtkTreeView get_background_area
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
@@ -2545,7 +2505,6 @@ PHP_METHOD
 }
 
 %%add-arginfo GtkTreeView get_cell_area
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
@@ -2613,7 +2572,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeView get_path_at_pos
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -2658,7 +2616,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeView get_dest_row_at_pos
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -2740,7 +2697,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeView set_search_equal_func
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -2841,7 +2797,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeView tree_to_widget_coords
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, tx)
     ZEND_ARG_INFO(0, ty)
@@ -2865,7 +2820,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeView widget_to_tree_coords
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, wx)
     ZEND_ARG_INFO(0, wy)
@@ -2892,7 +2846,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeViewColumn __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, title)
     ZEND_ARG_OBJ_INFO(0, cellrenderer, GtkCellRenderer, 1)
@@ -2972,7 +2925,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkTreeViewColumn cell_get_position
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, cellrenderer, GtkCellRenderer, 1)
 ZEND_END_ARG_INFO();

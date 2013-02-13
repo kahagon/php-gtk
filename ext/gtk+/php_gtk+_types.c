@@ -652,7 +652,7 @@ static PHP_METHOD(GtkTreeModelRow, children)
     phpg_modelrowiter_new(&return_value, row->model, &row->iter TSRMLS_CC);
 }
 
-static zend_function_entry gtktreemodelrow_methods[] = {
+static zend_zend_function_entry gtktreemodelrow_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
     PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -1340,7 +1340,7 @@ static char *php_gtk_clist_row_properties[] = {
 };
 
 /* GdkEvent */
-static function_entry php_gdk_event_functions[] = {
+static zend_function_entry php_gdk_event_functions[] = {
 	{"GdkEvent", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -1877,7 +1877,7 @@ PHP_FUNCTION(gdk_window_copy_area)
 						 src_window, src_x, src_y, width, height);
 }
 
-static function_entry php_gdk_window_functions[] = {
+static zend_function_entry php_gdk_window_functions[] = {
 	{"GdkWindow",		PHP_FN(no_direct_constructor), NULL},
 	{"raise", 			PHP_FN(gdk_window_raise), NULL},
 	{"lower", 			PHP_FN(gdk_window_lower), NULL},
@@ -1892,7 +1892,7 @@ static function_entry php_gdk_window_functions[] = {
 	{NULL, NULL, NULL}
 };
 
-static function_entry php_gdk_bitmap_functions[] = {
+static zend_function_entry php_gdk_bitmap_functions[] = {
 	{"GdkBitmap",		PHP_FN(no_direct_constructor), NULL},
 	{"new_gc", 			PHP_FN(gdk_window_new_gc), NULL},
 	{"copy_area",		PHP_FN(gdk_window_copy_area), NULL},
@@ -1924,7 +1924,7 @@ PHP_FUNCTION(gdkpixmap)
 	php_gtk_set_object(this_ptr, wrapped_obj, (php_gtk_dtor_t)gdk_pixmap_unref, 1);
 }
 
-static function_entry php_gdk_pixmap_functions[] = {
+static zend_function_entry php_gdk_pixmap_functions[] = {
 	{"GdkPixmap",		PHP_FN(gdkpixmap), NULL},
 	{"new_gc", 			PHP_FN(gdk_window_new_gc), NULL},
 	{"property_get", 	PHP_FN(gdk_window_property_get), NULL},
@@ -2139,7 +2139,7 @@ PHP_FUNCTION(gdkcolor)
 	php_gtk_set_object(this_ptr, gdk_color_copy(&color), (php_gtk_dtor_t)gdk_color_free, 0);
 }
 
-static function_entry php_gdk_color_functions[] = {
+static zend_function_entry php_gdk_color_functions[] = {
 	{"GdkColor", PHP_FN(gdkcolor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -2252,7 +2252,7 @@ PHP_FUNCTION(gdk_colormap_alloc)
 	*return_value = *php_gdk_color_new(&color);
 }
 
-static function_entry php_gdk_colormap_functions[] = {
+static zend_function_entry php_gdk_colormap_functions[] = {
 	{"GdkColormap", PHP_FN(no_direct_constructor), NULL},
 	{"size", 		PHP_FN(gdk_colormap_size), NULL},
 	{"alloc",		PHP_FN(gdk_colormap_alloc), NULL},
@@ -2320,7 +2320,7 @@ static void gdk_colormap_get_property(zval *return_value, zval *object, char *pr
 
 /* GdkAtom */
 /* TODO maybe change this to have a real constructor */
-static function_entry php_gdk_atom_functions[] = {
+static zend_function_entry php_gdk_atom_functions[] = {
 	{"GdkAtom", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -2344,7 +2344,7 @@ zval *php_gdk_atom_new(GdkAtom atom)
 }
 
 /* GdkCursor */
-static function_entry php_gdk_cursor_functions[] = {
+static zend_function_entry php_gdk_cursor_functions[] = {
 	{"GdkCursor", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -2409,7 +2409,7 @@ static void gdk_cursor_get_property(zval *return_value, zval *object, char *prop
 
 
 /* GdkVisual */
-static function_entry php_gdk_visual_functions[] = {
+static zend_function_entry php_gdk_visual_functions[] = {
 	{"GdkVisual", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -2545,7 +2545,7 @@ PHP_FUNCTION(gdk_font_extents)
 	*return_value = *php_gtk_build_value("(iiiii)", lbearing, rbearing, width, ascent, descent);
 }
 
-static function_entry php_gdk_font_functions[] = {
+static zend_function_entry php_gdk_font_functions[] = {
 	{"GdkFont",	PHP_FN(no_direct_constructor), NULL},
 	{"width", 	PHP_FN(gdk_font_width), NULL},
 	{"height", 	PHP_FN(gdk_font_height), NULL},
@@ -2648,7 +2648,7 @@ PHP_FUNCTION(gdk_gc_set_dashes)
 	RETURN_NULL();
 }
 
-static function_entry php_gdk_gc_functions[] = {
+static zend_function_entry php_gdk_gc_functions[] = {
 	{"GdkGC",		PHP_FN(no_direct_constructor), NULL},
 	{"set_dashes",	PHP_FN(gdk_gc_set_dashes), NULL},
 	{NULL, NULL, NULL}
@@ -2891,7 +2891,7 @@ static int gdk_gc_set_property(zval *object, char *prop_name, zval *value)
 
 
 /* GdkDragContext */
-static function_entry php_gdk_drag_context_functions[] = {
+static zend_function_entry php_gdk_drag_context_functions[] = {
 	{"GdkDragContext", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -2988,7 +2988,7 @@ PHP_FUNCTION(gtk_selection_data_set)
 	RETURN_NULL();
 }
 
-static function_entry php_gtk_selection_data_functions[] = {
+static zend_function_entry php_gtk_selection_data_functions[] = {
 	{"GtkSelectionData", PHP_FN(no_direct_constructor), NULL},
 	{"set", 			 PHP_FN(gtk_selection_data_set), NULL},
 	{NULL, NULL, NULL}
@@ -3045,7 +3045,7 @@ static void gtk_selection_data_get_property(zval *return_value, zval *object, ch
 }
 
 /* GtkCtreeNode */
-static function_entry php_gtk_ctree_node_functions[] = {
+static zend_function_entry php_gtk_ctree_node_functions[] = {
 	{"GtkCTreeNode", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -3177,7 +3177,7 @@ PHP_FUNCTION(gtk_accel_group_unlock)
 	gtk_accel_group_unlock(PHP_GTK_ACCEL_GROUP_GET(this_ptr));
 }
 
-static function_entry php_gtk_accel_group_functions[] = {
+static zend_function_entry php_gtk_accel_group_functions[] = {
 	{"GtkAccelGroup",	PHP_FN(gtkaccelgroup), NULL},
 	{"lock", 			PHP_FN(gtk_accel_group_lock), NULL},
 	{"unlock", 			PHP_FN(gtk_accel_group_unlock), NULL},
@@ -3248,7 +3248,7 @@ PHP_FUNCTION(gtk_style_copy)
 	gtk_style_unref(style);
 }
 
-static function_entry php_gtk_style_functions[] = {
+static zend_function_entry php_gtk_style_functions[] = {
 	{"GtkStyle", PHP_FN(gtkstyle), NULL},
 	{"copy",	 PHP_FN(gtk_style_copy), NULL},
 	{NULL, NULL, NULL}
@@ -3577,7 +3577,7 @@ static int gtk_style_set_property(zval *object, char *prop_name, zval *value)
 }
 
 
-static function_entry php_gtk_box_child_functions[] = {
+static zend_function_entry php_gtk_box_child_functions[] = {
 	{"GtkBoxChild", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -3629,7 +3629,7 @@ static void gtk_box_child_get_property(zval *return_value, zval *object, char *p
 }
 
 /* GtkTableChild */
-static function_entry php_gtk_table_child_functions[] = {
+static zend_function_entry php_gtk_table_child_functions[] = {
 	{"GtkTableChild", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -3697,7 +3697,7 @@ static void gtk_table_child_get_property(zval *return_value, zval *object, char 
 }
 
 /* GtkFixedChild */
-static function_entry php_gtk_fixed_child_functions[] = {
+static zend_function_entry php_gtk_fixed_child_functions[] = {
 	{"GtkFixedChild", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };
@@ -3746,7 +3746,7 @@ static void gtk_fixed_child_get_property(zval *return_value, zval *object, char 
 
 
 /* GtkCListRow */
-static function_entry php_gtk_clist_row_functions[] = {
+static zend_function_entry php_gtk_clist_row_functions[] = {
 	{"GtkCListRow", PHP_FN(no_direct_constructor), NULL},
 	{NULL, NULL, NULL}
 };

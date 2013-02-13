@@ -1527,7 +1527,6 @@ static PHP_METHOD(Gtk, io_add_watch_priority)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_accel_groups_activate, 0)
     ZEND_ARG_OBJ_INFO(0, object, GObject, 1)
     ZEND_ARG_INFO(0, accel_key)
@@ -1538,55 +1537,46 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_accel_groups_from_object, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_accelerator_get_label, 0)
     ZEND_ARG_INFO(0, accelerator_key)
     ZEND_ARG_INFO(0, accelerator_mods)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_accelerator_name, 0)
     ZEND_ARG_INFO(0, accelerator_key)
     ZEND_ARG_INFO(0, accelerator_mods)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_accelerator_set_default_mod_mask, 0)
     ZEND_ARG_INFO(0, default_mod_mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_accelerator_valid, 0)
     ZEND_ARG_INFO(0, keyval)
     ZEND_ARG_INFO(0, modifiers)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_bindings_activate, 0)
     ZEND_ARG_OBJ_INFO(0, object, GtkObject, 1)
     ZEND_ARG_INFO(0, keyval)
     ZEND_ARG_INFO(0, modifiers)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_bindings_activate_event, 0)
     ZEND_ARG_OBJ_INFO(0, object, GtkObject, 1)
     ZEND_ARG_INFO(0, event)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_check_version, 0)
     ZEND_ARG_INFO(0, required_major)
     ZEND_ARG_INFO(0, required_minor)
     ZEND_ARG_INFO(0, required_micro)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtk_alternative_dialog_button_order, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, screen, GdkScreen, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_drag_set_default_icon, 0)
     ZEND_ARG_OBJ_INFO(0, colormap, GdkColormap, 1)
     ZEND_ARG_OBJ_INFO(0, pixmap, GdkPixmap, 1)
@@ -1595,7 +1585,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_drag_set_default_icon, 0)
     ZEND_ARG_INFO(0, hot_y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_draw_insertion_cursor, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, drawable, GdkDrawable, 1)
@@ -1606,82 +1595,67 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_draw_insertion_cursor, 0)
     ZEND_ARG_INFO(0, draw_arrow)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_icon_size_from_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_icon_size_get_name, 0)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_icon_size_lookup, 0)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_icon_size_lookup_for_settings, 0)
     ZEND_ARG_OBJ_INFO(0, settings, GtkSettings, 0)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_icon_size_register, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_icon_size_register_alias, 0)
     ZEND_ARG_INFO(0, alias)
     ZEND_ARG_INFO(0, target)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_idle_remove, 0)
     ZEND_ARG_INFO(0, idle_handler_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_input_remove, 0)
     ZEND_ARG_INFO(0, input_handler_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_main_do_event, 0)
     ZEND_ARG_OBJ_INFO(0, event, GdkEvent, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtk_main_iteration_do, 0, 0, 0)
     ZEND_ARG_INFO(0, blocking)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_quit_add, 0)
     ZEND_ARG_INFO(0, main_level)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_quit_remove, 0)
     ZEND_ARG_INFO(0, quit_handler_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_rc_add_default_file, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_rc_find_module_in_path, 0)
     ZEND_ARG_INFO(0, module_file)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_rc_get_style_by_paths, 0)
     ZEND_ARG_OBJ_INFO(0, settings, GtkSettings, 1)
     ZEND_ARG_INFO(0, widget_path)
@@ -1689,51 +1663,42 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_rc_get_style_by_paths, 0)
     ZEND_ARG_OBJ_INFO(0, type, GType, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_rc_parse, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_rc_parse_string, 0)
     ZEND_ARG_INFO(0, rc_string)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_rc_reparse_all_for_settings, 0)
     ZEND_ARG_OBJ_INFO(0, settings, GtkSettings, 1)
     ZEND_ARG_INFO(0, force_load)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_rc_reset_styles, 0)
     ZEND_ARG_OBJ_INFO(0, settings, GtkSettings, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtk_selection_owner_set_for_display, 0, 0, 3)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, selection)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_stock_lookup, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_timeout_add, 0)
     ZEND_ARG_INFO(0, interval)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_timeout_remove, 0)
     ZEND_ARG_INFO(0, timeout_handler_id)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_timeout_add_priority, 0)
     ZEND_ARG_INFO(0, interval)
     ZEND_ARG_INFO(0, priority)
@@ -1741,7 +1706,7 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtk_timeout_add_priority, 0)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtk_methods[] = {
+static zend_function_entry gtk_methods[] = {
 	PHP_ME(Gtk, accel_groups_activate, arginfo_gtk_gtk_accel_groups_activate, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(Gtk, accel_groups_from_object, arginfo_gtk_gtk_accel_groups_from_object, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(Gtk, accelerator_get_default_mod_mask, NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -1856,12 +1821,11 @@ static PHP_METHOD(GtkCellEditable, start_editing)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcelleditable_start_editing, 0)
     ZEND_ARG_OBJ_INFO(0, event, GdkEvent, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcelleditable_methods[] = {
+static zend_function_entry gtkcelleditable_methods[] = {
 	ZEND_FENTRY(editing_done, ZEND_MN(GtkCellEditable_editing_done),         NULL, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(remove_widget, ZEND_MN(GtkCellEditable_remove_widget),        NULL, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(start_editing, ZEND_MN(GtkCellEditable_start_editing),        arginfo_gtk_gtkcelleditable_start_editing, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
@@ -2035,50 +1999,43 @@ static PHP_METHOD(GtkCellLayout, set_cell_data_func)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcelllayout_add_attribute, 0)
     ZEND_ARG_OBJ_INFO(0, cell, GtkCellRenderer, 1)
     ZEND_ARG_INFO(0, attribute)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcelllayout_clear_attributes, 0)
     ZEND_ARG_OBJ_INFO(0, cell, GtkCellRenderer, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcelllayout_pack_end, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, cell, GtkCellRenderer, 1)
     ZEND_ARG_INFO(0, expand)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcelllayout_pack_start, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, cell, GtkCellRenderer, 1)
     ZEND_ARG_INFO(0, expand)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcelllayout_reorder, 0)
     ZEND_ARG_OBJ_INFO(0, cell, GtkCellRenderer, 1)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcelllayout_set_attributes, 0, 0, 1)
     ZEND_ARG_INFO(0, cell)
     ZEND_ARG_INFO(0, attribute)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcelllayout_set_cell_data_func, 0)
     ZEND_ARG_OBJ_INFO(0, cellrenderer, GtkCellRenderer, 1)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkcelllayout_methods[] = {
+static zend_function_entry gtkcelllayout_methods[] = {
 	ZEND_FENTRY(add_attribute, ZEND_MN(GtkCellLayout_add_attribute),        arginfo_gtk_gtkcelllayout_add_attribute, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(clear, ZEND_MN(GtkCellLayout_clear),                NULL, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(clear_attributes, ZEND_MN(GtkCellLayout_clear_attributes),     arginfo_gtk_gtkcelllayout_clear_attributes, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
@@ -2298,41 +2255,35 @@ static PHP_METHOD(GtkEditable, set_position)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkeditable_delete_text, 0)
     ZEND_ARG_INFO(0, start_pos)
     ZEND_ARG_INFO(0, end_pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkeditable_get_chars, 0)
     ZEND_ARG_INFO(0, start_pos)
     ZEND_ARG_INFO(0, end_pos)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkeditable_insert_text, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkeditable_select_region, 0)
     ZEND_ARG_INFO(0, start)
     ZEND_ARG_INFO(0, end)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkeditable_set_editable, 0)
     ZEND_ARG_INFO(0, is_editable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkeditable_set_position, 0)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkeditable_methods[] = {
+static zend_function_entry gtkeditable_methods[] = {
 	ZEND_FENTRY(copy_clipboard, ZEND_MN(GtkEditable_copy_clipboard),       NULL, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(cut_clipboard, ZEND_MN(GtkEditable_cut_clipboard),        NULL, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(delete_selection, ZEND_MN(GtkEditable_delete_selection),     NULL, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
@@ -3232,151 +3183,123 @@ static PHP_METHOD(GtkFileChooser, unselect_uri)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_add_filter, 0)
     ZEND_ARG_OBJ_INFO(0, filter, GtkFileFilter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_add_shortcut_folder, 0)
     ZEND_ARG_INFO(0, folder)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_add_shortcut_folder_uri, 0)
     ZEND_ARG_INFO(0, uri)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkfilechooser_get_filename, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkfilechooser_get_filenames, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkfilechooser_list_shortcut_folder_uris, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkfilechooser_list_shortcut_folders, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_remove_filter, 0)
     ZEND_ARG_OBJ_INFO(0, filter, GtkFileFilter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_remove_shortcut_folder, 0)
     ZEND_ARG_INFO(0, folder)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_remove_shortcut_folder_uri, 0)
     ZEND_ARG_INFO(0, uri)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_select_filename, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_select_uri, 0)
     ZEND_ARG_INFO(0, uri)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_action, 0)
     ZEND_ARG_INFO(0, action)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_current_folder, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_current_folder_uri, 0)
     ZEND_ARG_INFO(0, uri)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_current_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_extra_widget, 0)
     ZEND_ARG_OBJ_INFO(0, extra_widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_filename, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_filter, 0)
     ZEND_ARG_OBJ_INFO(0, filter, GtkFileFilter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_local_only, 0)
     ZEND_ARG_INFO(0, local_only)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_preview_widget, 0)
     ZEND_ARG_OBJ_INFO(0, preview_widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_preview_widget_active, 0)
     ZEND_ARG_INFO(0, active)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_select_multiple, 0)
     ZEND_ARG_INFO(0, select_multiple)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_show_hidden, 0)
     ZEND_ARG_INFO(0, show_hidden)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_uri, 0)
     ZEND_ARG_INFO(0, uri)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_set_use_preview_label, 0)
     ZEND_ARG_INFO(0, use_label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_unselect_filename, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooser_unselect_uri, 0)
     ZEND_ARG_INFO(0, uri)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkfilechooser_methods[] = {
+static zend_function_entry gtkfilechooser_methods[] = {
 	ZEND_FENTRY(add_filter, ZEND_MN(GtkFileChooser_add_filter),           arginfo_gtk_gtkfilechooser_add_filter, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(add_shortcut_folder, ZEND_MN(GtkFileChooser_add_shortcut_folder),  arginfo_gtk_gtkfilechooser_add_shortcut_folder, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(add_shortcut_folder_uri, ZEND_MN(GtkFileChooser_add_shortcut_folder_uri), arginfo_gtk_gtkfilechooser_add_shortcut_folder_uri, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
@@ -3492,19 +3415,17 @@ static PHP_METHOD(GtkTreeDragDest, row_drop_possible)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreedragdest_drag_data_received, 0)
     ZEND_ARG_INFO(0, dest)
     ZEND_ARG_OBJ_INFO(0, selection_data, GtkSelectionData, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreedragdest_row_drop_possible, 0)
     ZEND_ARG_INFO(0, dest_path)
     ZEND_ARG_OBJ_INFO(0, selection_data, GtkSelectionData, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktreedragdest_methods[] = {
+static zend_function_entry gtktreedragdest_methods[] = {
 	ZEND_FENTRY(drag_data_received, ZEND_MN(GtkTreeDragDest_drag_data_received),   arginfo_gtk_gtktreedragdest_drag_data_received, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(row_drop_possible, ZEND_MN(GtkTreeDragDest_row_drop_possible),    arginfo_gtk_gtktreedragdest_row_drop_possible, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	{ NULL, NULL, NULL }
@@ -3591,23 +3512,20 @@ static PHP_METHOD(GtkTreeDragSource, row_draggable)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreedragsource_drag_data_delete, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreedragsource_drag_data_get, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, selection_data, GtkSelectionData, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreedragsource_row_draggable, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktreedragsource_methods[] = {
+static zend_function_entry gtktreedragsource_methods[] = {
 	ZEND_FENTRY(drag_data_delete, ZEND_MN(GtkTreeDragSource_drag_data_delete),     arginfo_gtk_gtktreedragsource_drag_data_delete, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(drag_data_get, ZEND_MN(GtkTreeDragSource_drag_data_get),        arginfo_gtk_gtktreedragsource_drag_data_get, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(row_draggable, ZEND_MN(GtkTreeDragSource_row_draggable),        arginfo_gtk_gtktreedragsource_row_draggable, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
@@ -4352,109 +4270,90 @@ static PHP_METHOD(GtkTreeModel, unref_node)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_foreach, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_get_column_type, 0)
     ZEND_ARG_INFO(0, index)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_get_iter, 0)
     ZEND_ARG_INFO(0, treepath)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_get_iter_from_string, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_get_path, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_get_string_from_iter, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_get_value, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_iter_children, 0)
     ZEND_ARG_OBJ_INFO(0, parent_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_iter_has_child, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_iter_n_children, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_iter_next, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_iter_nth_child, 0)
     ZEND_ARG_OBJ_INFO(0, parent_iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, n)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreemodel_iter_parent, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_ref_node, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_row_changed, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_row_deleted, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_row_has_child_toggled, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_row_inserted, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodel_unref_node, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktreemodel_methods[] = {
+static zend_function_entry gtktreemodel_methods[] = {
 	ZEND_FENTRY(foreach, ZEND_MN(GtkTreeModel_foreach),              arginfo_gtk_gtktreemodel_foreach, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(get, ZEND_MN(GtkTreeModel_get),                  NULL, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(get_column_type, ZEND_MN(GtkTreeModel_get_column_type),      arginfo_gtk_gtktreemodel_get_column_type, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
@@ -4646,25 +4545,22 @@ static PHP_METHOD(GtkTreeSortable, sort_column_changed)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreesortable_set_default_sort_func, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreesortable_set_sort_column_id, 0)
     ZEND_ARG_INFO(0, sort_column_id)
     ZEND_ARG_INFO(0, order)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreesortable_set_sort_func, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtktreesortable_methods[] = {
+static zend_function_entry gtktreesortable_methods[] = {
 	ZEND_FENTRY(get_sort_column_id, ZEND_MN(GtkTreeSortable_get_sort_column_id),   NULL, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(has_default_sort_func, ZEND_MN(GtkTreeSortable_has_default_sort_func), NULL, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
 	ZEND_FENTRY(set_default_sort_func, ZEND_MN(GtkTreeSortable_set_default_sort_func), arginfo_gtk_gtktreesortable_set_default_sort_func, ZEND_ACC_PUBLIC|ZEND_ACC_ABSTRACT)
@@ -4750,7 +4646,7 @@ static zend_object_value phpg_create_phpgtkcustomtreemodel(zend_class_entry *ce 
     return zov;
 }
 
-static function_entry phpgtkcustomtreemodel_methods[] = {
+static zend_function_entry phpgtkcustomtreemodel_methods[] = {
 	PHP_ME(PhpGtkCustomTreeModel, __construct,          NULL, ZEND_ACC_PUBLIC)
 
 	/***   GtkTreeModel interface implementations   ***/
@@ -4925,18 +4821,16 @@ static PHP_METHOD(GtkAccelGroup, unlock)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelgroup_disconnect_key, 0)
     ZEND_ARG_INFO(0, accel_key)
     ZEND_ARG_INFO(0, accel_mods)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelgroup_find, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkaccelgroup_methods[] = {
+static zend_function_entry gtkaccelgroup_methods[] = {
 	PHP_ME(GtkAccelGroup, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAccelGroup, disconnect_key,       arginfo_gtk_gtkaccelgroup_disconnect_key, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAccelGroup, find,                 arginfo_gtk_gtkaccelgroup_find, ZEND_ACC_PUBLIC)
@@ -5113,19 +5007,16 @@ static PHP_METHOD(GtkAccelMap, unlock_path)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_add_entry, 0)
     ZEND_ARG_INFO(0, accel_path)
     ZEND_ARG_INFO(0, accel_key)
     ZEND_ARG_INFO(0, accel_mods)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_add_filter, 0)
     ZEND_ARG_INFO(0, filter_pattern)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_change_entry, 0)
     ZEND_ARG_INFO(0, accel_path)
     ZEND_ARG_INFO(0, accel_key)
@@ -5133,37 +5024,31 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_change_entry, 0)
     ZEND_ARG_INFO(0, replace)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_load, 0)
     ZEND_ARG_INFO(0, file_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_load_fd, 0)
     ZEND_ARG_INFO(0, fd)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_lock_path, 0)
     ZEND_ARG_INFO(0, accel_path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_save, 0)
     ZEND_ARG_INFO(0, file_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_save_fd, 0)
     ZEND_ARG_INFO(0, fd)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccelmap_unlock_path, 0)
     ZEND_ARG_INFO(0, accel_path)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkaccelmap_methods[] = {
+static zend_function_entry gtkaccelmap_methods[] = {
 	PHP_ME(GtkAccelMap, add_entry,            arginfo_gtk_gtkaccelmap_add_entry, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkAccelMap, add_filter,           arginfo_gtk_gtkaccelmap_add_filter, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkAccelMap, change_entry,         arginfo_gtk_gtkaccelmap_change_entry, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -5191,7 +5076,7 @@ static PHP_METHOD(GtkAccessible, connect_widget_destroyed)
 }
 
 
-static function_entry gtkaccessible_methods[] = {
+static zend_function_entry gtkaccessible_methods[] = {
 	PHP_ME(GtkAccessible, connect_widget_destroyed, NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -5563,7 +5448,6 @@ static PHP_METHOD(GtkAction, unblock_activate_from)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_gtk_action_new, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_INFO(0, label)
@@ -5571,52 +5455,43 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_gtk_action_new, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_block_activate_from, 0)
     ZEND_ARG_OBJ_INFO(0, proxy, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_connect_proxy, 0)
     ZEND_ARG_OBJ_INFO(0, proxy, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_create_icon, 0)
     ZEND_ARG_INFO(0, icon_size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_disconnect_proxy, 0)
     ZEND_ARG_OBJ_INFO(0, proxy, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_set_accel_group, 0)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_set_accel_path, 0)
     ZEND_ARG_INFO(0, accel_path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_set_sensitive, 0)
     ZEND_ARG_INFO(0, sensitive)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_set_visible, 0)
     ZEND_ARG_INFO(0, visible)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaction_unblock_activate_from, 0)
     ZEND_ARG_OBJ_INFO(0, proxy, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkaction_methods[] = {
+static zend_function_entry gtkaction_methods[] = {
 	PHP_ME(GtkAction, __construct,          arginfo_gtk_gtkaction_gtk_action_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAction, activate,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAction, block_activate_from,  arginfo_gtk_gtkaction_block_activate_from, ZEND_ACC_PUBLIC)
@@ -5889,53 +5764,44 @@ static PHP_METHOD(GtkActionGroup, translate_string)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkactiongroup_gtk_action_group_new, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkactiongroup_add_action, 0)
     ZEND_ARG_OBJ_INFO(0, action, GtkAction, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkactiongroup_add_action_with_accel, 0)
     ZEND_ARG_OBJ_INFO(0, action, GtkAction, 1)
     ZEND_ARG_INFO(0, accelerator)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkactiongroup_get_action, 0)
     ZEND_ARG_INFO(0, action_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkactiongroup_remove_action, 0)
     ZEND_ARG_OBJ_INFO(0, action, GtkAction, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkactiongroup_set_sensitive, 0)
     ZEND_ARG_INFO(0, sensitive)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkactiongroup_set_translation_domain, 0)
     ZEND_ARG_INFO(0, domain)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkactiongroup_set_visible, 0)
     ZEND_ARG_INFO(0, visible)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkactiongroup_translate_string, 0)
     ZEND_ARG_INFO(0, string)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkactiongroup_methods[] = {
+static zend_function_entry gtkactiongroup_methods[] = {
 	PHP_ME(GtkActionGroup, __construct,          arginfo_gtk_gtkactiongroup_gtk_action_group_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkActionGroup, add_action,           arginfo_gtk_gtkactiongroup_add_action, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkActionGroup, add_action_with_accel, arginfo_gtk_gtkactiongroup_add_action_with_accel, ZEND_ACC_PUBLIC)
@@ -6638,39 +6504,33 @@ static PHP_METHOD(GtkClipboard, wait_is_target_available)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkclipboard_clipboard_get_for_display, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, selection)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkclipboard_get, 0, 0, 0)
     ZEND_ARG_INFO(0, selection)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkclipboard_set_text, 0, 0, 1)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, len)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclipboard_wait_for_contents, 0)
     ZEND_ARG_INFO(0, target)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclipboard_set_image, 0)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclipboard_wait_is_target_available, 0)
     ZEND_ARG_INFO(0, target)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkclipboard_methods[] = {
+static zend_function_entry gtkclipboard_methods[] = {
 	PHP_ME(GtkClipboard, __construct,          arginfo_gtk_gtkclipboard_clipboard_get_for_display, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkClipboard, clear,                NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkClipboard, get,                  arginfo_gtk_gtkclipboard_get, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -7033,54 +6893,45 @@ static PHP_METHOD(GtkEntryCompletion, set_text_column)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentrycompletion_delete_action, 0)
     ZEND_ARG_INFO(0, index)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentrycompletion_insert_action_markup, 0)
     ZEND_ARG_INFO(0, index)
     ZEND_ARG_INFO(0, markup)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentrycompletion_insert_action_text, 0)
     ZEND_ARG_INFO(0, index)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentrycompletion_set_inline_completion, 0)
     ZEND_ARG_INFO(0, inline_completion)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentrycompletion_set_match_func, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentrycompletion_set_minimum_key_length, 0)
     ZEND_ARG_INFO(0, length)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentrycompletion_set_model, 0)
     ZEND_ARG_INFO(0, model)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentrycompletion_set_popup_completion, 0)
     ZEND_ARG_INFO(0, popup_completion)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentrycompletion_set_text_column, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkentrycompletion_methods[] = {
+static zend_function_entry gtkentrycompletion_methods[] = {
 	PHP_ME(GtkEntryCompletion, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkEntryCompletion, complete,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkEntryCompletion, delete_action,        arginfo_gtk_gtkentrycompletion_delete_action, ZEND_ACC_PUBLIC)
@@ -7218,23 +7069,20 @@ static PHP_METHOD(GtkIconFactory, remove_default)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconfactory_add, 0)
     ZEND_ARG_INFO(0, stock_id)
     ZEND_ARG_OBJ_INFO(0, icon_set, GtkIconSet, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconfactory_lookup, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconfactory_lookup_default, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkiconfactory_methods[] = {
+static zend_function_entry gtkiconfactory_methods[] = {
 	PHP_ME(GtkIconFactory, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIconFactory, add,                  arginfo_gtk_gtkiconfactory_add, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIconFactory, add_default,          NULL, ZEND_ACC_PUBLIC)
@@ -7591,29 +7439,24 @@ static PHP_METHOD(GtkIconTheme, set_search_path)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_add_builtin_icon, 0)
     ZEND_ARG_INFO(0, icon_name)
     ZEND_ARG_INFO(0, size)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_append_search_path, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_get_for_screen, 0)
     ZEND_ARG_OBJ_INFO(0, screen, GdkScreen, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_has_icon, 0)
     ZEND_ARG_INFO(0, icon_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_load_icon, 0)
     ZEND_ARG_INFO(0, icon_name)
     ZEND_ARG_INFO(0, size)
@@ -7621,34 +7464,29 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_load_icon, 0)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_lookup_icon, 0)
     ZEND_ARG_INFO(0, icon_name)
     ZEND_ARG_INFO(0, size)
     ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_prepend_search_path, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_set_custom_theme, 0)
     ZEND_ARG_INFO(0, theme_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkicontheme_set_screen, 0)
     ZEND_ARG_OBJ_INFO(0, screen, GdkScreen, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkicontheme_set_search_path, 0, 0, 1)
     ZEND_ARG_ARRAY_INFO(0, search_paths, 0)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkicontheme_methods[] = {
+static zend_function_entry gtkicontheme_methods[] = {
 	PHP_ME(GtkIconTheme, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIconTheme, add_builtin_icon,     arginfo_gtk_gtkicontheme_add_builtin_icon, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkIconTheme, append_search_path,   arginfo_gtk_gtkicontheme_append_search_path, ZEND_ACC_PUBLIC)
@@ -8308,19 +8146,16 @@ static PHP_METHOD(GtkListStore, swap)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkliststore_gtk_list_store_new, 0, 0, 0)
     ZEND_ARG_INFO(0, type_col_0)
     ZEND_ARG_INFO(0, type_col_1)
     ZEND_ARG_INFO(0, ...)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkliststore_append, 0, 0, 0)
     ZEND_ARG_INFO(0, items)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkliststore_insert, 0, 0, 1)
     ZEND_ARG_INFO(0, position)
     ZEND_ARG_INFO(0, items)
@@ -8328,33 +8163,27 @@ ZEND_END_ARG_INFO();
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkliststore_iter_is_valid, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkliststore_move_after, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, position, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkliststore_move_before, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, position, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkliststore_prepend, 0, 0, 0)
     ZEND_ARG_INFO(0, items)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkliststore_remove, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkliststore_set, 0, 0, 3)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, column)
@@ -8364,13 +8193,12 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkliststore_set, 0, 0, 3)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkliststore_swap, 0)
     ZEND_ARG_OBJ_INFO(0, a, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, b, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkliststore_methods[] = {
+static zend_function_entry gtkliststore_methods[] = {
 	PHP_ME(GtkListStore, __construct,          arginfo_gtk_gtkliststore_gtk_list_store_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkListStore, append,               arginfo_gtk_gtkliststore_append, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkListStore, clear,                NULL, ZEND_ACC_PUBLIC)
@@ -8492,17 +8320,15 @@ static PHP_METHOD(GtkObject, destroy)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkobject_set_flags, 0)
     ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkobject_unset_flags, 0)
     ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkobject_methods[] = {
+static zend_function_entry gtkobject_methods[] = {
 	PHP_ME(GtkObject, destroy,              NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkObject, flags,                NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkObject, set_flags,            arginfo_gtk_gtkobject_set_flags, ZEND_ACC_PUBLIC)
@@ -8753,20 +8579,17 @@ static PHP_METHOD(GtkItemFactory, popup)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkitemfactory_gtk_item_factory_new, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, container_type, GType, 1)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_path_delete, 0)
     ZEND_ARG_INFO(0, ifactory_path)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_add_foreign, 0)
     ZEND_ARG_OBJ_INFO(0, accel_widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, full_path)
@@ -8775,54 +8598,44 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_add_foreign, 0)
     ZEND_ARG_INFO(0, modifiers)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_construct, 0)
     ZEND_ARG_OBJ_INFO(0, container_type, GType, 1)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_delete_item, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_from_path, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_from_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_get_item, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_get_item_by_action, 0)
     ZEND_ARG_INFO(0, action)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_get_widget, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_get_widget_by_action, 0)
     ZEND_ARG_INFO(0, action)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkitemfactory_path_from_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkitemfactory_popup, 0, 0, 3)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -8830,7 +8643,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkitemfactory_popup, 0, 0, 3)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkitemfactory_methods[] = {
+static zend_function_entry gtkitemfactory_methods[] = {
 	PHP_ME(GtkItemFactory, __construct,          arginfo_gtk_gtkitemfactory_gtk_item_factory_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkItemFactory, add_foreign,          arginfo_gtk_gtkitemfactory_add_foreign, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkItemFactory, construct,            arginfo_gtk_gtkitemfactory_construct, ZEND_ACC_PUBLIC)
@@ -8989,40 +8802,34 @@ static PHP_METHOD(GtkIMContext, set_use_preedit)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimcontext_delete_surrounding, 0)
     ZEND_ARG_INFO(0, offset)
     ZEND_ARG_INFO(0, n_chars)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimcontext_filter_keypress, 0)
     ZEND_ARG_INFO(0, event)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimcontext_set_client_window, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimcontext_set_cursor_location, 0)
     ZEND_ARG_OBJ_INFO(0, area, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimcontext_set_surrounding, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, len)
     ZEND_ARG_INFO(0, cursor_index)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimcontext_set_use_preedit, 0)
     ZEND_ARG_INFO(0, use_preedit)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkimcontext_methods[] = {
+static zend_function_entry gtkimcontext_methods[] = {
 	PHP_ME(GtkIMContext, delete_surrounding,   arginfo_gtk_gtkimcontext_delete_surrounding, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIMContext, filter_keypress,      arginfo_gtk_gtkimcontext_filter_keypress, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIMContext, focus_in,             NULL, ZEND_ACC_PUBLIC)
@@ -9374,34 +9181,29 @@ static PHP_METHOD(GtkFileFilter, set_name)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilefilter_add_custom, 0)
     ZEND_ARG_INFO(0, flags_needed)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilefilter_add_mime_type, 0)
     ZEND_ARG_INFO(0, mime_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilefilter_add_pattern, 0)
     ZEND_ARG_INFO(0, pattern)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilefilter_filter, 0)
     ZEND_ARG_INFO(0, filterinfo)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilefilter_set_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkfilefilter_methods[] = {
+static zend_function_entry gtkfilefilter_methods[] = {
 	PHP_ME(GtkFileFilter, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFileFilter, add_custom,           arginfo_gtk_gtkfilefilter_add_custom, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFileFilter, add_mime_type,        arginfo_gtk_gtkfilefilter_add_mime_type, ZEND_ACC_PUBLIC)
@@ -9447,12 +9249,11 @@ static PHP_METHOD(GtkIMMulticontext, append_menuitems)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimmulticontext_append_menuitems, 0)
     ZEND_ARG_OBJ_INFO(0, menushell, GtkMenuShell, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkimmulticontext_methods[] = {
+static zend_function_entry gtkimmulticontext_methods[] = {
 	PHP_ME(GtkIMMulticontext, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIMMulticontext, append_menuitems,     arginfo_gtk_gtkimmulticontext_append_menuitems, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -9477,7 +9278,7 @@ static PHP_METHOD(GtkIMContextSimple, __construct)
 }
 
 
-static function_entry gtkimcontextsimple_methods[] = {
+static zend_function_entry gtkimcontextsimple_methods[] = {
 	PHP_ME(GtkIMContextSimple, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -9679,7 +9480,6 @@ static PHP_METHOD(GtkCellRenderer, stop_editing)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderer_activate, 0)
     ZEND_ARG_OBJ_INFO(0, event, GdkEvent, 1)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
@@ -9688,13 +9488,11 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderer_activate, 0)
     ZEND_ARG_OBJ_INFO(0, cell_area, GdkRectangle, 1)
     ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderer_get_size, 0)
     ZEND_ARG_INFO(0, widget)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderer_render, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
@@ -9704,13 +9502,11 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderer_render, 0)
     ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderer_set_fixed_size, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderer_start_editing, 0)
     ZEND_ARG_OBJ_INFO(0, event, GdkEvent, 1)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
@@ -9720,12 +9516,11 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderer_start_editing, 0)
     ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderer_stop_editing, 0)
     ZEND_ARG_INFO(0, canceled)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcellrenderer_methods[] = {
+static zend_function_entry gtkcellrenderer_methods[] = {
 	PHP_ME(GtkCellRenderer, activate,             arginfo_gtk_gtkcellrenderer_activate, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCellRenderer, editing_canceled,     NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCellRenderer, get_fixed_size,       NULL, ZEND_ACC_PUBLIC)
@@ -9905,7 +9700,6 @@ static PHP_METHOD(GtkAdjustment, value_changed)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkadjustment_gtk_adjustment_new, 0)
     ZEND_ARG_INFO(0, value)
     ZEND_ARG_INFO(0, lower)
@@ -9916,18 +9710,16 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkadjustment_gtk_adjustment_new, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkadjustment_clamp_page, 0)
     ZEND_ARG_INFO(0, lower)
     ZEND_ARG_INFO(0, upper)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkadjustment_set_value, 0)
     ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkadjustment_methods[] = {
+static zend_function_entry gtkadjustment_methods[] = {
 	PHP_ME(GtkAdjustment, __construct,          arginfo_gtk_gtkadjustment_gtk_adjustment_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAdjustment, changed,              NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAdjustment, clamp_page,           arginfo_gtk_gtkadjustment_clamp_page, ZEND_ACC_PUBLIC)
@@ -10012,17 +9804,15 @@ static PHP_METHOD(GtkCellRendererToggle, set_radio)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderertoggle_set_active, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderertoggle_set_radio, 0)
     ZEND_ARG_INFO(0, radio)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcellrenderertoggle_methods[] = {
+static zend_function_entry gtkcellrenderertoggle_methods[] = {
 	PHP_ME(GtkCellRendererToggle, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCellRendererToggle, get_active,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCellRendererToggle, get_radio,            NULL, ZEND_ACC_PUBLIC)
@@ -10064,12 +9854,11 @@ static PHP_METHOD(GtkCellRendererText, set_fixed_height_from_font)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellrenderertext_set_fixed_height_from_font, 0)
     ZEND_ARG_INFO(0, number_of_rows)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcellrenderertext_methods[] = {
+static zend_function_entry gtkcellrenderertext_methods[] = {
 	PHP_ME(GtkCellRendererText, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCellRendererText, set_fixed_height_from_font, arginfo_gtk_gtkcellrenderertext_set_fixed_height_from_font, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -10094,7 +9883,7 @@ static PHP_METHOD(GtkCellRendererProgress, __construct)
 }
 
 
-static function_entry gtkcellrendererprogress_methods[] = {
+static zend_function_entry gtkcellrendererprogress_methods[] = {
 	PHP_ME(GtkCellRendererProgress, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -10118,7 +9907,7 @@ static PHP_METHOD(GtkCellRendererCombo, __construct)
 }
 
 
-static function_entry gtkcellrenderercombo_methods[] = {
+static zend_function_entry gtkcellrenderercombo_methods[] = {
 	PHP_ME(GtkCellRendererCombo, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -10142,7 +9931,7 @@ static PHP_METHOD(GtkCellRendererPixbuf, __construct)
 }
 
 
-static function_entry gtkcellrendererpixbuf_methods[] = {
+static zend_function_entry gtkcellrendererpixbuf_methods[] = {
 	PHP_ME(GtkCellRendererPixbuf, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -10212,22 +10001,19 @@ static PHP_METHOD(GtkRcStyle, copy)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkrcstyle_rc_add_class_style, 0)
     ZEND_ARG_INFO(0, pattern)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkrcstyle_rc_add_widget_class_style, 0)
     ZEND_ARG_INFO(0, pattern)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkrcstyle_rc_add_widget_name_style, 0)
     ZEND_ARG_INFO(0, pattern)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkrcstyle_methods[] = {
+static zend_function_entry gtkrcstyle_methods[] = {
 	PHP_ME(GtkRcStyle, copy,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRcStyle, rc_add_class_style,   arginfo_gtk_gtkrcstyle_rc_add_class_style, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRcStyle, rc_add_widget_class_style, arginfo_gtk_gtkrcstyle_rc_add_widget_class_style, ZEND_ACC_PUBLIC)
@@ -10314,33 +10100,29 @@ static PHP_METHOD(GtkSettings, set_string_property)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksettings_get_for_screen, 0)
     ZEND_ARG_OBJ_INFO(0, screen, GdkScreen, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksettings_set_double_property, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_INFO(0, v_double)
     ZEND_ARG_INFO(0, origin)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksettings_set_long_property, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_INFO(0, v_long)
     ZEND_ARG_INFO(0, origin)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksettings_set_string_property, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_INFO(0, v_string)
     ZEND_ARG_INFO(0, origin)
 ZEND_END_ARG_INFO();
 
-static function_entry gtksettings_methods[] = {
+static zend_function_entry gtksettings_methods[] = {
 	PHP_ME(GtkSettings, get_default,          NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkSettings, get_for_screen,       arginfo_gtk_gtksettings_get_for_screen, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkSettings, set_double_property,  arginfo_gtk_gtksettings_set_double_property, ZEND_ACC_PUBLIC)
@@ -10441,27 +10223,23 @@ static PHP_METHOD(GtkSizeGroup, set_mode)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksizegroup_size_group_new, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksizegroup_add_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksizegroup_remove_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksizegroup_set_mode, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static function_entry gtksizegroup_methods[] = {
+static zend_function_entry gtksizegroup_methods[] = {
 	PHP_ME(GtkSizeGroup, __construct,          arginfo_gtk_gtksizegroup_size_group_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkSizeGroup, add_widget,           arginfo_gtk_gtksizegroup_add_widget, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkSizeGroup, get_mode,             NULL, ZEND_ACC_PUBLIC)
@@ -11901,7 +11679,6 @@ static PHP_METHOD(GtkStyle, set_font)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_arrow, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -11917,7 +11694,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_arrow, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_box, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -11931,7 +11707,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_box, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_box_gap, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -11948,7 +11723,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_box_gap, 0)
     ZEND_ARG_INFO(0, gap_width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_check, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -11962,7 +11736,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_check, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_diamond, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -11976,7 +11749,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_diamond, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_expander, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -11988,7 +11760,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_expander, 0)
     ZEND_ARG_INFO(0, expander_style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_extension, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12003,7 +11774,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_extension, 0)
     ZEND_ARG_INFO(0, gap_side)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_flat_box, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12017,7 +11787,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_flat_box, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_focus, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12030,7 +11799,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_focus, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_handle, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12045,7 +11813,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_handle, 0)
     ZEND_ARG_INFO(0, orientation)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_hline, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12057,7 +11824,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_hline, 0)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_layout, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12070,7 +11836,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_layout, 0)
     ZEND_ARG_OBJ_INFO(0, layout, PangoLayout, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_option, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12084,7 +11849,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_option, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_resize_grip, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12098,7 +11862,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_resize_grip, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_shadow, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12112,7 +11875,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_shadow, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_shadow_gap, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12129,7 +11891,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_shadow_gap, 0)
     ZEND_ARG_INFO(0, gap_width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_slider, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12144,7 +11905,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_slider, 0)
     ZEND_ARG_INFO(0, orientation)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_string, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12156,7 +11916,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_string, 0)
     ZEND_ARG_INFO(0, string)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_tab, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12170,7 +11929,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_tab, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_vline, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
@@ -12182,7 +11940,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_paint_vline, 0)
     ZEND_ARG_INFO(0, x)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_apply_default_background, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, set_bg)
@@ -12194,7 +11951,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_apply_default_background, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_apply_default_pixmap, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, set_bg)
@@ -12205,17 +11961,14 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_apply_default_pixmap, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_attach, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_lookup_icon_set, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkstyle_render_icon, 0, 0, 4)
     ZEND_ARG_OBJ_INFO(0, source, GtkIconSource, 1)
     ZEND_ARG_INFO(0, direction)
@@ -12225,18 +11978,16 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkstyle_render_icon, 0, 0, 4)
     ZEND_ARG_INFO(0, detail)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_set_background, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, state_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstyle_set_font, 0)
     ZEND_ARG_OBJ_INFO(0, font, GdkFont, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkstyle_methods[] = {
+static zend_function_entry gtkstyle_methods[] = {
 	PHP_ME(GtkStyle, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkStyle, apply_default_background, arginfo_gtk_gtkstyle_apply_default_background, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkStyle, apply_default_pixmap, arginfo_gtk_gtkstyle_apply_default_pixmap, ZEND_ACC_PUBLIC)
@@ -13540,150 +13291,125 @@ static PHP_METHOD(GtkTextBuffer, set_text)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextbuffer_gtk_text_buffer_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, tag_table, GtkTextTagTable, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_add_selection_clipboard, 0)
     ZEND_ARG_OBJ_INFO(0, clipboard, GtkClipboard, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_apply_tag, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_apply_tag_by_name, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_backspace, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_INFO(0, interactive)
     ZEND_ARG_INFO(0, default_editable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_copy_clipboard, 0)
     ZEND_ARG_OBJ_INFO(0, clipboard, GtkClipboard, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_create_child_anchor, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextbuffer_create_mark, 0, 0, 2)
     ZEND_ARG_INFO(0, mark_name)
     ZEND_ARG_OBJ_INFO(0, where, GtkTextIter, 1)
     ZEND_ARG_INFO(0, left_gravity)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_cut_clipboard, 0)
     ZEND_ARG_OBJ_INFO(0, clipboard, GtkClipboard, 1)
     ZEND_ARG_INFO(0, default_editable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_delete, 0)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_delete_interactive, 0)
     ZEND_ARG_OBJ_INFO(0, start_iter, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end_iter, GtkTextIter, 1)
     ZEND_ARG_INFO(0, default_editable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_delete_mark, 0)
     ZEND_ARG_OBJ_INFO(0, mark, GtkTextMark, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_delete_mark_by_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_delete_selection, 0)
     ZEND_ARG_INFO(0, interactive)
     ZEND_ARG_INFO(0, default_editable)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_get_iter_at_line, 0)
     ZEND_ARG_INFO(0, line_number)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_get_iter_at_line_index, 0)
     ZEND_ARG_INFO(0, line_number)
     ZEND_ARG_INFO(0, byte_offset)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_get_iter_at_line_offset, 0)
     ZEND_ARG_INFO(0, line_number)
     ZEND_ARG_INFO(0, char_offset)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_get_iter_at_offset, 0)
     ZEND_ARG_INFO(0, char_offset)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_get_mark, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextbuffer_get_slice, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
     ZEND_ARG_INFO(0, include_hidden_chars)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextbuffer_get_text, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
     ZEND_ARG_INFO(0, include_hidden_chars)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextbuffer_insert, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, len)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextbuffer_insert_at_cursor, 0, 0, 1)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, len)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_insert_child_anchor, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, anchor, GtkTextChildAnchor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_insert_interactive, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_INFO(0, text)
@@ -13691,27 +13417,23 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_insert_interactive, 0)
     ZEND_ARG_INFO(0, default_editable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_insert_interactive_at_cursor, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, len)
     ZEND_ARG_INFO(0, default_editable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_insert_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_insert_range, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_insert_range_interactive, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
@@ -13719,72 +13441,61 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_insert_range_interactive, 0)
     ZEND_ARG_INFO(0, default_editable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_move_mark, 0)
     ZEND_ARG_OBJ_INFO(0, mark, GtkTextMark, 1)
     ZEND_ARG_OBJ_INFO(0, where, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_move_mark_by_name, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_OBJ_INFO(0, where, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_paste_clipboard, 0)
     ZEND_ARG_OBJ_INFO(0, clipboard, GtkClipboard, 1)
     ZEND_ARG_OBJ_INFO(0, override_location, GtkTextIter, 1)
     ZEND_ARG_INFO(0, default_editable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_place_cursor, 0)
     ZEND_ARG_OBJ_INFO(0, where, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_remove_all_tags, 0)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_remove_selection_clipboard, 0)
     ZEND_ARG_OBJ_INFO(0, clipboard, GtkClipboard, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_remove_tag, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_remove_tag_by_name, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_select_range, 0)
     ZEND_ARG_OBJ_INFO(0, ins, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, bound, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_set_modified, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextbuffer_set_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtktextbuffer_methods[] = {
+static zend_function_entry gtktextbuffer_methods[] = {
 	PHP_ME(GtkTextBuffer, __construct,          arginfo_gtk_gtktextbuffer_gtk_text_buffer_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextBuffer, add_selection_clipboard, arginfo_gtk_gtktextbuffer_add_selection_clipboard, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextBuffer, apply_tag,            arginfo_gtk_gtktextbuffer_apply_tag, ZEND_ACC_PUBLIC)
@@ -13903,7 +13614,7 @@ static PHP_METHOD(GtkTextChildAnchor, get_widgets)
 
 
 
-static function_entry gtktextchildanchor_methods[] = {
+static zend_function_entry gtktextchildanchor_methods[] = {
 	PHP_ME(GtkTextChildAnchor, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextChildAnchor, get_deleted,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextChildAnchor, get_widgets,          NULL, ZEND_ACC_PUBLIC)
@@ -14008,12 +13719,11 @@ static PHP_METHOD(GtkTextMark, set_visible)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextmark_set_visible, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktextmark_methods[] = {
+static zend_function_entry gtktextmark_methods[] = {
 	PHP_ME(GtkTextMark, get_buffer,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextMark, get_deleted,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextMark, get_left_gravity,     NULL, ZEND_ACC_PUBLIC)
@@ -14115,24 +13825,21 @@ static PHP_METHOD(GtkTextTag, set_priority)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktexttag_gtk_text_tag_new, 0, 0, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktexttag_event, 0)
     ZEND_ARG_OBJ_INFO(0, event_object, GObject, 1)
     ZEND_ARG_OBJ_INFO(0, event, GdkEvent, 1)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktexttag_set_priority, 0)
     ZEND_ARG_INFO(0, priority)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktexttag_methods[] = {
+static zend_function_entry gtktexttag_methods[] = {
 	PHP_ME(GtkTextTag, __construct,          arginfo_gtk_gtktexttag_gtk_text_tag_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextTag, event,                arginfo_gtk_gtktexttag_event, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextTag, get_priority,         NULL, ZEND_ACC_PUBLIC)
@@ -14278,27 +13985,23 @@ static PHP_METHOD(GtkTextTagTable, remove)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktexttagtable_add, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktexttagtable_foreach, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktexttagtable_lookup, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktexttagtable_remove, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktexttagtable_methods[] = {
+static zend_function_entry gtktexttagtable_methods[] = {
 	PHP_ME(GtkTextTagTable, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextTagTable, add,                  arginfo_gtk_gtktexttagtable_add, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextTagTable, foreach,              arginfo_gtk_gtktexttagtable_foreach, ZEND_ACC_PUBLIC)
@@ -14408,7 +14111,6 @@ static PHP_METHOD(GtkToggleAction, toggled)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoggleaction_gtk_toggle_action_new, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_INFO(0, label)
@@ -14416,17 +14118,15 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoggleaction_gtk_toggle_action_new, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoggleaction_set_active, 0)
     ZEND_ARG_INFO(0, is_active)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoggleaction_set_draw_as_radio, 0)
     ZEND_ARG_INFO(0, draw_as_radio)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktoggleaction_methods[] = {
+static zend_function_entry gtktoggleaction_methods[] = {
 	PHP_ME(GtkToggleAction, __construct,          arginfo_gtk_gtktoggleaction_gtk_toggle_action_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToggleAction, get_active,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToggleAction, get_draw_as_radio,    NULL, ZEND_ACC_PUBLIC)
@@ -14526,7 +14226,6 @@ static PHP_METHOD(GtkRadioAction, set_group)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkradioaction_gtk_radio_action_new, 0)
     ZEND_ARG_INFO(0, name)
     ZEND_ARG_INFO(0, label)
@@ -14535,7 +14234,7 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkradioaction_gtk_radio_action_new, 0)
     ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkradioaction_methods[] = {
+static zend_function_entry gtkradioaction_methods[] = {
 	PHP_ME(GtkRadioAction, __construct,          arginfo_gtk_gtkradioaction_gtk_radio_action_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRadioAction, get_current_value,    NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRadioAction, get_group,            NULL, ZEND_ACC_PUBLIC)
@@ -14781,19 +14480,17 @@ static PHP_METHOD(GtkTooltips, set_tip)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktooltips_set_delay, 0)
     ZEND_ARG_INFO(0, delay)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktooltips_set_tip, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, tip_text)
     ZEND_ARG_INFO(0, tip_private)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktooltips_methods[] = {
+static zend_function_entry gtktooltips_methods[] = {
 	PHP_ME(GtkTooltips, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTooltips, disable,              NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTooltips, enable,               NULL, ZEND_ACC_PUBLIC)
@@ -15065,44 +14762,37 @@ static PHP_METHOD(GtkTreeModelFilter, set_visible_func)
 #line 15066 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreemodelfilter_gtk_tree_model_filter_new, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, model, GtkTreeModel, 1)
     ZEND_ARG_INFO(0, root)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelfilter_convert_child_iter_to_iter, 0)
     ZEND_ARG_OBJ_INFO(0, child_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelfilter_convert_child_path_to_path, 0)
     ZEND_ARG_INFO(0, child_path)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelfilter_convert_iter_to_child_iter, 0)
     ZEND_ARG_OBJ_INFO(0, filter_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelfilter_convert_path_to_child_path, 0)
     ZEND_ARG_INFO(0, filter_path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelfilter_set_visible_column, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelfilter_set_visible_func, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtktreemodelfilter_methods[] = {
+static zend_function_entry gtktreemodelfilter_methods[] = {
 	PHP_ME(GtkTreeModelFilter, __construct,          arginfo_gtk_gtktreemodelfilter_gtk_tree_model_filter_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeModelFilter, clear_cache,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeModelFilter, convert_child_iter_to_iter, arginfo_gtk_gtktreemodelfilter_convert_child_iter_to_iter, ZEND_ACC_PUBLIC)
@@ -15355,37 +15045,31 @@ static PHP_METHOD(GtkTreeModelSort, reset_default_sort_func)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelsort_gtk_tree_model_sort_new_with_model, 0)
     ZEND_ARG_INFO(0, model)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelsort_convert_child_iter_to_iter, 0)
     ZEND_ARG_OBJ_INFO(0, child_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelsort_convert_child_path_to_path, 0)
     ZEND_ARG_INFO(0, child_path)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelsort_convert_iter_to_child_iter, 0)
     ZEND_ARG_OBJ_INFO(0, sort_iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelsort_convert_path_to_child_path, 0)
     ZEND_ARG_INFO(0, sorted_path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreemodelsort_iter_is_valid, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktreemodelsort_methods[] = {
+static zend_function_entry gtktreemodelsort_methods[] = {
 	PHP_ME(GtkTreeModelSort, __construct,          arginfo_gtk_gtktreemodelsort_gtk_tree_model_sort_new_with_model, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeModelSort, clear_cache,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeModelSort, convert_child_iter_to_iter, arginfo_gtk_gtktreemodelsort_convert_child_iter_to_iter, ZEND_ACC_PUBLIC)
@@ -15943,64 +15627,53 @@ static PHP_METHOD(GtkTreeSelection, unselect_range)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_iter_is_selected, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_path_is_selected, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_select_iter, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_select_path, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_select_range, 0)
     ZEND_ARG_INFO(0, start_path)
     ZEND_ARG_INFO(0, end_path)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_selected_foreach, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_set_mode, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_set_select_function, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_unselect_iter, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_unselect_path, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeselection_unselect_range, 0)
     ZEND_ARG_INFO(0, start_path)
     ZEND_ARG_INFO(0, end_path)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktreeselection_methods[] = {
+static zend_function_entry gtktreeselection_methods[] = {
 	PHP_ME(GtkTreeSelection, count_selected_rows,  NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeSelection, get_mode,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeSelection, get_selected,         NULL, ZEND_ACC_PUBLIC)
@@ -16581,34 +16254,29 @@ static PHP_METHOD(GtkTreeStore, swap)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreestore_gtk_tree_store_new, 0, 0, 1)
     ZEND_ARG_INFO(0, type_col_0)
     ZEND_ARG_INFO(0, type_col_1)
     ZEND_ARG_INFO(0, ...)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreestore_append, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, items)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreestore_insert, 0, 0, 1)
     ZEND_ARG_INFO(0, position)
     ZEND_ARG_OBJ_INFO(0, parent, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, items)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreestore_insert_after, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, parent, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, sibling, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, items)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreestore_insert_before, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, parent, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, sibling, GtkTreeIter, 1)
@@ -16616,45 +16284,37 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreestore_insert_before, 0, 0, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreestore_is_ancestor, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, descendant, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreestore_iter_depth, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreestore_iter_is_valid, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreestore_move_after, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, position, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreestore_move_before, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, position, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreestore_prepend, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, items)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreestore_remove, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreestore_set, 0, 0, 3)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
     ZEND_ARG_INFO(0, column)
@@ -16664,13 +16324,12 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreestore_set, 0, 0, 3)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreestore_swap, 0)
     ZEND_ARG_OBJ_INFO(0, a, GtkTreeIter, 1)
     ZEND_ARG_OBJ_INFO(0, b, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktreestore_methods[] = {
+static zend_function_entry gtktreestore_methods[] = {
 	PHP_ME(GtkTreeStore, __construct,          arginfo_gtk_gtktreestore_gtk_tree_store_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeStore, append,               arginfo_gtk_gtktreestore_append, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeStore, clear,                NULL, ZEND_ACC_PUBLIC)
@@ -17500,7 +17159,6 @@ static PHP_METHOD(GtkTreeViewColumn, set_widget)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeviewcolumn_gtk_tree_view_column_new_with_attributes, 0, 0, 0)
     ZEND_ARG_INFO(0, title)
     ZEND_ARG_OBJ_INFO(0, cellrenderer, GtkCellRenderer, 1)
@@ -17509,19 +17167,16 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeviewcolumn_gtk_tree_view_column_new_wi
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_add_attribute, 0)
     ZEND_ARG_OBJ_INFO(0, cell_renderer, GtkCellRenderer, 1)
     ZEND_ARG_INFO(0, attribute)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_cell_get_position, 0)
     ZEND_ARG_OBJ_INFO(0, cellrenderer, GtkCellRenderer, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_cell_set_cell_data, 0)
     ZEND_ARG_INFO(0, tree_model)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
@@ -17529,109 +17184,89 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_cell_set_cell_data, 0)
     ZEND_ARG_INFO(0, is_expanded)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_clear_attributes, 0)
     ZEND_ARG_OBJ_INFO(0, cell_renderer, GtkCellRenderer, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_focus_cell, 0)
     ZEND_ARG_OBJ_INFO(0, cell, GtkCellRenderer, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeviewcolumn_pack_end, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, cell, GtkCellRenderer, 1)
     ZEND_ARG_INFO(0, expand)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeviewcolumn_pack_start, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, cell, GtkCellRenderer, 1)
     ZEND_ARG_INFO(0, expand)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_alignment, 0)
     ZEND_ARG_INFO(0, xalign)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_clickable, 0)
     ZEND_ARG_INFO(0, active)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_expand, 0)
     ZEND_ARG_INFO(0, expand)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_fixed_width, 0)
     ZEND_ARG_INFO(0, fixed_width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_max_width, 0)
     ZEND_ARG_INFO(0, max_width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_min_width, 0)
     ZEND_ARG_INFO(0, min_width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_reorderable, 0)
     ZEND_ARG_INFO(0, reorderable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_resizable, 0)
     ZEND_ARG_INFO(0, resizable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_sizing, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_sort_column_id, 0)
     ZEND_ARG_INFO(0, sort_column_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_sort_indicator, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_sort_order, 0)
     ZEND_ARG_INFO(0, order)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_spacing, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_title, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_visible, 0)
     ZEND_ARG_INFO(0, visible)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeviewcolumn_set_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktreeviewcolumn_methods[] = {
+static zend_function_entry gtktreeviewcolumn_methods[] = {
 	PHP_ME(GtkTreeViewColumn, __construct,          arginfo_gtk_gtktreeviewcolumn_gtk_tree_view_column_new_with_attributes, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeViewColumn, add_attribute,        arginfo_gtk_gtktreeviewcolumn_add_attribute, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeViewColumn, cell_get_position,    arginfo_gtk_gtktreeviewcolumn_cell_get_position, ZEND_ACC_PUBLIC)
@@ -18010,7 +17645,6 @@ static PHP_METHOD(GtkUIManager, set_add_tearoffs)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_add_ui, 0)
     ZEND_ARG_INFO(0, merge_id)
     ZEND_ARG_INFO(0, path)
@@ -18020,54 +17654,45 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_add_ui, 0)
     ZEND_ARG_INFO(0, top)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_add_ui_from_file, 0)
     ZEND_ARG_INFO(0, filename)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_add_ui_from_string, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_get_action, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_get_toplevels, 0)
     ZEND_ARG_INFO(0, types)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_get_widget, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_insert_action_group, 0)
     ZEND_ARG_OBJ_INFO(0, action_group, GtkActionGroup, 1)
     ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_remove_action_group, 0)
     ZEND_ARG_OBJ_INFO(0, action_group, GtkActionGroup, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_remove_ui, 0)
     ZEND_ARG_INFO(0, merge_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkuimanager_set_add_tearoffs, 0)
     ZEND_ARG_INFO(0, add_tearoffs)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkuimanager_methods[] = {
+static zend_function_entry gtkuimanager_methods[] = {
 	PHP_ME(GtkUIManager, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkUIManager, add_ui,               arginfo_gtk_gtkuimanager_add_ui, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkUIManager, add_ui_from_file,     arginfo_gtk_gtkuimanager_add_ui_from_file, ZEND_ACC_PUBLIC)
@@ -20900,7 +20525,6 @@ static PHP_METHOD(GtkWidget, get_for_attach_widget)
 #line 20901 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_begin, 0)
     ZEND_ARG_INFO(0, targets)
     ZEND_ARG_INFO(0, actions)
@@ -20909,20 +20533,17 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_begin, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_check_threshold, 0)
     ZEND_ARG_INFO(0, start_x)
     ZEND_ARG_INFO(0, start_y)
     ZEND_ARG_INFO(0, current_x)
     ZEND_ARG_INFO(0, current_y)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkwidget_drag_dest_find_target, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, context, GdkDragContext, 1)
     ZEND_ARG_INFO(0, targets)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_dest_set, 0)
     ZEND_ARG_INFO(0, flags)
     ZEND_ARG_INFO(0, targets)
@@ -20930,25 +20551,21 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_dest_set, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_dest_set_proxy, 0)
     ZEND_ARG_OBJ_INFO(0, proxy_window, GdkWindow, 1)
     ZEND_ARG_INFO(0, protocol)
     ZEND_ARG_INFO(0, use_coordinates)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_dest_set_target_list, 0)
     ZEND_ARG_INFO(0, targets)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkwidget_drag_get_data, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, context, GdkDragContext, 1)
     ZEND_ARG_INFO(0, target)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_source_set, 0)
     ZEND_ARG_INFO(0, sbmask)
     ZEND_ARG_INFO(0, targets)
@@ -20956,59 +20573,49 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_source_set, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkwidget_drag_source_set_icon, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, colormap, GdkColormap, 1)
     ZEND_ARG_OBJ_INFO(0, pixmap, GdkPixmap, 1)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_source_set_icon_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_source_set_icon_stock, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_drag_source_set_target_list, 0)
     ZEND_ARG_INFO(0, targets)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_selection_add_target, 0)
     ZEND_ARG_INFO(0, selection)
     ZEND_ARG_INFO(0, target)
     ZEND_ARG_INFO(0, info)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_selection_clear, 0)
     ZEND_ARG_INFO(0, event)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_selection_clear_targets, 0)
     ZEND_ARG_INFO(0, selection)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkwidget_selection_convert, 0, 0, 2)
     ZEND_ARG_INFO(0, selection)
     ZEND_ARG_INFO(0, target)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkwidget_selection_owner_set, 0, 0, 1)
     ZEND_ARG_INFO(0, selection)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_add_accelerator, 0)
     ZEND_ARG_INFO(0, accel_signal)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
@@ -21017,111 +20624,90 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_add_accelerator, 0)
     ZEND_ARG_INFO(0, accel_flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_add_events, 0)
     ZEND_ARG_INFO(0, events)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_add_mnemonic_label, 0)
     ZEND_ARG_OBJ_INFO(0, label, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_can_activate_accel, 0)
     ZEND_ARG_INFO(0, signal_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_child_focus, 0)
     ZEND_ARG_INFO(0, direction)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_child_notify, 0)
     ZEND_ARG_INFO(0, child_property)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_create_pango_layout, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_draw, 0)
     ZEND_ARG_OBJ_INFO(0, area, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_event, 0)
     ZEND_ARG_OBJ_INFO(0, event, GdkEvent, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_get_ancestor, 0)
     ZEND_ARG_OBJ_INFO(0, widget_type, GType, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_get_clipboard, 0)
     ZEND_ARG_INFO(0, selection)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_intersect, 0)
     ZEND_ARG_OBJ_INFO(0, area, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_is_ancestor, 0)
     ZEND_ARG_OBJ_INFO(0, ancestor, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_mnemonic_activate, 0)
     ZEND_ARG_INFO(0, group_cycling)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_modify_base, 0)
     ZEND_ARG_INFO(0, state)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_modify_bg, 0)
     ZEND_ARG_INFO(0, state)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_modify_fg, 0)
     ZEND_ARG_INFO(0, state)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_modify_font, 0)
     ZEND_ARG_OBJ_INFO(0, font_desc, PangoFontDescription, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_modify_style, 0)
     ZEND_ARG_OBJ_INFO(0, style, GtkRcStyle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_modify_text, 0)
     ZEND_ARG_INFO(0, state)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_push_colormap, 0)
     ZEND_ARG_OBJ_INFO(0, cmap, GdkColormap, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_queue_clear_area, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -21129,7 +20715,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_queue_clear_area, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_queue_draw_area, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -21137,186 +20722,153 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_queue_draw_area, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_remove_accelerator, 0)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
     ZEND_ARG_INFO(0, accel_key)
     ZEND_ARG_INFO(0, accel_mods)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_remove_mnemonic_label, 0)
     ZEND_ARG_OBJ_INFO(0, label, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkwidget_render_icon, 0, 0, 2)
     ZEND_ARG_INFO(0, stock_id)
     ZEND_ARG_INFO(0, size)
     ZEND_ARG_INFO(0, detail)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_reparent, 0)
     ZEND_ARG_OBJ_INFO(0, new_parent, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_send_expose, 0)
     ZEND_ARG_OBJ_INFO(0, event, GdkEvent, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_accel_path, 0)
     ZEND_ARG_INFO(0, accel_path)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_app_paintable, 0)
     ZEND_ARG_INFO(0, app_paintable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_child_visible, 0)
     ZEND_ARG_INFO(0, is_visible)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_colormap, 0)
     ZEND_ARG_OBJ_INFO(0, colormap, GdkColormap, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_composite_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_default_colormap, 0)
     ZEND_ARG_OBJ_INFO(0, colormap, GdkColormap, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_default_direction, 0)
     ZEND_ARG_INFO(0, dir)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_direction, 0)
     ZEND_ARG_INFO(0, dir)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_double_buffered, 0)
     ZEND_ARG_INFO(0, double_buffered)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_events, 0)
     ZEND_ARG_INFO(0, events)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_extension_events, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_no_show_all, 0)
     ZEND_ARG_INFO(0, no_show_all)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_parent, 0)
     ZEND_ARG_OBJ_INFO(0, parent, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_parent_window, 0)
     ZEND_ARG_OBJ_INFO(0, parent_window, GdkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_redraw_on_allocate, 0)
     ZEND_ARG_INFO(0, redraw_on_allocate)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_scroll_adjustments, 0)
     ZEND_ARG_OBJ_INFO(0, hadjustment, GtkAdjustment, 1)
     ZEND_ARG_OBJ_INFO(0, vadjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_sensitive, 0)
     ZEND_ARG_INFO(0, sensitive)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_size_request, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_state, 0)
     ZEND_ARG_INFO(0, state)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_style, 0)
     ZEND_ARG_OBJ_INFO(0, style, GtkStyle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_uposition, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_set_usize, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_shape_combine_mask, 0)
     ZEND_ARG_INFO(0, shape_mask)
     ZEND_ARG_INFO(0, offset_x)
     ZEND_ARG_INFO(0, offset_y)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_size_allocate, 0)
     ZEND_ARG_INFO(0, allocation)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_style_get_property, 0)
     ZEND_ARG_INFO(0, property_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwidget_translate_coordinates, 0)
     ZEND_ARG_OBJ_INFO(0, dest_widget, GtkWidget, 0)
     ZEND_ARG_INFO(0, src_x)
     ZEND_ARG_INFO(0, src_y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkwidget_set_visible, 0, 0, 1)
     ZEND_ARG_INFO(0, visible)
     ZEND_ARG_INFO(0, all)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkwidget_methods[] = {
+static zend_function_entry gtkwidget_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -21569,12 +21121,10 @@ static PHP_METHOD(GtkRuler, set_range)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkruler_set_metric, 0)
     ZEND_ARG_INFO(0, metric)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkruler_set_range, 0)
     ZEND_ARG_INFO(0, lower)
     ZEND_ARG_INFO(0, upper)
@@ -21582,7 +21132,7 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkruler_set_range, 0)
     ZEND_ARG_INFO(0, max_size)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkruler_methods[] = {
+static zend_function_entry gtkruler_methods[] = {
 	PHP_ME(GtkRuler, draw_pos,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRuler, draw_ticks,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRuler, get_metric,           NULL, ZEND_ACC_PUBLIC)
@@ -21611,7 +21161,7 @@ static PHP_METHOD(GtkVSeparator, __construct)
 }
 
 
-static function_entry gtkvseparator_methods[] = {
+static zend_function_entry gtkvseparator_methods[] = {
 	PHP_ME(GtkVSeparator, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -21635,7 +21185,7 @@ static PHP_METHOD(GtkHSeparator, __construct)
 }
 
 
-static function_entry gtkhseparator_methods[] = {
+static zend_function_entry gtkhseparator_methods[] = {
 	PHP_ME(GtkHSeparator, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -21659,7 +21209,7 @@ static PHP_METHOD(GtkVRuler, __construct)
 }
 
 
-static function_entry gtkvruler_methods[] = {
+static zend_function_entry gtkvruler_methods[] = {
 	PHP_ME(GtkVRuler, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -21809,39 +21359,33 @@ static PHP_METHOD(GtkRange, set_value)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkrange_set_adjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkrange_set_increments, 0)
     ZEND_ARG_INFO(0, step)
     ZEND_ARG_INFO(0, page)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkrange_set_inverted, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkrange_set_range, 0)
     ZEND_ARG_INFO(0, min)
     ZEND_ARG_INFO(0, max)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkrange_set_update_policy, 0)
     ZEND_ARG_INFO(0, policy)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkrange_set_value, 0)
     ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkrange_methods[] = {
+static zend_function_entry gtkrange_methods[] = {
 	PHP_ME(GtkRange, get_adjustment,       NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRange, get_inverted,         NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRange, get_update_policy,    NULL, ZEND_ACC_PUBLIC)
@@ -21874,7 +21418,7 @@ static PHP_METHOD(GtkHRuler, __construct)
 }
 
 
-static function_entry gtkhruler_methods[] = {
+static zend_function_entry gtkhruler_methods[] = {
 	PHP_ME(GtkHRuler, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -22116,60 +21660,50 @@ static PHP_METHOD(GtkProgress, set_value)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_configure, 0)
     ZEND_ARG_INFO(0, value)
     ZEND_ARG_INFO(0, min)
     ZEND_ARG_INFO(0, max)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_get_percentage_from_value, 0)
     ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_get_text_from_value, 0)
     ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_set_activity_mode, 0)
     ZEND_ARG_INFO(0, activity_mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_set_adjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_set_format_string, 0)
     ZEND_ARG_INFO(0, format)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_set_percentage, 0)
     ZEND_ARG_INFO(0, percentage)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_set_show_text, 0)
     ZEND_ARG_INFO(0, show_text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_set_text_alignment, 0)
     ZEND_ARG_INFO(0, x_align)
     ZEND_ARG_INFO(0, y_align)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogress_set_value, 0)
     ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkprogress_methods[] = {
+static zend_function_entry gtkprogress_methods[] = {
 	PHP_ME(GtkProgress, configure,            arginfo_gtk_gtkprogress_configure, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkProgress, get_current_percentage, NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkProgress, get_current_text,     NULL, ZEND_ACC_PUBLIC)
@@ -22217,12 +21751,11 @@ static PHP_METHOD(GtkVScrollbar, __construct)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkvscrollbar_gtk_vscrollbar_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkvscrollbar_methods[] = {
+static zend_function_entry gtkvscrollbar_methods[] = {
 	PHP_ME(GtkVScrollbar, __construct,          arginfo_gtk_gtkvscrollbar_gtk_vscrollbar_new, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -22258,12 +21791,11 @@ static PHP_METHOD(GtkHScrollbar, __construct)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkhscrollbar_gtk_hscrollbar_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkhscrollbar_methods[] = {
+static zend_function_entry gtkhscrollbar_methods[] = {
 	PHP_ME(GtkHScrollbar, __construct,          arginfo_gtk_gtkhscrollbar_gtk_hscrollbar_new, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -22388,22 +21920,19 @@ static PHP_METHOD(GtkScale, set_value_pos)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkscale_set_digits, 0)
     ZEND_ARG_INFO(0, digits)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkscale_set_draw_value, 0)
     ZEND_ARG_INFO(0, draw_value)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkscale_set_value_pos, 0)
     ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkscale_methods[] = {
+static zend_function_entry gtkscale_methods[] = {
 	PHP_ME(GtkScale, get_digits,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkScale, get_draw_value,       NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkScale, get_layout,           NULL, ZEND_ACC_PUBLIC)
@@ -22619,12 +22148,10 @@ static PHP_METHOD(GtkPreview, size)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_gtk_preview_new, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_draw_row, 0)
     ZEND_ARG_INFO(0, data)
     ZEND_ARG_INFO(0, x)
@@ -22632,7 +22159,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_draw_row, 0)
     ZEND_ARG_INFO(0, w)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_put, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
@@ -22644,7 +22170,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_put, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_set_color_cube, 0)
     ZEND_ARG_INFO(0, nred_shades)
     ZEND_ARG_INFO(0, ngreen_shades)
@@ -22652,38 +22177,32 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_set_color_cube, 0)
     ZEND_ARG_INFO(0, ngray_shades)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_set_dither, 0)
     ZEND_ARG_INFO(0, dither)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_set_expand, 0)
     ZEND_ARG_INFO(0, expand)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_set_gamma, 0)
     ZEND_ARG_INFO(0, gamma)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_set_install_cmap, 0)
     ZEND_ARG_INFO(0, install_cmap)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_set_reserved, 0)
     ZEND_ARG_INFO(0, nreserved)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpreview_size, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkpreview_methods[] = {
+static zend_function_entry gtkpreview_methods[] = {
 	PHP_ME(GtkPreview, __construct,          arginfo_gtk_gtkpreview_gtk_preview_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkPreview, draw_row,             arginfo_gtk_gtkpreview_draw_row, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkPreview, get_cmap,             NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -22750,19 +22269,17 @@ static PHP_METHOD(GtkVScale, new_with_range)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkvscale_gtk_vscale_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkvscale_gtk_vscale_new_with_range, 0)
     ZEND_ARG_INFO(0, min)
     ZEND_ARG_INFO(0, max)
     ZEND_ARG_INFO(0, step)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkvscale_methods[] = {
+static zend_function_entry gtkvscale_methods[] = {
 	PHP_ME(GtkVScale, __construct,          arginfo_gtk_gtkvscale_gtk_vscale_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkVScale, new_with_range,       arginfo_gtk_gtkvscale_gtk_vscale_new_with_range, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	{ NULL, NULL, NULL }
@@ -22818,19 +22335,17 @@ static PHP_METHOD(GtkHScale, new_with_range)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkhscale_gtk_hscale_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkhscale_gtk_hscale_new_with_range, 0)
     ZEND_ARG_INFO(0, min)
     ZEND_ARG_INFO(0, max)
     ZEND_ARG_INFO(0, step)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkhscale_methods[] = {
+static zend_function_entry gtkhscale_methods[] = {
 	PHP_ME(GtkHScale, __construct,          arginfo_gtk_gtkhscale_gtk_hscale_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkHScale, new_with_range,       arginfo_gtk_gtkhscale_gtk_hscale_new_with_range, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	{ NULL, NULL, NULL }
@@ -23107,58 +22622,48 @@ static PHP_METHOD(GtkProgressBar, set_text)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkprogressbar_gtk_progress_bar_new_with_adjustment, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogressbar_set_activity_blocks, 0)
     ZEND_ARG_INFO(0, blocks)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogressbar_set_activity_step, 0)
     ZEND_ARG_INFO(0, step)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogressbar_set_bar_style, 0)
     ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogressbar_set_discrete_blocks, 0)
     ZEND_ARG_INFO(0, blocks)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogressbar_set_ellipsize, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogressbar_set_fraction, 0)
     ZEND_ARG_INFO(0, fraction)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogressbar_set_orientation, 0)
     ZEND_ARG_INFO(0, orientation)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogressbar_set_pulse_step, 0)
     ZEND_ARG_INFO(0, fraction)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkprogressbar_set_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkprogressbar_methods[] = {
+static zend_function_entry gtkprogressbar_methods[] = {
 	PHP_ME(GtkProgressBar, __construct,          arginfo_gtk_gtkprogressbar_gtk_progress_bar_new_with_adjustment, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkProgressBar, get_ellipsize,        NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkProgressBar, get_fraction,         NULL, ZEND_ACC_PUBLIC)
@@ -23206,13 +22711,12 @@ static PHP_METHOD(GtkOldEditable, claim_selection)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkoldeditable_claim_selection, 0, 0, 1)
     ZEND_ARG_INFO(0, claim)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkoldeditable_methods[] = {
+static zend_function_entry gtkoldeditable_methods[] = {
 	PHP_ME(GtkOldEditable, changed,              NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkOldEditable, claim_selection,      arginfo_gtk_gtkoldeditable_claim_selection, ZEND_ACC_PUBLIC)
 
@@ -23297,19 +22801,17 @@ static PHP_METHOD(GtkMisc, set_padding)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmisc_set_alignment, 0)
     ZEND_ARG_INFO(0, xalign)
     ZEND_ARG_INFO(0, yalign)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmisc_set_padding, 0)
     ZEND_ARG_INFO(0, xpad)
     ZEND_ARG_INFO(0, ypad)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkmisc_methods[] = {
+static zend_function_entry gtkmisc_methods[] = {
 	PHP_ME(GtkMisc, get_alignment,        NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMisc, get_padding,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMisc, set_alignment,        arginfo_gtk_gtkmisc_set_alignment, ZEND_ACC_PUBLIC)
@@ -23383,17 +22885,15 @@ static PHP_METHOD(GtkInvisible, set_screen)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkinvisible_gtk_invisible_new_for_screen, 0)
     ZEND_ARG_OBJ_INFO(0, screen, GdkScreen, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkinvisible_set_screen, 0)
     ZEND_ARG_OBJ_INFO(0, screen, GdkScreen, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkinvisible_methods[] = {
+static zend_function_entry gtkinvisible_methods[] = {
 	PHP_ME(GtkInvisible, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkInvisible, new_for_screen,       arginfo_gtk_gtkinvisible_gtk_invisible_new_for_screen, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkInvisible, get_screen,           NULL, ZEND_ACC_PUBLIC)
@@ -23481,24 +22981,21 @@ static PHP_METHOD(GtkPixmap, set_build_insensitive)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpixmap_gtk_pixmap_new, 0)
     ZEND_ARG_OBJ_INFO(0, pixmap, GdkPixmap, 1)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpixmap_set, 0)
     ZEND_ARG_OBJ_INFO(0, val, GdkPixmap, 1)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpixmap_set_build_insensitive, 0)
     ZEND_ARG_INFO(0, build)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkpixmap_methods[] = {
+static zend_function_entry gtkpixmap_methods[] = {
 	PHP_ME(GtkPixmap, __construct,          arginfo_gtk_gtkpixmap_gtk_pixmap_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkPixmap, get,                  NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkPixmap, set,                  arginfo_gtk_gtkpixmap_set, ZEND_ACC_PUBLIC)
@@ -23561,19 +23058,17 @@ static PHP_METHOD(GtkArrow, set)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkarrow_gtk_arrow_new, 0)
     ZEND_ARG_INFO(0, arrow_type)
     ZEND_ARG_INFO(0, shadow_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkarrow_set, 0)
     ZEND_ARG_INFO(0, arrow_type)
     ZEND_ARG_INFO(0, shadow_type)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkarrow_methods[] = {
+static zend_function_entry gtkarrow_methods[] = {
 	PHP_ME(GtkArrow, __construct,          arginfo_gtk_gtkarrow_gtk_arrow_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkArrow, set,                  arginfo_gtk_gtkarrow_set, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -24196,108 +23691,90 @@ static PHP_METHOD(GtkImage, set_pixel_size)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_image_new_from_animation, 0)
     ZEND_ARG_OBJ_INFO(0, animation, GdkPixbufAnimation, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_image_new_from_file, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_image_new_from_icon_name, 0)
     ZEND_ARG_INFO(0, icon_name)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_image_new_from_icon_set, 0)
     ZEND_ARG_OBJ_INFO(0, icon_set, GtkIconSet, 1)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_image_new_from_image, 0)
     ZEND_ARG_OBJ_INFO(0, image, GdkImage, 1)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_image_new_from_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_image_new_from_pixmap, 0)
     ZEND_ARG_OBJ_INFO(0, pixmap, GdkPixmap, 1)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_image_new_from_stock, 0)
     ZEND_ARG_INFO(0, stock_id)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set, 0)
     ZEND_ARG_OBJ_INFO(0, val, GdkImage, 1)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set_from_animation, 0)
     ZEND_ARG_OBJ_INFO(0, animation, GdkPixbufAnimation, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set_from_file, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set_from_icon_name, 0)
     ZEND_ARG_INFO(0, icon_name)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set_from_icon_set, 0)
     ZEND_ARG_OBJ_INFO(0, icon_set, GtkIconSet, 1)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set_from_image, 0)
     ZEND_ARG_OBJ_INFO(0, gdk_image, GdkImage, 1)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set_from_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set_from_pixmap, 0)
     ZEND_ARG_OBJ_INFO(0, pixmap, GdkPixmap, 1)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set_from_stock, 0)
     ZEND_ARG_INFO(0, stock_id)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimage_set_pixel_size, 0)
     ZEND_ARG_INFO(0, pixel_size)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkimage_methods[] = {
+static zend_function_entry gtkimage_methods[] = {
 	PHP_ME(GtkImage, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkImage, new_from_animation,   arginfo_gtk_gtkimage_image_new_from_animation, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkImage, new_from_file,        arginfo_gtk_gtkimage_image_new_from_file, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -24996,120 +24473,98 @@ static PHP_METHOD(GtkLabel, set_width_chars)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtklabel_gtk_label_new, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_parse_uline, 0)
     ZEND_ARG_INFO(0, string)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_select_region, 0)
     ZEND_ARG_INFO(0, start_offset)
     ZEND_ARG_INFO(0, end_offset)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set, 0)
     ZEND_ARG_INFO(0, str)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_angle, 0)
     ZEND_ARG_INFO(0, angle)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_attributes, 0)
     ZEND_ARG_OBJ_INFO(0, attrs, PangoAttrList, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_ellipsize, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_justify, 0)
     ZEND_ARG_INFO(0, jtype)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_label, 0)
     ZEND_ARG_INFO(0, str)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_line_wrap, 0)
     ZEND_ARG_INFO(0, wrap)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_markup, 0)
     ZEND_ARG_INFO(0, str)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_markup_with_mnemonic, 0)
     ZEND_ARG_INFO(0, str)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_max_width_chars, 0)
     ZEND_ARG_INFO(0, n_chars)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_mnemonic_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_pattern, 0)
     ZEND_ARG_INFO(0, pattern)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_selectable, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_single_line_mode, 0)
     ZEND_ARG_INFO(0, single_line_mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_text, 0)
     ZEND_ARG_INFO(0, str)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_text_with_mnemonic, 0)
     ZEND_ARG_INFO(0, str)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_use_markup, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_use_underline, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklabel_set_width_chars, 0)
     ZEND_ARG_INFO(0, n_chars)
 ZEND_END_ARG_INFO();
 
-static function_entry gtklabel_methods[] = {
+static zend_function_entry gtklabel_methods[] = {
 	PHP_ME(GtkLabel, __construct,          arginfo_gtk_gtklabel_gtk_label_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkLabel, get,                  NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkLabel, get_angle,            NULL, ZEND_ACC_PUBLIC)
@@ -25591,85 +25046,70 @@ static PHP_METHOD(GtkEntry, set_width_chars)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkentry_gtk_entry_new, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, max_length)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_append_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_prepend_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_select_region, 0)
     ZEND_ARG_INFO(0, start)
     ZEND_ARG_INFO(0, end)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_activates_default, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_alignment, 0)
     ZEND_ARG_INFO(0, xalign)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_completion, 0)
     ZEND_ARG_OBJ_INFO(0, completion, GtkEntryCompletion, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_editable, 0)
     ZEND_ARG_INFO(0, editable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_has_frame, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_invisible_char, 0)
     ZEND_ARG_INFO(0, char)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_max_length, 0)
     ZEND_ARG_INFO(0, max)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_position, 0)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_visibility, 0)
     ZEND_ARG_INFO(0, visible)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkentry_set_width_chars, 0)
     ZEND_ARG_INFO(0, n_chars)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkentry_methods[] = {
+static zend_function_entry gtkentry_methods[] = {
 	PHP_ME(GtkEntry, __construct,          arginfo_gtk_gtkentry_gtk_entry_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkEntry, append_text,          arginfo_gtk_gtkentry_append_text, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkEntry, get_activates_default, NULL, ZEND_ACC_PUBLIC)
@@ -25804,18 +25244,16 @@ static PHP_METHOD(GtkTipsQuery, stop_query)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktipsquery_set_caller, 0)
     ZEND_ARG_OBJ_INFO(0, caller, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktipsquery_set_labels, 0)
     ZEND_ARG_INFO(0, label_inactive)
     ZEND_ARG_INFO(0, label_no_tip)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktipsquery_methods[] = {
+static zend_function_entry gtktipsquery_methods[] = {
 	PHP_ME(GtkTipsQuery, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTipsQuery, set_caller,           arginfo_gtk_gtktipsquery_set_caller, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTipsQuery, set_labels,           arginfo_gtk_gtktipsquery_set_labels, ZEND_ACC_PUBLIC)
@@ -25927,17 +25365,15 @@ static PHP_METHOD(GtkAccelLabel, set_accel_widget)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccellabel_gtk_accel_label_new, 0)
     ZEND_ARG_INFO(0, string)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaccellabel_set_accel_widget, 0)
     ZEND_ARG_OBJ_INFO(0, accel_widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkaccellabel_methods[] = {
+static zend_function_entry gtkaccellabel_methods[] = {
 	PHP_ME(GtkAccelLabel, __construct,          arginfo_gtk_gtkaccellabel_gtk_accel_label_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAccelLabel, accelerator_width,    NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAccelLabel, get_accel_widget,     NULL, ZEND_ACC_PUBLIC)
@@ -26326,81 +25762,68 @@ static PHP_METHOD(GtkSpinButton, update)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkspinbutton_gtk_spin_button_new, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
     ZEND_ARG_INFO(0, climb_rate)
     ZEND_ARG_INFO(0, digits)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_gtk_spin_button_new_with_range, 0)
     ZEND_ARG_INFO(0, min)
     ZEND_ARG_INFO(0, max)
     ZEND_ARG_INFO(0, step)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_configure, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
     ZEND_ARG_INFO(0, climb_rate)
     ZEND_ARG_INFO(0, digits)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_set_adjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_set_digits, 0)
     ZEND_ARG_INFO(0, digits)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_set_increments, 0)
     ZEND_ARG_INFO(0, step)
     ZEND_ARG_INFO(0, page)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_set_numeric, 0)
     ZEND_ARG_INFO(0, numeric)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_set_range, 0)
     ZEND_ARG_INFO(0, min)
     ZEND_ARG_INFO(0, max)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_set_snap_to_ticks, 0)
     ZEND_ARG_INFO(0, snap_to_ticks)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_set_update_policy, 0)
     ZEND_ARG_INFO(0, policy)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_set_value, 0)
     ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_set_wrap, 0)
     ZEND_ARG_INFO(0, wrap)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkspinbutton_spin, 0)
     ZEND_ARG_INFO(0, direction)
     ZEND_ARG_INFO(0, increment)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkspinbutton_methods[] = {
+static zend_function_entry gtkspinbutton_methods[] = {
 	PHP_ME(GtkSpinButton, __construct,          arginfo_gtk_gtkspinbutton_gtk_spin_button_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkSpinButton, new_with_range,       arginfo_gtk_gtkspinbutton_gtk_spin_button_new_with_range, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkSpinButton, configure,            arginfo_gtk_gtkspinbutton_configure, ZEND_ACC_PUBLIC)
@@ -26463,13 +25886,12 @@ static PHP_METHOD(GtkDrawingArea, size)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkdrawingarea_size, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkdrawingarea_methods[] = {
+static zend_function_entry gtkdrawingarea_methods[] = {
 	PHP_ME(GtkDrawingArea, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkDrawingArea, size,                 arginfo_gtk_gtkdrawingarea_size, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -26894,58 +26316,48 @@ static PHP_METHOD(GtkContainer, unset_focus_chain)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_add, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_propagate_expose, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, event)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_remove, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_set_border_width, 0)
     ZEND_ARG_INFO(0, border_width)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_set_focus_chain, 0)
     ZEND_ARG_INFO(0, widgets)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_set_focus_child, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_set_focus_hadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_set_focus_vadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_set_reallocate_redraws, 0)
     ZEND_ARG_INFO(0, needs_redraws)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcontainer_set_resize_mode, 0)
     ZEND_ARG_INFO(0, resize_mode)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcontainer_methods[] = {
+static zend_function_entry gtkcontainer_methods[] = {
 	PHP_ME(GtkContainer, add,                  arginfo_gtk_gtkcontainer_add, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkContainer, check_resize,         NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkContainer, child_type,           NULL, ZEND_ACC_PUBLIC)
@@ -27110,17 +26522,14 @@ static PHP_METHOD(GtkCurve, set_vector)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcurve_set_curve_type, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcurve_set_gamma, 0)
     ZEND_ARG_INFO(0, gamma)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcurve_set_range, 0)
     ZEND_ARG_INFO(0, min_x)
     ZEND_ARG_INFO(0, max_x)
@@ -27128,7 +26537,7 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcurve_set_range, 0)
     ZEND_ARG_INFO(0, max_y)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcurve_methods[] = {
+static zend_function_entry gtkcurve_methods[] = {
 	PHP_ME(GtkCurve, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCurve, get_vector,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCurve, reset,                NULL, ZEND_ACC_PUBLIC)
@@ -28637,32 +28046,26 @@ static PHP_METHOD(GtkTreeView, widget_to_tree_coords)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeview_gtk_tree_view_new_with_model, 0, 0, 0)
     ZEND_ARG_INFO(0, model)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_append_column, 0)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_collapse_row, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_create_row_drag_icon, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_enable_model_drag_dest, 0)
     ZEND_ARG_INFO(0, targets)
     ZEND_ARG_INFO(0, actions)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_enable_model_drag_source, 0)
     ZEND_ARG_INFO(0, sbmask)
     ZEND_ARG_INFO(0, targets)
@@ -28670,52 +28073,43 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_enable_model_drag_source, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_expand_row, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_INFO(0, open_all)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_expand_to_path, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_get_background_area, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_get_cell_area, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_get_column, 0)
     ZEND_ARG_INFO(0, n)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_get_dest_row_at_pos, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_get_path_at_pos, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_insert_column, 0)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_insert_column_with_data_func, 0)
     ZEND_ARG_INFO(0, position)
     ZEND_ARG_INFO(0, title)
@@ -28724,29 +28118,24 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_insert_column_with_data_func, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_move_column_after, 0)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
     ZEND_ARG_OBJ_INFO(0, base_column, GtkTreeViewColumn, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_remove_column, 0)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_row_activated, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_row_expanded, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeview_scroll_to_cell, 0, 0, 1)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
@@ -28755,25 +28144,21 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeview_scroll_to_cell, 0, 0, 1)
     ZEND_ARG_INFO(0, col_align)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_scroll_to_point, 0)
     ZEND_ARG_INFO(0, tree_x)
     ZEND_ARG_INFO(0, tree_y)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_column_drag_function, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeview_set_cursor, 0, 0, 1)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, focus_column, GtkTreeViewColumn, 1)
     ZEND_ARG_INFO(0, start_editing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeview_set_cursor_on_cell, 0, 0, 1)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_OBJ_INFO(0, focus_column, GtkTreeViewColumn, 1)
@@ -28781,100 +28166,82 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeview_set_cursor_on_cell, 0, 0, 1)
     ZEND_ARG_INFO(0, start_editing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_drag_dest_row, 0)
     ZEND_ARG_INFO(0, path)
     ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_enable_search, 0)
     ZEND_ARG_INFO(0, enable_search)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_expander_column, 0)
     ZEND_ARG_OBJ_INFO(0, column, GtkTreeViewColumn, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_fixed_height_mode, 0)
     ZEND_ARG_INFO(0, enable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_hadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_headers_clickable, 0)
     ZEND_ARG_INFO(0, active)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_headers_visible, 0)
     ZEND_ARG_INFO(0, headers_visible)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_hover_expand, 0)
     ZEND_ARG_INFO(0, expand)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_hover_selection, 0)
     ZEND_ARG_INFO(0, hover)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktreeview_set_model, 0, 0, 0)
     ZEND_ARG_INFO(0, model)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_reorderable, 0)
     ZEND_ARG_INFO(0, reorderable)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_row_separator_func, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_rules_hint, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_search_column, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_search_equal_func, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_set_vadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_tree_to_widget_coords, 0)
     ZEND_ARG_INFO(0, tx)
     ZEND_ARG_INFO(0, ty)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreeview_widget_to_tree_coords, 0)
     ZEND_ARG_INFO(0, wx)
     ZEND_ARG_INFO(0, wy)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtktreeview_methods[] = {
+static zend_function_entry gtktreeview_methods[] = {
 	PHP_ME(GtkTreeView, __construct,          arginfo_gtk_gtktreeview_gtk_tree_view_new_with_model, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeView, append_column,        arginfo_gtk_gtktreeview_append_column, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeView, collapse_all,         NULL, ZEND_ACC_PUBLIC)
@@ -29479,7 +28846,6 @@ static PHP_METHOD(GtkToolbar, set_toolbar_style)
 #line 29480 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_append_item, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, tooltip_text)
@@ -29489,48 +28855,40 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_append_item, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_append_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, tooltip_text)
     ZEND_ARG_INFO(0, tooltip_private_text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_get_drop_index, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_get_item_index, 0)
     ZEND_ARG_OBJ_INFO(0, item, GtkToolItem, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_get_nth_item, 0)
     ZEND_ARG_INFO(0, n)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_insert, 0)
     ZEND_ARG_OBJ_INFO(0, item, GtkToolItem, 1)
     ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_insert_space, 0)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_insert_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, tooltip_text)
     ZEND_ARG_INFO(0, tooltip_private_text)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_prepend_item, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, tooltip_text)
@@ -29540,50 +28898,42 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_prepend_item, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_prepend_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, tooltip_text)
     ZEND_ARG_INFO(0, tooltip_private_text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_remove_space, 0)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_set_drop_highlight_item, 0)
     ZEND_ARG_OBJ_INFO(0, tool_item, GtkToolItem, 1)
     ZEND_ARG_INFO(0, index)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_set_icon_size, 0)
     ZEND_ARG_INFO(0, icon_size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_set_orientation, 0)
     ZEND_ARG_INFO(0, orientation)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_set_show_arrow, 0)
     ZEND_ARG_INFO(0, show_arrow)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_set_tooltips, 0)
     ZEND_ARG_INFO(0, enable)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbar_set_toolbar_style, 0)
     ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtktoolbar_methods[] = {
+static zend_function_entry gtktoolbar_methods[] = {
 	PHP_ME(GtkToolbar, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToolbar, append_item,          arginfo_gtk_gtktoolbar_append_item, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToolbar, append_space,         NULL, ZEND_ACC_PUBLIC)
@@ -30603,18 +29953,15 @@ static PHP_METHOD(GtkTextView, window_to_buffer_coords)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextview_gtk_text_view_new_with_buffer, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, buffer, GtkTextBuffer, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_add_child_at_anchor, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, anchor, GtkTextChildAnchor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_add_child_in_window, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, which_window)
@@ -30622,16 +29969,13 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_add_child_in_window, 0)
     ZEND_ARG_INFO(0, ypos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_backward_display_line, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_backward_display_line_start, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_buffer_to_window_coords, 0)
     ZEND_ARG_INFO(0, window_type)
     ZEND_ARG_INFO(0, buffer_x)
@@ -30639,82 +29983,67 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_buffer_to_window_coords, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_forward_display_line, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_forward_display_line_end, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_get_border_window_size, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_get_iter_at_location, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_get_iter_at_position, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_get_iter_location, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 0)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_get_line_at_y, 0)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_get_line_yrange, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_get_window, 0)
     ZEND_ARG_INFO(0, win)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_get_window_type, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_move_child, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, xpos)
     ZEND_ARG_INFO(0, ypos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_move_mark_onscreen, 0)
     ZEND_ARG_OBJ_INFO(0, mark, GtkTextMark, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_move_visually, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_scroll_mark_onscreen, 0)
     ZEND_ARG_OBJ_INFO(0, mark, GtkTextMark, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextview_scroll_to_iter, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_INFO(0, within_margin)
@@ -30723,7 +30052,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextview_scroll_to_iter, 0, 0, 2)
     ZEND_ARG_INFO(0, yalign)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextview_scroll_to_mark, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, mark, GtkTextMark, 1)
     ZEND_ARG_INFO(0, within_margin)
@@ -30732,87 +30060,70 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextview_scroll_to_mark, 0, 0, 2)
     ZEND_ARG_INFO(0, yalign)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_accepts_tab, 0)
     ZEND_ARG_INFO(0, accepts_tab)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_border_window_size, 0)
     ZEND_ARG_INFO(0, type)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_buffer, 0)
     ZEND_ARG_OBJ_INFO(0, buffer, GtkTextBuffer, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_cursor_visible, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_editable, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_indent, 0)
     ZEND_ARG_INFO(0, indent)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_justification, 0)
     ZEND_ARG_INFO(0, justification)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_left_margin, 0)
     ZEND_ARG_INFO(0, left_margin)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_overwrite, 0)
     ZEND_ARG_INFO(0, overwrite)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_pixels_above_lines, 0)
     ZEND_ARG_INFO(0, pixels_above_lines)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_pixels_below_lines, 0)
     ZEND_ARG_INFO(0, pixels_below_lines)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_pixels_inside_wrap, 0)
     ZEND_ARG_INFO(0, pixels_inside_wrap)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_right_margin, 0)
     ZEND_ARG_INFO(0, right_margin)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_tabs, 0)
     ZEND_ARG_OBJ_INFO(0, tabs, PangoTabArray, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_set_wrap_mode, 0)
     ZEND_ARG_INFO(0, wrap_mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_starts_display_line, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_window_to_buffer_coords, 0)
     ZEND_ARG_INFO(0, window_type)
     ZEND_ARG_INFO(0, window_x)
@@ -30820,7 +30131,7 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextview_window_to_buffer_coords, 0)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtktextview_methods[] = {
+static zend_function_entry gtktextview_methods[] = {
 	PHP_ME(GtkTextView, __construct,          arginfo_gtk_gtktextview_gtk_text_view_new_with_buffer, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextView, add_child_at_anchor,  arginfo_gtk_gtktextview_add_child_at_anchor, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextView, add_child_in_window,  arginfo_gtk_gtktextview_add_child_in_window, ZEND_ACC_PUBLIC)
@@ -31106,14 +30417,12 @@ static PHP_METHOD(GtkTable, set_row_spacings)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktable_gtk_table_new, 0, 0, 0)
     ZEND_ARG_INFO(0, n_rows)
     ZEND_ARG_INFO(0, n_columns)
     ZEND_ARG_INFO(0, homogeneous)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktable_attach, 0, 0, 5)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, left_attach)
@@ -31126,7 +30435,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktable_attach, 0, 0, 5)
     ZEND_ARG_INFO(0, ypadding)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_attach_defaults, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, left_attach)
@@ -31135,50 +30443,42 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_attach_defaults, 0)
     ZEND_ARG_INFO(0, bottom_attach)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_get_col_spacing, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_get_row_spacing, 0)
     ZEND_ARG_INFO(0, row)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_resize, 0)
     ZEND_ARG_INFO(0, rows)
     ZEND_ARG_INFO(0, columns)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_set_col_spacing, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_set_col_spacings, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_set_homogeneous, 0)
     ZEND_ARG_INFO(0, homogeneous)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_set_row_spacing, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktable_set_row_spacings, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktable_methods[] = {
+static zend_function_entry gtktable_methods[] = {
 	PHP_ME(GtkTable, __construct,          arginfo_gtk_gtktable_gtk_table_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTable, attach,               arginfo_gtk_gtktable_attach, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTable, attach_defaults,      arginfo_gtk_gtktable_attach_defaults, ZEND_ACC_PUBLIC)
@@ -31257,17 +30557,15 @@ static PHP_METHOD(GtkSocket, steal)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksocket_add_id, 0)
     ZEND_ARG_INFO(0, window_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtksocket_steal, 0)
     ZEND_ARG_INFO(0, wid)
 ZEND_END_ARG_INFO();
 
-static function_entry gtksocket_methods[] = {
+static zend_function_entry gtksocket_methods[] = {
 	PHP_ME(GtkSocket, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkSocket, add_id,               arginfo_gtk_gtksocket_add_id, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkSocket, get_id,               NULL, ZEND_ACC_PUBLIC)
@@ -31403,43 +30701,37 @@ static PHP_METHOD(GtkPaned, set_position)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpaned_add1, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpaned_add2, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpaned_compute_position, 0)
     ZEND_ARG_INFO(0, allocation)
     ZEND_ARG_INFO(0, child1_req)
     ZEND_ARG_INFO(0, child2_req)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkpaned_pack1, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, resize)
     ZEND_ARG_INFO(0, shrink)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkpaned_pack2, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, resize)
     ZEND_ARG_INFO(0, shrink)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkpaned_set_position, 0)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkpaned_methods[] = {
+static zend_function_entry gtkpaned_methods[] = {
 	PHP_ME(GtkPaned, add1,                 arginfo_gtk_gtkpaned_add1, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkPaned, add2,                 arginfo_gtk_gtkpaned_add2, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkPaned, compute_position,     arginfo_gtk_gtkpaned_compute_position, ZEND_ACC_PUBLIC)
@@ -32198,52 +31490,43 @@ static PHP_METHOD(GtkNotebook, set_tab_vborder)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtknotebook_append_page, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, tab_label, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtknotebook_append_page_menu, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, tab_label, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, menu_label, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_get_menu_label, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_get_menu_label_text, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_get_nth_page, 0)
     ZEND_ARG_INFO(0, page_num)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_get_tab_label, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_get_tab_label_text, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtknotebook_insert_page, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, tab_label, GtkWidget, 1)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtknotebook_insert_page_menu, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, tab_label, GtkWidget, 1)
@@ -32251,99 +31534,81 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtknotebook_insert_page_menu, 0, 0, 1)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_page_num, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtknotebook_prepend_page, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, tab_label, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtknotebook_prepend_page_menu, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, tab_label, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, menu_label, GtkWidget, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_query_tab_label_packing, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_remove_page, 0)
     ZEND_ARG_INFO(0, page_num)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_reorder_child, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_current_page, 0)
     ZEND_ARG_INFO(0, page_num)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_homogeneous_tabs, 0)
     ZEND_ARG_INFO(0, homogeneous)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtknotebook_set_menu_label, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, menu_label, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_menu_label_text, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, menu_text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_page, 0)
     ZEND_ARG_INFO(0, page_num)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_scrollable, 0)
     ZEND_ARG_INFO(0, scrollable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_show_border, 0)
     ZEND_ARG_INFO(0, show_border)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_show_tabs, 0)
     ZEND_ARG_INFO(0, show_tabs)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_tab_border, 0)
     ZEND_ARG_INFO(0, border_width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_tab_hborder, 0)
     ZEND_ARG_INFO(0, tab_hborder)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtknotebook_set_tab_label, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, tab_label, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_tab_label_packing, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, expand)
@@ -32351,23 +31616,20 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_tab_label_packing, 0)
     ZEND_ARG_INFO(0, pack_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_tab_label_text, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, tab_text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_tab_pos, 0)
     ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtknotebook_set_tab_vborder, 0)
     ZEND_ARG_INFO(0, tab_vborder)
 ZEND_END_ARG_INFO();
 
-static function_entry gtknotebook_methods[] = {
+static zend_function_entry gtknotebook_methods[] = {
 	PHP_ME(GtkNotebook, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkNotebook, append_page,          arginfo_gtk_gtknotebook_append_page, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkNotebook, append_page_menu,     arginfo_gtk_gtknotebook_append_page_menu, ZEND_ACC_PUBLIC)
@@ -32432,7 +31694,7 @@ static PHP_METHOD(GtkVPaned, __construct)
 }
 
 
-static function_entry gtkvpaned_methods[] = {
+static zend_function_entry gtkvpaned_methods[] = {
 	PHP_ME(GtkVPaned, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -32456,7 +31718,7 @@ static PHP_METHOD(GtkHPaned, __construct)
 }
 
 
-static function_entry gtkhpaned_methods[] = {
+static zend_function_entry gtkhpaned_methods[] = {
 	PHP_ME(GtkHPaned, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -32586,39 +31848,33 @@ static PHP_METHOD(GtkMenuShell, select_item)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenushell_activate_item, 0)
     ZEND_ARG_OBJ_INFO(0, menu_item, GtkWidget, 1)
     ZEND_ARG_INFO(0, force_deactivate)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenushell_append, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenushell_insert, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenushell_prepend, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenushell_select_first, 0)
     ZEND_ARG_INFO(0, search_sensitive)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenushell_select_item, 0)
     ZEND_ARG_OBJ_INFO(0, menu_item, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkmenushell_methods[] = {
+static zend_function_entry gtkmenushell_methods[] = {
 	PHP_ME(GtkMenuShell, activate_item,        arginfo_gtk_gtkmenushell_activate_item, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMenuShell, append,               arginfo_gtk_gtkmenushell_append, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMenuShell, cancel,               NULL, ZEND_ACC_PUBLIC)
@@ -32961,67 +32217,56 @@ static PHP_METHOD(GtkList, unselect_item)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_child_position, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_clear_items, 0)
     ZEND_ARG_INFO(0, start)
     ZEND_ARG_INFO(0, end)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_extend_selection, 0)
     ZEND_ARG_INFO(0, scroll_type)
     ZEND_ARG_INFO(0, position)
     ZEND_ARG_INFO(0, auto_start_selection)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_scroll_horizontal, 0)
     ZEND_ARG_INFO(0, scroll_type)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_scroll_vertical, 0)
     ZEND_ARG_INFO(0, scroll_type)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_select_child, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_select_item, 0)
     ZEND_ARG_INFO(0, item)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_set_selection_mode, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_toggle_row, 0)
     ZEND_ARG_OBJ_INFO(0, item, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_unselect_child, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklist_unselect_item, 0)
     ZEND_ARG_INFO(0, item)
 ZEND_END_ARG_INFO();
 
-static function_entry gtklist_methods[] = {
+static zend_function_entry gtklist_methods[] = {
 	PHP_ME(GtkList, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkList, child_position,       arginfo_gtk_gtklist_child_position, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkList, clear_items,          arginfo_gtk_gtklist_clear_items, ZEND_ACC_PUBLIC)
@@ -33406,7 +32651,6 @@ static PHP_METHOD(GtkMenu, set_menu_accel_path)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_attach, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, left_attach)
@@ -33414,7 +32658,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_attach, 0)
     ZEND_ARG_INFO(0, top_attach)
     ZEND_ARG_INFO(0, bottom_attach)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkmenu_popup, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, parent_menu_shell, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, parent_menu_item, GtkWidget, 1)
@@ -33424,48 +32667,40 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkmenu_popup, 0, 0, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_reorder_child, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_set_accel_group, 0)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_set_active, 0)
     ZEND_ARG_INFO(0, index)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_set_monitor, 0)
     ZEND_ARG_INFO(0, monitor_num)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_set_screen, 0)
     ZEND_ARG_OBJ_INFO(0, screen, GdkScreen, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_set_tearoff_state, 0)
     ZEND_ARG_INFO(0, torn_off)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_set_title, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenu_set_menu_accel_path, 0)
     ZEND_ARG_INFO(0, accel_path)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkmenu_methods[] = {
+static zend_function_entry gtkmenu_methods[] = {
 	PHP_ME(GtkMenu, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMenu, attach,               arginfo_gtk_gtkmenu_attach, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMenu, detach,               NULL, ZEND_ACC_PUBLIC)
@@ -33507,7 +32742,7 @@ static PHP_METHOD(GtkMenuBar, __construct)
 }
 
 
-static function_entry gtkmenubar_methods[] = {
+static zend_function_entry gtkmenubar_methods[] = {
 	PHP_ME(GtkMenuBar, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -33708,43 +32943,37 @@ static PHP_METHOD(GtkLayout, thaw)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtklayout_gtk_layout_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, hadjustment, GtkAdjustment, 1)
     ZEND_ARG_OBJ_INFO(0, vadjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklayout_move, 0)
     ZEND_ARG_OBJ_INFO(0, child_widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklayout_put, 0)
     ZEND_ARG_OBJ_INFO(0, child_widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklayout_set_hadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklayout_set_size, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtklayout_set_vadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtklayout_methods[] = {
+static zend_function_entry gtklayout_methods[] = {
 	PHP_ME(GtkLayout, __construct,          arginfo_gtk_gtklayout_gtk_layout_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkLayout, freeze,               NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkLayout, get_hadjustment,      NULL, ZEND_ACC_PUBLIC)
@@ -34365,104 +33594,85 @@ static PHP_METHOD(GtkIconView, unselect_path)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkiconview_gtk_icon_view_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, model, GtkTreeModel, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_get_path_at_pos, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_item_activated, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_path_is_selected, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_select_path, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_selected_foreach, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_column_spacing, 0)
     ZEND_ARG_INFO(0, column_spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_columns, 0)
     ZEND_ARG_INFO(0, columns)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_item_width, 0)
     ZEND_ARG_INFO(0, item_width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_margin, 0)
     ZEND_ARG_INFO(0, margin)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_markup_column, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkiconview_set_model, 0, 0, 0)
     ZEND_ARG_INFO(0, model)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_orientation, 0)
     ZEND_ARG_INFO(0, orientation)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_pixbuf_column, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_row_spacing, 0)
     ZEND_ARG_INFO(0, row_spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_selection_mode, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_spacing, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_set_text_column, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconview_unselect_path, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkiconview_methods[] = {
+static zend_function_entry gtkiconview_methods[] = {
 	PHP_ME(GtkIconView, __construct,          arginfo_gtk_gtkiconview_gtk_icon_view_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIconView, get_column_spacing,   NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIconView, get_columns,          NULL, ZEND_ACC_PUBLIC)
@@ -34577,26 +33787,23 @@ static PHP_METHOD(GtkFixed, set_has_window)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfixed_move, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfixed_put, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfixed_set_has_window, 0)
     ZEND_ARG_INFO(0, has_window)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkfixed_methods[] = {
+static zend_function_entry gtkfixed_methods[] = {
 	PHP_ME(GtkFixed, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFixed, get_has_window,       NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFixed, move,                 arginfo_gtk_gtkfixed_move, ZEND_ACC_PUBLIC)
@@ -34821,42 +34028,35 @@ static PHP_METHOD(GtkCellView, set_model)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellview_new_with_markup, 0)
     ZEND_ARG_INFO(0, markup)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellview_new_with_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellview_new_with_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellview_get_size_of_row, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellview_set_background_color, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellview_set_displayed_row, 0)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcellview_set_model, 0)
     ZEND_ARG_INFO(0, model)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcellview_methods[] = {
+static zend_function_entry gtkcellview_methods[] = {
 	PHP_ME(GtkCellView, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCellView, new_with_markup,      arginfo_gtk_gtkcellview_new_with_markup, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkCellView, new_with_pixbuf,      arginfo_gtk_gtkcellview_new_with_pixbuf, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -34911,7 +34111,7 @@ static PHP_METHOD(GtkBin, get_child)
 }
 
 
-static function_entry gtkbin_methods[] = {
+static zend_function_entry gtkbin_methods[] = {
 	PHP_ME(GtkBin, get_child,            NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -35092,7 +34292,6 @@ static PHP_METHOD(GtkBox, set_spacing)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkbox_pack_end, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, expand)
@@ -35100,12 +34299,10 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkbox_pack_end, 0, 0, 1)
     ZEND_ARG_INFO(0, padding)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbox_pack_end_defaults, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkbox_pack_start, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, expand)
@@ -35113,23 +34310,19 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkbox_pack_start, 0, 0, 1)
     ZEND_ARG_INFO(0, padding)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbox_pack_start_defaults, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbox_query_child_packing, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbox_reorder_child, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbox_set_child_packing, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, expand)
@@ -35138,17 +34331,15 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbox_set_child_packing, 0)
     ZEND_ARG_INFO(0, pack_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbox_set_homogeneous, 0)
     ZEND_ARG_INFO(0, homogeneous)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbox_set_spacing, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkbox_methods[] = {
+static zend_function_entry gtkbox_methods[] = {
 	PHP_ME(GtkBox, get_homogeneous,      NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkBox, get_spacing,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkBox, pack_end,             arginfo_gtk_gtkbox_pack_end, ZEND_ACC_PUBLIC)
@@ -37121,28 +36312,23 @@ static PHP_METHOD(GtkWindow, window_mnemonic_activate)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkwindow_gtk_window_new, 0, 0, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_activate_key, 0)
     ZEND_ARG_INFO(0, event)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_add_accel_group, 0)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_add_mnemonic, 0)
     ZEND_ARG_INFO(0, keyval)
     ZEND_ARG_OBJ_INFO(0, target, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_begin_move_drag, 0)
     ZEND_ARG_INFO(0, button)
     ZEND_ARG_INFO(0, root_x)
@@ -37150,7 +36336,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_begin_move_drag, 0)
     ZEND_ARG_INFO(0, timestamp)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_begin_resize_drag, 0)
     ZEND_ARG_INFO(0, edge)
     ZEND_ARG_INFO(0, button)
@@ -37159,109 +36344,89 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_begin_resize_drag, 0)
     ZEND_ARG_INFO(0, timestamp)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_move, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_parse_geometry, 0)
     ZEND_ARG_INFO(0, geometry)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_propagate_key_event, 0)
     ZEND_ARG_INFO(0, event)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_remove_accel_group, 0)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_remove_mnemonic, 0)
     ZEND_ARG_INFO(0, keyval)
     ZEND_ARG_OBJ_INFO(0, target, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_resize, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_accept_focus, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_auto_startup_notification, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_decorated, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_default, 0)
     ZEND_ARG_OBJ_INFO(0, default_widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_default_icon, 0)
     ZEND_ARG_OBJ_INFO(0, icon, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_default_icon_from_file, 0)
     ZEND_ARG_INFO(0, filename)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_default_icon_list, 0)
     ZEND_ARG_INFO(0, pixbufs)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_default_icon_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_default_size, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_destroy_with_parent, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_focus, 0)
     ZEND_ARG_OBJ_INFO(0, focus, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_focus_on_map, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_frame_dimensions, 0)
     ZEND_ARG_INFO(0, left)
     ZEND_ARG_INFO(0, top)
     ZEND_ARG_INFO(0, right)
     ZEND_ARG_INFO(0, bottom)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_geometry_hints, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 0)
     ZEND_ARG_INFO(0, min_width)
@@ -37278,122 +36443,100 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_geometry_hints, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_gravity, 0)
     ZEND_ARG_INFO(0, gravity)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_has_frame, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_icon, 0)
     ZEND_ARG_OBJ_INFO(0, icon, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_icon_from_file, 0)
     ZEND_ARG_INFO(0, filename)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_icon_list, 0)
     ZEND_ARG_INFO(0, pixbufs)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_icon_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_keep_above, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_keep_below, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_mnemonic_modifier, 0)
     ZEND_ARG_INFO(0, modifier)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_modal, 0)
     ZEND_ARG_INFO(0, modal)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_policy, 0)
     ZEND_ARG_INFO(0, allow_shrink)
     ZEND_ARG_INFO(0, allow_grow)
     ZEND_ARG_INFO(0, auto_shrink)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_position, 0)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_resizable, 0)
     ZEND_ARG_INFO(0, resizable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_role, 0)
     ZEND_ARG_INFO(0, role)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_screen, 0)
     ZEND_ARG_OBJ_INFO(0, screen, GdkScreen, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_skip_pager_hint, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_skip_taskbar_hint, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_title, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_transient_for, 0)
     ZEND_ARG_OBJ_INFO(0, parent, GtkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_type_hint, 0)
     ZEND_ARG_INFO(0, hint)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_set_wmclass, 0)
     ZEND_ARG_INFO(0, wmclass_name)
     ZEND_ARG_INFO(0, wmclass_class)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindow_window_mnemonic_activate, 0)
     ZEND_ARG_INFO(0, keyval)
     ZEND_ARG_INFO(0, modifier)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkwindow_methods[] = {
+static zend_function_entry gtkwindow_methods[] = {
 	PHP_ME(GtkWindow, __construct,          arginfo_gtk_gtkwindow_gtk_window_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkWindow, activate_default,     NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkWindow, activate_focus,       NULL, ZEND_ACC_PUBLIC)
@@ -37611,28 +36754,24 @@ static PHP_METHOD(GtkViewport, set_vadjustment)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkviewport_gtk_viewport_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, hadjustment, GtkAdjustment, 1)
     ZEND_ARG_OBJ_INFO(0, vadjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkviewport_set_hadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkviewport_set_shadow_type, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkviewport_set_vadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkviewport_methods[] = {
+static zend_function_entry gtkviewport_methods[] = {
 	PHP_ME(GtkViewport, __construct,          arginfo_gtk_gtkviewport_gtk_viewport_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkViewport, get_hadjustment,      NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkViewport, get_shadow_type,      NULL, ZEND_ACC_PUBLIC)
@@ -37909,7 +37048,6 @@ static PHP_METHOD(GtkDialog, set_response_sensitive)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkdialog_gtk_dialog_new_with_buttons, 0, 0, 0)
     ZEND_ARG_INFO(0, title)
     ZEND_ARG_OBJ_INFO(0, parent, GtkWindow, 1)
@@ -37918,45 +37056,38 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkdialog_gtk_dialog_new_with_buttons, 0, 0, 
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkdialog_add_action_widget, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, response_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkdialog_add_button, 0)
     ZEND_ARG_INFO(0, button_text)
     ZEND_ARG_INFO(0, response_id)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkdialog_add_buttons, 0)
     ZEND_ARG_INFO(0, buttons)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkdialog_response, 0)
     ZEND_ARG_INFO(0, response_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkdialog_set_default_response, 0)
     ZEND_ARG_INFO(0, response_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkdialog_set_has_separator, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkdialog_set_response_sensitive, 0)
     ZEND_ARG_INFO(0, response_id)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkdialog_methods[] = {
+static zend_function_entry gtkdialog_methods[] = {
 	PHP_ME(GtkDialog, __construct,          arginfo_gtk_gtkdialog_gtk_dialog_new_with_buttons, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkDialog, add_action_widget,    arginfo_gtk_gtkdialog_add_action_widget, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkDialog, add_button,           arginfo_gtk_gtkdialog_add_button, ZEND_ACC_PUBLIC)
@@ -38012,14 +37143,13 @@ static PHP_METHOD(GtkPlug, get_id)
 	RETVAL_LONG(php_retval);
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkplug_gtk_plug_new, 0, 0, 1)
     ZEND_ARG_INFO(0, socket_id)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkplug_methods[] = {
+static zend_function_entry gtkplug_methods[] = {
 	PHP_ME(GtkPlug, __construct,          arginfo_gtk_gtkplug_gtk_plug_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkPlug, get_id,               NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -38105,12 +37235,11 @@ static prop_info_t gtkcolorselectiondialog_prop_info[] = {
 };
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcolorselectiondialog_gtk_color_selection_dialog_new, 0, 0, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcolorselectiondialog_methods[] = {
+static zend_function_entry gtkcolorselectiondialog_methods[] = {
 	PHP_ME(GtkColorSelectionDialog, __construct,          arginfo_gtk_gtkcolorselectiondialog_gtk_color_selection_dialog_new, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -38847,83 +37976,68 @@ static PHP_METHOD(GtkAboutDialog, set_website_label)
 #line 38848 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_artists, 0)
     ZEND_ARG_INFO(0, artists)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_authors, 0)
     ZEND_ARG_INFO(0, authors)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_comments, 0)
     ZEND_ARG_INFO(0, comments)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_copyright, 0)
     ZEND_ARG_INFO(0, copyright)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_documenters, 0)
     ZEND_ARG_INFO(0, documenters)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_email_hook, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_license, 0)
     ZEND_ARG_INFO(0, license)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_logo, 0)
     ZEND_ARG_OBJ_INFO(0, logo, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_logo_icon_name, 0)
     ZEND_ARG_INFO(0, icon_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_translator_credits, 0)
     ZEND_ARG_INFO(0, translator_credits)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_url_hook, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_version, 0)
     ZEND_ARG_INFO(0, version)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_website, 0)
     ZEND_ARG_INFO(0, website)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_website_label, 0)
     ZEND_ARG_INFO(0, website_label)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkaboutdialog_methods[] = {
+static zend_function_entry gtkaboutdialog_methods[] = {
 	PHP_ME(GtkAboutDialog, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAboutDialog, get_artists,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAboutDialog, get_authors,          NULL, ZEND_ACC_PUBLIC)
@@ -39040,7 +38154,6 @@ static PHP_METHOD(GtkFileChooserDialog, __construct)
 #line 39041 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkfilechooserdialog_file_chooser_dialog_new_with_backend, 0, 0, 0)
     ZEND_ARG_INFO(0, title)
     ZEND_ARG_OBJ_INFO(0, parent, GtkWindow, 1)
@@ -39050,7 +38163,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkfilechooserdialog_file_chooser_dialog_new_
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkfilechooserdialog_methods[] = {
+static zend_function_entry gtkfilechooserdialog_methods[] = {
 	PHP_ME(GtkFileChooserDialog, __construct,          arginfo_gtk_gtkfilechooserdialog_file_chooser_dialog_new_with_backend, ZEND_ACC_PUBLIC)
 
 	/***   GtkFileChooser interface implementations   ***/
@@ -39520,37 +38633,31 @@ static PHP_METHOD(GtkFileSelection, show_fileop_buttons)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkfileselection_gtk_file_selection_new, 0, 0, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfileselection_complete, 0)
     ZEND_ARG_INFO(0, pattern)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkfileselection_get_filename, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkfileselection_get_selections, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfileselection_set_filename, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfileselection_set_select_multiple, 0)
     ZEND_ARG_INFO(0, select_multiple)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkfileselection_methods[] = {
+static zend_function_entry gtkfileselection_methods[] = {
 	PHP_ME(GtkFileSelection, __construct,          arginfo_gtk_gtkfileselection_gtk_file_selection_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFileSelection, complete,             arginfo_gtk_gtkfileselection_complete, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFileSelection, get_filename,         arginfo_gtk_gtkfileselection_get_filename, ZEND_ACC_PUBLIC)
@@ -39770,22 +38877,19 @@ static PHP_METHOD(GtkFontSelectionDialog, set_preview_text)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontselectiondialog_gtk_font_selection_dialog_new, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontselectiondialog_set_font_name, 0)
     ZEND_ARG_INFO(0, fontname)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontselectiondialog_set_preview_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkfontselectiondialog_methods[] = {
+static zend_function_entry gtkfontselectiondialog_methods[] = {
 	PHP_ME(GtkFontSelectionDialog, __construct,          arginfo_gtk_gtkfontselectiondialog_gtk_font_selection_dialog_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFontSelectionDialog, get_font,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFontSelectionDialog, get_font_name,        NULL, ZEND_ACC_PUBLIC)
@@ -39814,7 +38918,7 @@ static PHP_METHOD(GtkInputDialog, __construct)
 }
 
 
-static function_entry gtkinputdialog_methods[] = {
+static zend_function_entry gtkinputdialog_methods[] = {
 	PHP_ME(GtkInputDialog, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -39918,7 +39022,6 @@ static PHP_METHOD(GtkMessageDialog, set_markup)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkmessagedialog_gtk_message_dialog_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, parent, GtkWindow, 1)
     ZEND_ARG_INFO(0, flags)
@@ -39928,12 +39031,11 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkmessagedialog_gtk_message_dialog_new, 0, 0
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmessagedialog_set_markup, 0)
     ZEND_ARG_INFO(0, str)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkmessagedialog_methods[] = {
+static zend_function_entry gtkmessagedialog_methods[] = {
 	PHP_ME(GtkMessageDialog, __construct,          arginfo_gtk_gtkmessagedialog_gtk_message_dialog_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMessageDialog, set_markup,           arginfo_gtk_gtkmessagedialog_set_markup, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -40264,55 +39366,46 @@ static PHP_METHOD(GtkToolItem, set_visible_vertical)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolitem_get_proxy_menu_item, 0)
     ZEND_ARG_INFO(0, menu_item_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolitem_set_expand, 0)
     ZEND_ARG_INFO(0, expand)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolitem_set_homogeneous, 0)
     ZEND_ARG_INFO(0, homogeneous)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolitem_set_is_important, 0)
     ZEND_ARG_INFO(0, is_important)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolitem_set_proxy_menu_item, 0)
     ZEND_ARG_INFO(0, menu_item_id)
     ZEND_ARG_OBJ_INFO(0, menu_item, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktoolitem_set_tooltip, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, tooltips, GtkTooltips, 1)
     ZEND_ARG_INFO(0, tip_text)
     ZEND_ARG_INFO(0, tip_private)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolitem_set_use_drag_window, 0)
     ZEND_ARG_INFO(0, use_drag_window)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolitem_set_visible_horizontal, 0)
     ZEND_ARG_INFO(0, visible_horizontal)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolitem_set_visible_vertical, 0)
     ZEND_ARG_INFO(0, visible_vertical)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktoolitem_methods[] = {
+static zend_function_entry gtktoolitem_methods[] = {
 	PHP_ME(GtkToolItem, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToolItem, get_expand,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToolItem, get_homogeneous,      NULL, ZEND_ACC_PUBLIC)
@@ -40369,13 +39462,12 @@ static PHP_METHOD(GtkVBox, __construct)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkvbox_gtk_vbox_new, 0, 0, 1)
     ZEND_ARG_INFO(0, homogeneous)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkvbox_methods[] = {
+static zend_function_entry gtkvbox_methods[] = {
 	PHP_ME(GtkVBox, __construct,          arginfo_gtk_gtkvbox_gtk_vbox_new, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -40588,44 +39680,37 @@ static PHP_METHOD(GtkScrolledWindow, set_vadjustment)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkscrolledwindow_gtk_scrolled_window_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, hadjustment, GtkAdjustment, 1)
     ZEND_ARG_OBJ_INFO(0, vadjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkscrolledwindow_add_with_viewport, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkscrolledwindow_set_hadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, hadjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkscrolledwindow_set_placement, 0)
     ZEND_ARG_INFO(0, window_placement)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkscrolledwindow_set_policy, 0)
     ZEND_ARG_INFO(0, hscrollbar_policy)
     ZEND_ARG_INFO(0, vscrollbar_policy)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkscrolledwindow_set_shadow_type, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkscrolledwindow_set_vadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, hadjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkscrolledwindow_methods[] = {
+static zend_function_entry gtkscrolledwindow_methods[] = {
 	PHP_ME(GtkScrolledWindow, __construct,          arginfo_gtk_gtkscrolledwindow_gtk_scrolled_window_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkScrolledWindow, add_with_viewport,    arginfo_gtk_gtkscrolledwindow_add_with_viewport, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkScrolledWindow, get_hadjustment,      NULL, ZEND_ACC_PUBLIC)
@@ -41052,12 +40137,10 @@ static PHP_METHOD(GtkColorSelection, set_update_policy)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorselection_set_change_palette_with_screen_hook, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcolorselection_set_color, 0, 0, 3)
     ZEND_ARG_INFO(0, red)
     ZEND_ARG_INFO(0, green)
@@ -41066,42 +40149,35 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcolorselection_set_color, 0, 0, 3)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorselection_set_current_alpha, 0)
     ZEND_ARG_INFO(0, alpha)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorselection_set_current_color, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorselection_set_has_opacity_control, 0)
     ZEND_ARG_INFO(0, has_opacity)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorselection_set_has_palette, 0)
     ZEND_ARG_INFO(0, has_palette)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorselection_set_previous_alpha, 0)
     ZEND_ARG_INFO(0, alpha)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorselection_set_previous_color, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorselection_set_update_policy, 0)
     ZEND_ARG_INFO(0, policy)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcolorselection_methods[] = {
+static zend_function_entry gtkcolorselection_methods[] = {
 	PHP_ME(GtkColorSelection, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkColorSelection, get_color,            NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkColorSelection, get_current_alpha,    NULL, ZEND_ACC_PUBLIC)
@@ -41175,18 +40251,16 @@ static PHP_METHOD(GtkFileChooserWidget, new_with_backend)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooserwidget_gtk_file_chooser_widget_new, 0)
     ZEND_ARG_INFO(0, action)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooserwidget_file_chooser_widget_new_with_backend, 0)
     ZEND_ARG_INFO(0, action)
     ZEND_ARG_INFO(0, backend)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkfilechooserwidget_methods[] = {
+static zend_function_entry gtkfilechooserwidget_methods[] = {
 	PHP_ME(GtkFileChooserWidget, __construct,          arginfo_gtk_gtkfilechooserwidget_gtk_file_chooser_widget_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFileChooserWidget, new_with_backend,     arginfo_gtk_gtkfilechooserwidget_file_chooser_widget_new_with_backend, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 
@@ -41365,17 +40439,15 @@ static PHP_METHOD(GtkFontSelection, set_preview_text)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontselection_set_font_name, 0)
     ZEND_ARG_INFO(0, fontname)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontselection_set_preview_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkfontselection_methods[] = {
+static zend_function_entry gtkfontselection_methods[] = {
 	PHP_ME(GtkFontSelection, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFontSelection, get_font,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFontSelection, get_font_name,        NULL, ZEND_ACC_PUBLIC)
@@ -41464,7 +40536,7 @@ static prop_info_t gtkgammacurve_prop_info[] = {
 };
 
 
-static function_entry gtkgammacurve_methods[] = {
+static zend_function_entry gtkgammacurve_methods[] = {
 	PHP_ME(GtkGammaCurve, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -41516,12 +40588,11 @@ static PHP_METHOD(GtkSeparatorToolItem, set_draw)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkseparatortoolitem_set_draw, 0)
     ZEND_ARG_INFO(0, draw)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkseparatortoolitem_methods[] = {
+static zend_function_entry gtkseparatortoolitem_methods[] = {
 	PHP_ME(GtkSeparatorToolItem, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkSeparatorToolItem, get_draw,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkSeparatorToolItem, set_draw,             arginfo_gtk_gtkseparatortoolitem_set_draw, ZEND_ACC_PUBLIC)
@@ -41756,43 +40827,36 @@ static PHP_METHOD(GtkToolButton, set_use_underline)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktoolbutton_gtk_tool_button_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, icon_widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbutton_tool_button_new_from_stock, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbutton_set_icon_widget, 0)
     ZEND_ARG_OBJ_INFO(0, icon_widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbutton_set_label, 0)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbutton_set_label_widget, 0)
     ZEND_ARG_OBJ_INFO(0, label_widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbutton_set_stock_id, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoolbutton_set_use_underline, 0)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktoolbutton_methods[] = {
+static zend_function_entry gtktoolbutton_methods[] = {
 	PHP_ME(GtkToolButton, __construct,          arginfo_gtk_gtktoolbutton_gtk_tool_button_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToolButton, new_from_stock,       arginfo_gtk_gtktoolbutton_tool_button_new_from_stock, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkToolButton, get_icon_widget,      NULL, ZEND_ACC_PUBLIC)
@@ -41847,7 +40911,7 @@ static PHP_METHOD(GtkItem, toggle)
 }
 
 
-static function_entry gtkitem_methods[] = {
+static zend_function_entry gtkitem_methods[] = {
 	PHP_ME(GtkItem, deselect,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkItem, select,               NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkItem, toggle,               NULL, ZEND_ACC_PUBLIC)
@@ -41922,17 +40986,15 @@ static PHP_METHOD(GtkToggleToolButton, set_active)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoggletoolbutton_toggle_tool_button_new_from_stock, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktoggletoolbutton_set_active, 0)
     ZEND_ARG_INFO(0, is_active)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktoggletoolbutton_methods[] = {
+static zend_function_entry gtktoggletoolbutton_methods[] = {
 	PHP_ME(GtkToggleToolButton, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToggleToolButton, new_from_stock,       arginfo_gtk_gtktoggletoolbutton_toggle_tool_button_new_from_stock, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkToggleToolButton, get_active,           NULL, ZEND_ACC_PUBLIC)
@@ -42029,30 +41091,26 @@ static PHP_METHOD(GtkMenuToolButton, set_menu)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenutoolbutton_gtk_menu_tool_button_new, 0)
     ZEND_ARG_OBJ_INFO(0, icon_widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenutoolbutton_gtk_menu_tool_button_new_from_stock, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkmenutoolbutton_set_arrow_tooltip, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, tooltips, GtkTooltips, 1)
     ZEND_ARG_INFO(0, tip_text)
     ZEND_ARG_INFO(0, tip_private)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenutoolbutton_set_menu, 0)
     ZEND_ARG_OBJ_INFO(0, menu, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkmenutoolbutton_methods[] = {
+static zend_function_entry gtkmenutoolbutton_methods[] = {
 	PHP_ME(GtkMenuToolButton, __construct,          arginfo_gtk_gtkmenutoolbutton_gtk_menu_tool_button_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMenuToolButton, new_from_stock,       arginfo_gtk_gtkmenutoolbutton_gtk_menu_tool_button_new_from_stock, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkMenuToolButton, get_menu,             NULL, ZEND_ACC_PUBLIC)
@@ -42149,19 +41207,17 @@ static PHP_METHOD(GtkRadioToolButton, set_group)
 #line 42150 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkradiotoolbutton_gtk_radio_tool_button_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioToolButton, 1)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkradiotoolbutton_set_group, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioToolButton, 1)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkradiotoolbutton_methods[] = {
+static zend_function_entry gtkradiotoolbutton_methods[] = {
 	PHP_ME(GtkRadioToolButton, __construct,          arginfo_gtk_gtkradiotoolbutton_gtk_radio_tool_button_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRadioToolButton, get_group,            NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRadioToolButton, set_group,            arginfo_gtk_gtkradiotoolbutton_set_group, ZEND_ACC_PUBLIC)
@@ -42286,22 +41342,19 @@ static PHP_METHOD(GtkHandleBox, set_snap_edge)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkhandlebox_set_handle_position, 0)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkhandlebox_set_shadow_type, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkhandlebox_set_snap_edge, 0)
     ZEND_ARG_INFO(0, edge)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkhandlebox_methods[] = {
+static zend_function_entry gtkhandlebox_methods[] = {
 	PHP_ME(GtkHandleBox, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkHandleBox, get_handle_position,  NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkHandleBox, get_shadow_type,      NULL, ZEND_ACC_PUBLIC)
@@ -42521,34 +41574,29 @@ static PHP_METHOD(GtkMenuItem, set_item_accel_path)
 #line 42522 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkmenuitem_gtk_menu_item_new, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenuitem_set_right_justified, 0)
     ZEND_ARG_INFO(0, right_justified)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenuitem_set_submenu, 0)
     ZEND_ARG_OBJ_INFO(0, submenu, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenuitem_toggle_size_allocate, 0)
     ZEND_ARG_INFO(0, allocation)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkmenuitem_set_item_accel_path, 0)
     ZEND_ARG_INFO(0, accel_path)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkmenuitem_methods[] = {
+static zend_function_entry gtkmenuitem_methods[] = {
 	PHP_ME(GtkMenuItem, __construct,          arginfo_gtk_gtkmenuitem_gtk_menu_item_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMenuItem, activate,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkMenuItem, deselect,             NULL, ZEND_ACC_PUBLIC)
@@ -42623,13 +41671,12 @@ static PHP_METHOD(GtkListItem, select)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtklistitem_gtk_list_item_new, 0, 0, 0)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtklistitem_methods[] = {
+static zend_function_entry gtklistitem_methods[] = {
 	PHP_ME(GtkListItem, __construct,          arginfo_gtk_gtklistitem_gtk_list_item_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkListItem, deselect,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkListItem, select,               NULL, ZEND_ACC_PUBLIC)
@@ -42655,7 +41702,7 @@ static PHP_METHOD(GtkTearoffMenuItem, __construct)
 }
 
 
-static function_entry gtktearoffmenuitem_methods[] = {
+static zend_function_entry gtktearoffmenuitem_methods[] = {
 	PHP_ME(GtkTearoffMenuItem, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -42679,7 +41726,7 @@ static PHP_METHOD(GtkSeparatorMenuItem, __construct)
 }
 
 
-static function_entry gtkseparatormenuitem_methods[] = {
+static zend_function_entry gtkseparatormenuitem_methods[] = {
 	PHP_ME(GtkSeparatorMenuItem, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -42864,39 +41911,33 @@ static PHP_METHOD(GtkCheckMenuItem, toggled)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcheckmenuitem_gtk_check_menu_item_new, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcheckmenuitem_set_active, 0)
     ZEND_ARG_INFO(0, is_active)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcheckmenuitem_set_draw_as_radio, 0)
     ZEND_ARG_INFO(0, draw_as_radio)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcheckmenuitem_set_inconsistent, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcheckmenuitem_set_show_toggle, 0)
     ZEND_ARG_INFO(0, always)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcheckmenuitem_set_state, 0)
     ZEND_ARG_INFO(0, is_active)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcheckmenuitem_methods[] = {
+static zend_function_entry gtkcheckmenuitem_methods[] = {
 	PHP_ME(GtkCheckMenuItem, __construct,          arginfo_gtk_gtkcheckmenuitem_gtk_check_menu_item_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCheckMenuItem, get_active,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCheckMenuItem, get_draw_as_radio,    NULL, ZEND_ACC_PUBLIC)
@@ -42977,19 +42018,17 @@ static PHP_METHOD(GtkImageMenuItem, set_image)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkimagemenuitem_gtk_image_menu_item_new, 0, 0, 0)
     ZEND_ARG_INFO(0, stock_id)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkimagemenuitem_set_image, 0)
     ZEND_ARG_OBJ_INFO(0, image, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkimagemenuitem_methods[] = {
+static zend_function_entry gtkimagemenuitem_methods[] = {
 	PHP_ME(GtkImageMenuItem, __construct,          arginfo_gtk_gtkimagemenuitem_gtk_image_menu_item_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkImageMenuItem, get_image,            NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkImageMenuItem, set_image,            arginfo_gtk_gtkimagemenuitem_set_image, ZEND_ACC_PUBLIC)
@@ -43119,26 +42158,23 @@ static PHP_METHOD(GtkRadioMenuItem, set_group)
 #line 43120 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkradiomenuitem_gtk_radio_menu_item_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioMenuItem, 1)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkradiomenuitem_new_from_widget, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkradiomenuitem_set_group, 0)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioMenuItem, 1)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkradiomenuitem_methods[] = {
+static zend_function_entry gtkradiomenuitem_methods[] = {
 	PHP_ME(GtkRadioMenuItem, __construct,          arginfo_gtk_gtkradiomenuitem_gtk_radio_menu_item_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRadioMenuItem, get_group,            NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRadioMenuItem, new_from_widget,      arginfo_gtk_gtkradiomenuitem_new_from_widget, ZEND_ACC_PUBLIC)
@@ -43177,13 +42213,12 @@ static PHP_METHOD(GtkHBox, __construct)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkhbox_gtk_hbox_new, 0, 0, 1)
     ZEND_ARG_INFO(0, homogeneous)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkhbox_methods[] = {
+static zend_function_entry gtkhbox_methods[] = {
 	PHP_ME(GtkHBox, __construct,          arginfo_gtk_gtkhbox_gtk_hbox_new, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -43356,33 +42391,28 @@ static PHP_METHOD(GtkFrame, set_shadow_type)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkframe_gtk_frame_new, 0, 0, 0)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkframe_set_label, 0)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkframe_set_label_align, 0)
     ZEND_ARG_INFO(0, xalign)
     ZEND_ARG_INFO(0, yalign)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkframe_set_label_widget, 0)
     ZEND_ARG_OBJ_INFO(0, label_widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkframe_set_shadow_type, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkframe_methods[] = {
+static zend_function_entry gtkframe_methods[] = {
 	PHP_ME(GtkFrame, __construct,          arginfo_gtk_gtkframe_gtk_frame_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFrame, get_label,            NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFrame, get_label_align,      NULL, ZEND_ACC_PUBLIC)
@@ -43506,34 +42536,29 @@ static PHP_METHOD(GtkStatusbar, remove_message)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstatusbar_get_context_id, 0)
     ZEND_ARG_INFO(0, context_description)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstatusbar_pop, 0)
     ZEND_ARG_INFO(0, context_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstatusbar_push, 0)
     ZEND_ARG_INFO(0, context_id)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstatusbar_set_has_resize_grip, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkstatusbar_remove_message, 0)
     ZEND_ARG_INFO(0, context_id)
     ZEND_ARG_INFO(0, message_id)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkstatusbar_methods[] = {
+static zend_function_entry gtkstatusbar_methods[] = {
 	PHP_ME(GtkStatusbar, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkStatusbar, get_context_id,       arginfo_gtk_gtkstatusbar_get_context_id, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkStatusbar, get_has_resize_grip,  NULL, ZEND_ACC_PUBLIC)
@@ -43719,39 +42744,33 @@ static PHP_METHOD(GtkCombo, set_value_in_list)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombo_set_case_sensitive, 0)
     ZEND_ARG_INFO(0, val)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombo_set_item_string, 0)
     ZEND_ARG_OBJ_INFO(0, item, GtkItem, 1)
     ZEND_ARG_INFO(0, item_value)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombo_set_popdown_strings, 0)
     ZEND_ARG_INFO(0, strings)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombo_set_use_arrows, 0)
     ZEND_ARG_INFO(0, val)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombo_set_use_arrows_always, 0)
     ZEND_ARG_INFO(0, val)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombo_set_value_in_list, 0)
     ZEND_ARG_INFO(0, val)
     ZEND_ARG_INFO(0, ok_if_empty)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcombo_methods[] = {
+static zend_function_entry gtkcombo_methods[] = {
 	PHP_ME(GtkCombo, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCombo, disable_activate,     NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCombo, set_case_sensitive,   arginfo_gtk_gtkcombo_set_case_sensitive, ZEND_ACC_PUBLIC)
@@ -43909,35 +42928,30 @@ static PHP_METHOD(GtkFileChooserButton, set_width_chars)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooserbutton_file_chooser_button_new, 0)
     ZEND_ARG_INFO(0, title)
     ZEND_ARG_INFO(0, action)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooserbutton_file_chooser_button_new_with_backend, 0)
     ZEND_ARG_INFO(0, title)
     ZEND_ARG_INFO(0, action)
     ZEND_ARG_INFO(0, backend)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooserbutton_file_chooser_button_new_with_dialog, 0)
     ZEND_ARG_OBJ_INFO(0, dialog, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooserbutton_set_title, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfilechooserbutton_set_width_chars, 0)
     ZEND_ARG_INFO(0, n_chars)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkfilechooserbutton_methods[] = {
+static zend_function_entry gtkfilechooserbutton_methods[] = {
 	PHP_ME(GtkFileChooserButton, __construct,          arginfo_gtk_gtkfilechooserbutton_file_chooser_button_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFileChooserButton, new_with_backend,     arginfo_gtk_gtkfilechooserbutton_file_chooser_button_new_with_backend, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkFileChooserButton, new_with_dialog,      arginfo_gtk_gtkfilechooserbutton_file_chooser_button_new_with_dialog, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -44233,47 +43247,39 @@ static PHP_METHOD(GtkExpander, set_use_underline)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkexpander_gtk_expander_new, 0)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkexpander_expander_new_with_mnemonic, 0)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkexpander_set_expanded, 0)
     ZEND_ARG_INFO(0, expanded)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkexpander_set_label, 0)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkexpander_set_label_widget, 0)
     ZEND_ARG_OBJ_INFO(0, label_widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkexpander_set_spacing, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkexpander_set_use_markup, 0)
     ZEND_ARG_INFO(0, use_markup)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkexpander_set_use_underline, 0)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkexpander_methods[] = {
+static zend_function_entry gtkexpander_methods[] = {
 	PHP_ME(GtkExpander, __construct,          arginfo_gtk_gtkexpander_gtk_expander_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkExpander, new_with_mnemonic,    arginfo_gtk_gtkexpander_expander_new_with_mnemonic, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkExpander, get_expanded,         NULL, ZEND_ACC_PUBLIC)
@@ -44337,7 +43343,6 @@ static PHP_METHOD(GtkAspectFrame, set)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkaspectframe_gtk_aspect_frame_new, 0, 0, 0)
     ZEND_ARG_INFO(0, label)
     ZEND_ARG_INFO(0, xalign)
@@ -44346,7 +43351,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkaspectframe_gtk_aspect_frame_new, 0, 0, 0)
     ZEND_ARG_INFO(0, obey_child)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkaspectframe_set, 0, 0, 0)
     ZEND_ARG_INFO(0, xalign)
     ZEND_ARG_INFO(0, yalign)
@@ -44354,7 +43358,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkaspectframe_set, 0, 0, 0)
     ZEND_ARG_INFO(0, obey_child)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkaspectframe_methods[] = {
+static zend_function_entry gtkaspectframe_methods[] = {
 	PHP_ME(GtkAspectFrame, __construct,          arginfo_gtk_gtkaspectframe_gtk_aspect_frame_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAspectFrame, set,                  arginfo_gtk_gtkaspectframe_set, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -44435,17 +43439,15 @@ static PHP_METHOD(GtkEventBox, set_visible_window)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkeventbox_set_above_child, 0)
     ZEND_ARG_INFO(0, above_child)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkeventbox_set_visible_window, 0)
     ZEND_ARG_INFO(0, visible_window)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkeventbox_methods[] = {
+static zend_function_entry gtkeventbox_methods[] = {
 	PHP_ME(GtkEventBox, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkEventBox, get_above_child,      NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkEventBox, get_visible_window,   NULL, ZEND_ACC_PUBLIC)
@@ -44531,7 +43533,6 @@ static PHP_METHOD(GtkAlignment, set_padding)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkalignment_gtk_alignment_new, 0, 0, 0)
     ZEND_ARG_INFO(0, xalign)
     ZEND_ARG_INFO(0, yalign)
@@ -44539,7 +43540,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkalignment_gtk_alignment_new, 0, 0, 0)
     ZEND_ARG_INFO(0, yscale)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkalignment_set, 0)
     ZEND_ARG_INFO(0, xalign)
     ZEND_ARG_INFO(0, yalign)
@@ -44547,7 +43547,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkalignment_set, 0)
     ZEND_ARG_INFO(0, yscale)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkalignment_set_padding, 0)
     ZEND_ARG_INFO(0, padding_top)
     ZEND_ARG_INFO(0, padding_bottom)
@@ -44555,7 +43554,7 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkalignment_set_padding, 0)
     ZEND_ARG_INFO(0, padding_right)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkalignment_methods[] = {
+static zend_function_entry gtkalignment_methods[] = {
 	PHP_ME(GtkAlignment, __construct,          arginfo_gtk_gtkalignment_gtk_alignment_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAlignment, get_padding,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkAlignment, set,                  arginfo_gtk_gtkalignment_set, ZEND_ACC_PUBLIC)
@@ -44906,55 +43905,46 @@ static PHP_METHOD(GtkButton, set_use_underline)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkbutton_gtk_button_new, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbutton_gtk_button_new_from_stock, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbutton_set_alignment, 0)
     ZEND_ARG_INFO(0, xalign)
     ZEND_ARG_INFO(0, yalign)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbutton_set_focus_on_click, 0)
     ZEND_ARG_INFO(0, focus_on_click)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbutton_set_image, 0)
     ZEND_ARG_OBJ_INFO(0, image, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbutton_set_label, 0)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbutton_set_relief, 0)
     ZEND_ARG_INFO(0, newstyle)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbutton_set_use_stock, 0)
     ZEND_ARG_INFO(0, use_stock)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbutton_set_use_underline, 0)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkbutton_methods[] = {
+static zend_function_entry gtkbutton_methods[] = {
 	PHP_ME(GtkButton, __construct,          arginfo_gtk_gtkbutton_gtk_button_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkButton, new_from_stock,       arginfo_gtk_gtkbutton_gtk_button_new_from_stock, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkButton, clicked,              NULL, ZEND_ACC_PUBLIC)
@@ -45409,79 +44399,65 @@ static PHP_METHOD(GtkComboBox, set_wrap_width)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcombobox_gtk_combo_box_new, 0, 0, 0)
     ZEND_ARG_INFO(0, model)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_append_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_insert_text, 0)
     ZEND_ARG_INFO(0, position)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_prepend_text, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_remove_text, 0)
     ZEND_ARG_INFO(0, position)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_set_active, 0)
     ZEND_ARG_INFO(0, index)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_set_active_iter, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTreeIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_set_add_tearoffs, 0)
     ZEND_ARG_INFO(0, add_tearoffs)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_set_column_span_column, 0)
     ZEND_ARG_INFO(0, column_span)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_set_focus_on_click, 0)
     ZEND_ARG_INFO(0, focus_on_click)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_set_model, 0)
     ZEND_ARG_INFO(0, model)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_set_row_separator_func, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_set_row_span_column, 0)
     ZEND_ARG_INFO(0, row_span)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcombobox_set_wrap_width, 0)
     ZEND_ARG_INFO(0, width)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcombobox_methods[] = {
+static zend_function_entry gtkcombobox_methods[] = {
 	PHP_ME(GtkComboBox, __construct,          arginfo_gtk_gtkcombobox_gtk_combo_box_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkComboBox, new_text,             NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkComboBox, append_text,          arginfo_gtk_gtkcombobox_append_text, ZEND_ACC_PUBLIC)
@@ -45701,34 +44677,29 @@ static PHP_METHOD(GtkToggleButton, toggled)
 
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktogglebutton_gtk_toggle_button_new, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktogglebutton_set_active, 0)
     ZEND_ARG_INFO(0, is_active)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktogglebutton_set_inconsistent, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktogglebutton_set_mode, 0)
     ZEND_ARG_INFO(0, draw_indicator)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktogglebutton_set_state, 0)
     ZEND_ARG_INFO(0, is_active)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktogglebutton_methods[] = {
+static zend_function_entry gtktogglebutton_methods[] = {
 	PHP_ME(GtkToggleButton, __construct,          arginfo_gtk_gtktogglebutton_gtk_toggle_button_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToggleButton, get_active,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkToggleButton, get_inconsistent,     NULL, ZEND_ACC_PUBLIC)
@@ -45831,17 +44802,15 @@ static PHP_METHOD(GtkOptionMenu, set_menu)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkoptionmenu_set_history, 0)
     ZEND_ARG_INFO(0, index)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkoptionmenu_set_menu, 0)
     ZEND_ARG_OBJ_INFO(0, menu, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkoptionmenu_methods[] = {
+static zend_function_entry gtkoptionmenu_methods[] = {
 	PHP_ME(GtkOptionMenu, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkOptionMenu, get_history,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkOptionMenu, get_menu,             NULL, ZEND_ACC_PUBLIC)
@@ -45879,14 +44848,13 @@ static PHP_METHOD(GtkCheckButton, __construct)
 #line 45880 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcheckbutton_gtk_check_button_new, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkcheckbutton_methods[] = {
+static zend_function_entry gtkcheckbutton_methods[] = {
 	PHP_ME(GtkCheckButton, __construct,          arginfo_gtk_gtkcheckbutton_gtk_check_button_new, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -46132,42 +45100,35 @@ static PHP_METHOD(GtkFontButton, set_use_size)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontbutton_gtk_font_button_new_with_font, 0)
     ZEND_ARG_INFO(0, fontname)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontbutton_set_font_name, 0)
     ZEND_ARG_INFO(0, fontname)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontbutton_set_show_size, 0)
     ZEND_ARG_INFO(0, show_size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontbutton_set_show_style, 0)
     ZEND_ARG_INFO(0, show_style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontbutton_set_title, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontbutton_set_use_font, 0)
     ZEND_ARG_INFO(0, use_font)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkfontbutton_set_use_size, 0)
     ZEND_ARG_INFO(0, use_size)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkfontbutton_methods[] = {
+static zend_function_entry gtkfontbutton_methods[] = {
 	PHP_ME(GtkFontButton, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkFontButton, new_with_font,        arginfo_gtk_gtkfontbutton_gtk_font_button_new_with_font, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkFontButton, get_font_name,        NULL, ZEND_ACC_PUBLIC)
@@ -46288,7 +45249,6 @@ static PHP_METHOD(GtkRadioButton, set_group)
 #line 46289 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkradiobutton_gtk_radio_button_new, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioButton, 1)
     ZEND_ARG_INFO(0, text)
@@ -46296,7 +45256,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkradiobutton_gtk_radio_button_new, 0, 0, 0)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkradiobutton_methods[] = {
+static zend_function_entry gtkradiobutton_methods[] = {
 	PHP_ME(GtkRadioButton, __construct,          arginfo_gtk_gtkradiobutton_gtk_radio_button_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRadioButton, get_group,            NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkRadioButton, group,                NULL, ZEND_ACC_PUBLIC)
@@ -46479,32 +45439,27 @@ static PHP_METHOD(GtkColorButton, set_use_alpha)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkcolorbutton_color_button_new_with_color, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorbutton_set_alpha, 0)
     ZEND_ARG_INFO(0, alpha)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorbutton_set_color, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorbutton_set_title, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcolorbutton_set_use_alpha, 0)
     ZEND_ARG_INFO(0, use_alpha)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcolorbutton_methods[] = {
+static zend_function_entry gtkcolorbutton_methods[] = {
 	PHP_ME(GtkColorButton, __construct,          arginfo_gtk_gtkcolorbutton_color_button_new_with_color, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkColorButton, get_alpha,            NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkColorButton, get_color,            NULL, ZEND_ACC_PUBLIC)
@@ -47710,62 +46665,51 @@ static PHP_METHOD(GtkCList, remove_row)
 #line 47711 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkclist_gtk_clist_new, 0, 0, 0)
     ZEND_ARG_INFO(0, columns)
     ZEND_ARG_INFO(0, titles)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_column_title_active, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_column_title_passive, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_get_cell_style, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_get_cell_type, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_get_column_title, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_get_column_widget, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_get_row_style, 0)
     ZEND_ARG_INFO(0, row)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_get_selectable, 0)
     ZEND_ARG_INFO(0, row)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_get_selection_info, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_moveto, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
@@ -47773,118 +46717,98 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_moveto, 0)
     ZEND_ARG_INFO(0, col_align)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_optimal_column_width, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_row_is_visible, 0)
     ZEND_ARG_INFO(0, row)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_row_move, 0)
     ZEND_ARG_INFO(0, source_row)
     ZEND_ARG_INFO(0, dest_row)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_select_row, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_auto_sort, 0)
     ZEND_ARG_INFO(0, auto_sort)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_background, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_button_actions, 0)
     ZEND_ARG_INFO(0, button)
     ZEND_ARG_INFO(0, button_actions)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_cell_style, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_OBJ_INFO(0, style, GtkStyle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_column_auto_resize, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, auto_resize)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_column_justification, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, justification)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_column_max_width, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, max_width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_column_min_width, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, min_width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_column_resizeable, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, resizeable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_column_title, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_column_visibility, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, visible)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_column_widget, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_column_width, 0)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_foreground, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_hadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkclist_set_pixmap, 0, 0, 3)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
@@ -47892,7 +46816,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkclist_set_pixmap, 0, 0, 3)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_pixtext, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
@@ -47902,39 +46825,32 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_pixtext, 0)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_reorderable, 0)
     ZEND_ARG_INFO(0, reorderable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_row_height, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_row_style, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_OBJ_INFO(0, style, GtkStyle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_selectable, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, selectable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_selection_mode, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_shadow_type, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_shift, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
@@ -47942,51 +46858,43 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_shift, 0)
     ZEND_ARG_INFO(0, horizontal)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_sort_column, 0)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_sort_type, 0)
     ZEND_ARG_INFO(0, sort_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_text, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_use_drag_icons, 0)
     ZEND_ARG_INFO(0, use_icons)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_set_vadjustment, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_swap_rows, 0)
     ZEND_ARG_INFO(0, row1)
     ZEND_ARG_INFO(0, row2)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_unselect_row, 0)
     ZEND_ARG_INFO(0, row)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkclist_remove_row, 0)
     ZEND_ARG_INFO(0, row)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkclist_methods[] = {
+static zend_function_entry gtkclist_methods[] = {
 	PHP_ME(GtkCList, __construct,          arginfo_gtk_gtkclist_gtk_clist_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCList, append,               NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCList, clear,                NULL, ZEND_ACC_PUBLIC)
@@ -48120,12 +47028,11 @@ static PHP_METHOD(GtkComboBoxEntry, set_text_column)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcomboboxentry_set_text_column, 0)
     ZEND_ARG_INFO(0, text_column)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcomboboxentry_methods[] = {
+static zend_function_entry gtkcomboboxentry_methods[] = {
 	PHP_ME(GtkComboBoxEntry, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkComboBoxEntry, new_text,             NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkComboBoxEntry, get_text_column,      NULL, ZEND_ACC_PUBLIC)
@@ -48277,35 +47184,30 @@ static PHP_METHOD(GtkButtonBox, set_layout)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbuttonbox_get_child_secondary, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbuttonbox_set_child_ipadding, 0)
     ZEND_ARG_INFO(0, ipad_x)
     ZEND_ARG_INFO(0, ipad_y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbuttonbox_set_child_secondary, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
     ZEND_ARG_INFO(0, is_secondary)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbuttonbox_set_child_size, 0)
     ZEND_ARG_INFO(0, min_width)
     ZEND_ARG_INFO(0, min_height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkbuttonbox_set_layout, 0)
     ZEND_ARG_INFO(0, layout_style)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkbuttonbox_methods[] = {
+static zend_function_entry gtkbuttonbox_methods[] = {
 	PHP_ME(GtkButtonBox, get_child_ipadding,   NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkButtonBox, get_child_secondary,  arginfo_gtk_gtkbuttonbox_get_child_secondary, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkButtonBox, get_child_size,       NULL, ZEND_ACC_PUBLIC)
@@ -48503,38 +47405,32 @@ static PHP_METHOD(GtkCalendar, unmark_day)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcalendar_display_options, 0)
     ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcalendar_mark_day, 0)
     ZEND_ARG_INFO(0, day)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcalendar_select_day, 0)
     ZEND_ARG_INFO(0, day)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcalendar_select_month, 0)
     ZEND_ARG_INFO(0, month)
     ZEND_ARG_INFO(0, year)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcalendar_set_display_options, 0)
     ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkcalendar_unmark_day, 0)
     ZEND_ARG_INFO(0, day)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkcalendar_methods[] = {
+static zend_function_entry gtkcalendar_methods[] = {
 	PHP_ME(GtkCalendar, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCalendar, clear_marks,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCalendar, display_options,      arginfo_gtk_gtkcalendar_display_options, ZEND_ACC_PUBLIC)
@@ -48622,17 +47518,15 @@ static PHP_METHOD(GtkVButtonBox, set_spacing_default)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkvbuttonbox_set_layout_default, 0)
     ZEND_ARG_INFO(0, layout)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkvbuttonbox_set_spacing_default, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkvbuttonbox_methods[] = {
+static zend_function_entry gtkvbuttonbox_methods[] = {
 	PHP_ME(GtkVButtonBox, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkVButtonBox, get_layout_default,   NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkVButtonBox, get_spacing_default,  NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -48713,17 +47607,15 @@ static PHP_METHOD(GtkHButtonBox, set_spacing_default)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkhbuttonbox_set_layout_default, 0)
     ZEND_ARG_INFO(0, layout)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkhbuttonbox_set_spacing_default, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkhbuttonbox_methods[] = {
+static zend_function_entry gtkhbuttonbox_methods[] = {
 	PHP_ME(GtkHButtonBox, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkHButtonBox, get_layout_default,   NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkHButtonBox, get_spacing_default,  NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -49919,7 +48811,6 @@ static PHP_METHOD(GtkCTree, row_is_ancestor)
 #line 49920 "ext/gtk+/gen_gtk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkctree_gtk_ctree_new, 0, 0, 0)
     ZEND_ARG_INFO(0, columns)
     ZEND_ARG_INFO(0, tree_column)
@@ -49927,95 +48818,78 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkctree_gtk_ctree_new, 0, 0, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_collapse, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_collapse_recursive, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_collapse_to_depth, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, depth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_expand, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_expand_recursive, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_expand_to_depth, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, depth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_find, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_is_hot_spot, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_is_viewable, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_last, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_move, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_OBJ_INFO(0, new_parent, GtkCTreeNode, 1)
     ZEND_ARG_OBJ_INFO(0, new_sibling, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_get_cell_style, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_get_cell_type, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_get_row_style, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_get_selectable, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_is_visible, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_moveto, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, column)
@@ -50023,31 +48897,26 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_moveto, 0)
     ZEND_ARG_INFO(0, col_align)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_nth, 0)
     ZEND_ARG_INFO(0, row)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_background, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_cell_style, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_OBJ_INFO(0, style, GtkStyle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_foreground, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_pixmap, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, column)
@@ -50055,7 +48924,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_pixmap, 0)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_pixtext, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, column)
@@ -50065,19 +48933,16 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_pixtext, 0)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_row_style, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_OBJ_INFO(0, style, GtkStyle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_selectable, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, selectable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_shift, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, column)
@@ -50085,50 +48950,41 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_shift, 0)
     ZEND_ARG_INFO(0, horizontal)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_node_set_text, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, column)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_real_select_recursive, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, state)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_remove_node, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_select, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_select_recursive, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_set_expander_style, 0)
     ZEND_ARG_INFO(0, expander_style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_set_indent, 0)
     ZEND_ARG_INFO(0, indent)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_set_line_style, 0)
     ZEND_ARG_INFO(0, line_style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_set_node_info, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_INFO(0, text)
@@ -50141,53 +48997,44 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_set_node_info, 0)
     ZEND_ARG_INFO(0, expanded)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_set_show_stub, 0)
     ZEND_ARG_INFO(0, show_stub)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_set_spacing, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_sort_node, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_sort_recursive, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_toggle_expansion, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_toggle_expansion_recursive, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_unselect, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_unselect_recursive, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkctree_row_is_ancestor, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkCTreeNode, 1)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gtkctree_methods[] = {
+static zend_function_entry gtkctree_methods[] = {
 	PHP_ME(GtkCTree, __construct,          arginfo_gtk_gtkctree_gtk_ctree_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCTree, collapse,             arginfo_gtk_gtkctree_collapse, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkCTree, collapse_recursive,   arginfo_gtk_gtkctree_collapse_recursive, ZEND_ACC_PUBLIC)
@@ -50284,17 +49131,15 @@ static PHP_METHOD(GtkWindowGroup, remove_window)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindowgroup_add_window, 0)
     ZEND_ARG_OBJ_INFO(0, window, GtkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkwindowgroup_remove_window, 0)
     ZEND_ARG_OBJ_INFO(0, window, GtkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkwindowgroup_methods[] = {
+static zend_function_entry gtkwindowgroup_methods[] = {
 	PHP_ME(GtkWindowGroup, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkWindowGroup, add_window,           arginfo_gtk_gtkwindowgroup_add_window, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkWindowGroup, remove_window,        arginfo_gtk_gtkwindowgroup_remove_window, ZEND_ACC_PUBLIC)
@@ -50316,7 +49161,7 @@ static PHP_METHOD(GtkBorder, copy)
 }
 
 
-static function_entry gtkborder_methods[] = {
+static zend_function_entry gtkborder_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -50508,22 +49353,19 @@ static PHP_METHOD(GtkIconInfo, set_raw_coordinates)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconinfo_get_embedded_rect, 0)
     ZEND_ARG_OBJ_INFO(0, rectangle, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconinfo_load_icon, 0)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconinfo_set_raw_coordinates, 0)
     ZEND_ARG_INFO(0, raw_coordinates)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkiconinfo_methods[] = {
+static zend_function_entry gtkiconinfo_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -50680,17 +49522,14 @@ static PHP_METHOD(GtkIconSet, render_icon)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconset_icon_set_new_from_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconset_add_source, 0)
     ZEND_ARG_OBJ_INFO(0, source, GtkIconSource, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkiconset_render_icon, 0, 0, 4)
     ZEND_ARG_OBJ_INFO(0, style, GtkStyle, 1)
     ZEND_ARG_INFO(0, direction)
@@ -50700,7 +49539,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkiconset_render_icon, 0, 0, 4)
     ZEND_ARG_INFO(0, detail)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkiconset_methods[] = {
+static zend_function_entry gtkiconset_methods[] = {
 	PHP_ME(GtkIconSet, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIconSet, new_from_pixbuf,      arginfo_gtk_gtkiconset_icon_set_new_from_pixbuf, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GtkIconSet, add_source,           arginfo_gtk_gtkiconset_add_source, ZEND_ACC_PUBLIC)
@@ -51044,52 +49883,43 @@ static PHP_METHOD(GtkIconSource, set_state_wildcarded)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconsource_set_direction, 0)
     ZEND_ARG_INFO(0, direction)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconsource_set_direction_wildcarded, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconsource_set_filename, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconsource_set_icon_name, 0)
     ZEND_ARG_INFO(0, icon_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconsource_set_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconsource_set_size, 0)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconsource_set_size_wildcarded, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconsource_set_state, 0)
     ZEND_ARG_INFO(0, state)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkiconsource_set_state_wildcarded, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkiconsource_methods[] = {
+static zend_function_entry gtkiconsource_methods[] = {
 	PHP_ME(GtkIconSource, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIconSource, copy,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkIconSource, get_direction,        NULL, ZEND_ACC_PUBLIC)
@@ -51155,7 +49985,7 @@ static PHP_METHOD(GtkRequisition, copy)
 }
 
 
-static function_entry gtkrequisition_methods[] = {
+static zend_function_entry gtkrequisition_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -51480,7 +50310,6 @@ static PHP_METHOD(GtkSelectionData, tree_set_row_drag_data)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkselectiondata_set, 0)
     ZEND_ARG_INFO(0, type)
     ZEND_ARG_INFO(0, format)
@@ -51488,34 +50317,29 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkselectiondata_set, 0)
     ZEND_ARG_INFO(0, length)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkselectiondata_set_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtkselectiondata_set_text, 0, 0, 1)
     ZEND_ARG_INFO(0, str)
     ZEND_ARG_INFO(0, len)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkselectiondata_set_uris, 0)
     ZEND_ARG_INFO(0, uris)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkselectiondata_targets_include_image, 0)
     ZEND_ARG_INFO(0, writable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkselectiondata_tree_set_row_drag_data, 0)
     ZEND_ARG_INFO(0, tree_model)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static function_entry gtkselectiondata_methods[] = {
+static zend_function_entry gtkselectiondata_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -51939,12 +50763,11 @@ static PHP_METHOD(GtkTextAttributes, copy_values)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextattributes_copy_values, 0)
     ZEND_ARG_OBJ_INFO(0, dest, GtkTextAttributes, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktextattributes_methods[] = {
+static zend_function_entry gtktextattributes_methods[] = {
 	PHP_ME(GtkTextAttributes, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextAttributes, copy,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTextAttributes, copy_values,          arginfo_gtk_gtktextattributes_copy_values, ZEND_ACC_PUBLIC)
@@ -53558,28 +52381,23 @@ static PHP_METHOD(GtkTextIter, toggles_tag)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_chars, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_cursor_positions, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_find_char, 0)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_lines, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_search, 0)
     ZEND_ARG_INFO(0, str)
     ZEND_ARG_INFO(0, flags)
@@ -53588,83 +52406,67 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_search, 0)
     ZEND_ARG_OBJ_INFO(0, limit, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_sentence_starts, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_to_tag_toggle, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_visible_cursor_positions, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_visible_word_starts, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_backward_word_starts, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextiter_begins_tag, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_can_insert, 0)
     ZEND_ARG_INFO(0, default_editability)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_compare, 0)
     ZEND_ARG_OBJ_INFO(0, rhs, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_editable, 0)
     ZEND_ARG_INFO(0, default_setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextiter_ends_tag, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_equal, 0)
     ZEND_ARG_OBJ_INFO(0, rhs, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_chars, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_cursor_positions, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_find_char, 0)
     ZEND_ARG_INFO(0, callback)
     ZEND_ARG_OBJ_INFO(0, iter, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_lines, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_search, 0)
     ZEND_ARG_INFO(0, str)
     ZEND_ARG_INFO(0, flags)
@@ -53673,108 +52475,88 @@ ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_search, 0)
     ZEND_ARG_OBJ_INFO(0, limit, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_sentence_ends, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_to_tag_toggle, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_visible_cursor_positions, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_visible_word_ends, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_forward_word_ends, 0)
     ZEND_ARG_INFO(0, count)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_get_attributes, 0)
     ZEND_ARG_OBJ_INFO(0, values, GtkTextAttributes, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_get_slice, 0)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_get_text, 0)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_get_visible_slice, 0)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_get_visible_text, 0)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_has_tag, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_in_range, 0)
     ZEND_ARG_OBJ_INFO(0, start, GtkTextIter, 1)
     ZEND_ARG_OBJ_INFO(0, end, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_order, 0)
     ZEND_ARG_OBJ_INFO(0, second, GtkTextIter, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_set_line, 0)
     ZEND_ARG_INFO(0, line_number)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_set_line_index, 0)
     ZEND_ARG_INFO(0, byte_on_line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_set_line_offset, 0)
     ZEND_ARG_INFO(0, char_on_line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_set_offset, 0)
     ZEND_ARG_INFO(0, char_offset)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_set_visible_line_index, 0)
     ZEND_ARG_INFO(0, byte_on_line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktextiter_set_visible_line_offset, 0)
     ZEND_ARG_INFO(0, char_on_line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gtk_gtktextiter_toggles_tag, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, tag, GtkTextTag, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktextiter_methods[] = {
+static zend_function_entry gtktextiter_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -53868,7 +52650,7 @@ static function_entry gtktextiter_methods[] = {
 	{ NULL, NULL, NULL }
 };
 
-static function_entry gtktreeiter_methods[] = {
+static zend_function_entry gtktreeiter_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -53955,13 +52737,12 @@ static PHP_METHOD(GtkTreeRowReference, valid)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtktreerowreference_gtk_tree_row_reference_new, 0)
     ZEND_ARG_INFO(0, model)
     ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static function_entry gtktreerowreference_methods[] = {
+static zend_function_entry gtktreerowreference_methods[] = {
 	PHP_ME(GtkTreeRowReference, __construct,          arginfo_gtk_gtktreerowreference_gtk_tree_row_reference_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeRowReference, copy,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkTreeRowReference, get_path,             NULL, ZEND_ACC_PUBLIC)
@@ -53969,7 +52750,7 @@ static function_entry gtktreerowreference_methods[] = {
 	{ NULL, NULL, NULL }
 };
 
-static function_entry gtkctreenode_methods[] = {
+static zend_function_entry gtkctreenode_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else

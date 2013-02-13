@@ -268,58 +268,48 @@ static PHP_METHOD(Atk, role_for_name)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_relation_type_register, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_relation_type_for_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_state_type_for_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_text_attribute_get_name, 0)
     ZEND_ARG_INFO(0, attr)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_text_attribute_get_value, 0)
     ZEND_ARG_INFO(0, attr)
     ZEND_ARG_INFO(0, index)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_remove_focus_tracker, 0)
     ZEND_ARG_INFO(0, tracker_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_focus_tracker_notify, 0)
     ZEND_ARG_OBJ_INFO(0, object, AtkObject, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_remove_global_event_listener, 0)
     ZEND_ARG_INFO(0, listener_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_remove_key_event_listener, 0)
     ZEND_ARG_INFO(0, listener_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atk_role_for_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static function_entry atk_methods[] = {
+static zend_function_entry atk_methods[] = {
 	PHP_ME(Atk, focus_tracker_notify, arginfo_atk_atk_focus_tracker_notify, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(Atk, get_default_registry, NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(Atk, get_root,             NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -436,17 +426,15 @@ static PHP_METHOD(AtkHyperlink, get_n_anchors)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkhyperlink_get_uri, 0)
     ZEND_ARG_INFO(0, i)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkhyperlink_get_object, 0)
     ZEND_ARG_INFO(0, i)
 ZEND_END_ARG_INFO();
 
-static function_entry atkhyperlink_methods[] = {
+static zend_function_entry atkhyperlink_methods[] = {
 	PHP_ME(AtkHyperlink, get_end_index,        NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkHyperlink, get_n_anchors,        NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkHyperlink, get_object,           arginfo_atk_atkhyperlink_get_object, ZEND_ACC_PUBLIC)
@@ -718,37 +706,31 @@ static PHP_METHOD(AtkObject, remove_property_change_handler)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkobject_ref_accessible_child, 0)
     ZEND_ARG_INFO(0, i)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkobject_set_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkobject_set_description, 0)
     ZEND_ARG_INFO(0, description)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkobject_set_parent, 0)
     ZEND_ARG_OBJ_INFO(0, parent, AtkObject, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkobject_set_role, 0)
     ZEND_ARG_INFO(0, role)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkobject_remove_property_change_handler, 0)
     ZEND_ARG_INFO(0, handler_id)
 ZEND_END_ARG_INFO();
 
-static function_entry atkobject_methods[] = {
+static zend_function_entry atkobject_methods[] = {
 	PHP_ME(AtkObject, get_description,      NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkObject, get_index_in_parent,  NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkObject, get_layer,            NULL, ZEND_ACC_PUBLIC)
@@ -787,12 +769,11 @@ static PHP_METHOD(AtkNoOpObject, __construct)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atknoopobject_atk_no_op_object_new, 0)
     ZEND_ARG_OBJ_INFO(0, obj, GObject, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry atknoopobject_methods[] = {
+static zend_function_entry atknoopobject_methods[] = {
 	PHP_ME(AtkNoOpObject, __construct,          arginfo_atk_atknoopobject_atk_no_op_object_new, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -825,12 +806,11 @@ static PHP_METHOD(AtkObjectFactory, invalidate)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkobjectfactory_create_accessible, 0)
     ZEND_ARG_OBJ_INFO(0, obj, GObject, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry atkobjectfactory_methods[] = {
+static zend_function_entry atkobjectfactory_methods[] = {
 	PHP_ME(AtkObjectFactory, create_accessible,    arginfo_atk_atkobjectfactory_create_accessible, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkObjectFactory, invalidate,           NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -855,7 +835,7 @@ static PHP_METHOD(AtkNoOpObjectFactory, __construct)
 }
 
 
-static function_entry atknoopobjectfactory_methods[] = {
+static zend_function_entry atknoopobjectfactory_methods[] = {
 	PHP_ME(AtkNoOpObjectFactory, __construct,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
 };
@@ -919,23 +899,20 @@ static PHP_METHOD(AtkRegistry, get_factory)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkregistry_set_factory_type, 0)
     ZEND_ARG_OBJ_INFO(0, type, GType, 1)
     ZEND_ARG_OBJ_INFO(0, factory_type, GType, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkregistry_get_factory_type, 0)
     ZEND_ARG_OBJ_INFO(0, type, GType, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkregistry_get_factory, 0)
     ZEND_ARG_OBJ_INFO(0, type, GType, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry atkregistry_methods[] = {
+static zend_function_entry atkregistry_methods[] = {
 	PHP_ME(AtkRegistry, get_factory,          arginfo_atk_atkregistry_get_factory, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkRegistry, get_factory_type,     arginfo_atk_atkregistry_get_factory_type, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkRegistry, set_factory_type,     arginfo_atk_atkregistry_set_factory_type, ZEND_ACC_PUBLIC)
@@ -995,14 +972,13 @@ static PHP_METHOD(AtkRelation, get_relation_type)
 	RETVAL_LONG(php_retval);
 }
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkrelation_relation_new, 0)
     ZEND_ARG_INFO(0, targets)
     ZEND_ARG_INFO(0, relationship)
 ZEND_END_ARG_INFO();
 
 
-static function_entry atkrelation_methods[] = {
+static zend_function_entry atkrelation_methods[] = {
 	PHP_ME(AtkRelation, __construct,          arginfo_atk_atkrelation_relation_new, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkRelation, get_relation_type,    NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -1143,38 +1119,32 @@ static PHP_METHOD(AtkRelationSet, add_relation_by_type)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkrelationset_contains, 0)
     ZEND_ARG_INFO(0, relationship)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkrelationset_remove, 0)
     ZEND_ARG_OBJ_INFO(0, relation, AtkRelation, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkrelationset_add, 0)
     ZEND_ARG_OBJ_INFO(0, relation, AtkRelation, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkrelationset_get_relation, 0)
     ZEND_ARG_INFO(0, i)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkrelationset_get_relation_by_type, 0)
     ZEND_ARG_INFO(0, relationship)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkrelationset_add_relation_by_type, 0)
     ZEND_ARG_INFO(0, relationship)
     ZEND_ARG_OBJ_INFO(0, target, AtkObject, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry atkrelationset_methods[] = {
+static zend_function_entry atkrelationset_methods[] = {
 	PHP_ME(AtkRelationSet, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkRelationSet, add,                  arginfo_atk_atkrelationset_add, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkRelationSet, add_relation_by_type, arginfo_atk_atkrelationset_add_relation_by_type, ZEND_ACC_PUBLIC)
@@ -1337,37 +1307,31 @@ static PHP_METHOD(AtkStateSet, xor_sets)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkstateset_add_state, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkstateset_contains_state, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkstateset_remove_state, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkstateset_and_sets, 0)
     ZEND_ARG_OBJ_INFO(0, compare_set, AtkStateSet, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkstateset_or_sets, 0)
     ZEND_ARG_OBJ_INFO(0, compare_set, AtkStateSet, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_atk_atkstateset_xor_sets, 0)
     ZEND_ARG_OBJ_INFO(0, compare_set, AtkStateSet, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry atkstateset_methods[] = {
+static zend_function_entry atkstateset_methods[] = {
 	PHP_ME(AtkStateSet, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkStateSet, add_state,            arginfo_atk_atkstateset_add_state, ZEND_ACC_PUBLIC)
 	PHP_ME(AtkStateSet, and_sets,             arginfo_atk_atkstateset_and_sets, ZEND_ACC_PUBLIC)

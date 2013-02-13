@@ -5,18 +5,18 @@
 */
 require_once('doc_templates.php');
 
-class DocEnumGenerator
+class DocEnumPHPGtkGenerator
 {
     private $type = 'gtk';
     private $outputfile = null;
     private $fileHandle = null;
 
 
-    public function DocEnumGenerator($type, $outputfile)
+    public function DocEnumPHPGtkGenerator($type, $outputfile)
     {
         $this->type = ucfirst(strtolower($type));
         $this->outputfile = $outputfile;
-    }//public function DocEnumGenerator($type, $outputfile)
+    }//public function DocEnumPHPGtkGenerator($type, $outputfile)
 
 
 
@@ -93,7 +93,7 @@ class DocEnumGenerator
         }
     }//protected function closeFile()
 
-}//class DocEnumGenerator
+}//class DocEnumPHPGtkGenerator
 
 
 if (!class_exists('gtk') || version_compare(phpversion(), '5.0.0', 'ge') == 0) {
@@ -117,7 +117,7 @@ if ($argc >= 3) {
     $outputfile = null;
 }
 
-$deg = new DocEnumGenerator($type, $outputfile);
+$deg = new DocEnumPHPGtkGenerator($type, $outputfile);
 $deg->createDocs();
 
 ?>

@@ -226,7 +226,6 @@ ignore-win32
 
 %%
 add-arginfo Gtk timeout_add
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, interval)
     ZEND_ARG_INFO(0, callback)
@@ -282,7 +281,6 @@ PHP_METHOD
 
 %%
 add-arginfo Gtk timeout_add_priority
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, interval)
     ZEND_ARG_INFO(0, priority)
@@ -369,7 +367,6 @@ PHP_METHOD
 
 %%
 add-arginfo Gtk quit_add
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, main_level)
     ZEND_ARG_INFO(0, callback)
@@ -538,7 +535,6 @@ PHP_METHOD
 
 %%
 add-arginfo Gtk icon_size_lookup
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
@@ -566,7 +562,6 @@ PHP_METHOD
 
 %%
 add-arginfo Gtk icon_size_lookup_for_settings
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, settings, GtkSettings, 0)
     ZEND_ARG_INFO(0, size)
@@ -643,7 +638,6 @@ PHP_METHOD
 
 %%
 add-arginfo Gtk stock_lookup
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
@@ -783,7 +777,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkAccelGroup find
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -985,7 +978,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkAboutDialog set_artists
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, artists)
 ZEND_END_ARG_INFO();
@@ -1024,7 +1016,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkAboutDialog set_authors
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, authors)
 ZEND_END_ARG_INFO();
@@ -1063,7 +1054,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkAboutDialog set_documenters
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, documenters)
 ZEND_END_ARG_INFO();
@@ -1102,7 +1092,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkAboutDialog set_email_hook
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -1184,7 +1173,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkAboutDialog set_url_hook
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -1216,7 +1204,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkAboutDialog set_website_label
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gtk_gtkaboutdialog_set_website_label, 0)
     ZEND_ARG_INFO(0, website_label)
 ZEND_END_ARG_INFO();
@@ -1250,7 +1237,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkAdjustment __construct
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, value)
     ZEND_ARG_INFO(0, lower)
@@ -1314,7 +1300,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkBox query_child_packing
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
@@ -1343,7 +1328,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkButton __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
@@ -1379,7 +1363,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkButton new_from_stock
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, stock_id)
 ZEND_END_ARG_INFO();
@@ -1487,7 +1470,6 @@ PHP_METHOD
 %% {{{ GtkCheckButton
 %%
 add-arginfo GtkCheckButton __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
@@ -1525,7 +1507,6 @@ PHP_METHOD
 %% {{{ GtkCheckMenuItem
 %%
 add-arginfo GtkCheckMenuItem __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
@@ -1571,7 +1552,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkCList __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, columns)
     ZEND_ARG_INFO(0, titles)
@@ -1797,7 +1777,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkCList get_selection_info
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -1829,7 +1808,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkCList remove_row
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, row)
 ZEND_END_ARG_INFO();
@@ -1939,7 +1917,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkColorSelection set_color
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 3)
     ZEND_ARG_INFO(0, red)
     ZEND_ARG_INFO(0, green)
@@ -2011,7 +1988,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkColorSelection set_change_palette_with_screen_hook
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -2088,7 +2064,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkCombo set_popdown_strings
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, strings)
 ZEND_END_ARG_INFO();
@@ -2138,7 +2113,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkComboBox __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, model)
 ZEND_END_ARG_INFO();
@@ -2186,7 +2160,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkComboBox set_row_separator_func
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -2226,7 +2199,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkComboBoxEntry __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, model)
     ZEND_ARG_INFO(0, text_column)
@@ -2265,7 +2237,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkCTree __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, columns)
     ZEND_ARG_INFO(0, tree_column)
@@ -2434,7 +2405,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkCTree row_is_ancestor
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, node, GtkCTreeNode, 1)
     ZEND_ARG_OBJ_INFO(0, child, GtkCTreeNode, 1)
@@ -2538,7 +2508,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkDialog __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, title)
     ZEND_ARG_OBJ_INFO(0, parent, GtkWindow, 1)
@@ -2629,7 +2598,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkDialog add_buttons
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, buttons)
 ZEND_END_ARG_INFO();
@@ -2696,7 +2664,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkEditable insert_text
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, position)
@@ -2729,7 +2696,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkEntry __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, max_length)
@@ -2815,7 +2781,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkEntry set_invisible_char
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, char)
 ZEND_END_ARG_INFO();
@@ -2846,7 +2811,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkEntryCompletion set_match_func
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -2947,7 +2911,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkFileFilter add_custom
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, flags_needed)
     ZEND_ARG_INFO(0, callback)
@@ -3090,7 +3053,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkFileFilter filter
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, filterinfo)
 ZEND_END_ARG_INFO();
@@ -3180,7 +3142,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkFileSelection get_filename
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
@@ -3223,7 +3184,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkFileSelection get_selections
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
@@ -3276,7 +3236,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkFileChooser get_filename
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
@@ -3318,7 +3277,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkFileChooser get_filenames
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
@@ -3405,7 +3363,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkFileChooser list_shortcut_folders
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
@@ -3450,7 +3407,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkFileChooser list_shortcut_folder_uris
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
@@ -3499,7 +3455,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkFileChooserDialog __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, title)
     ZEND_ARG_OBJ_INFO(0, parent, GtkWindow, 1)
@@ -3641,7 +3596,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkIconTheme set_search_path
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_ARRAY_INFO(0, search_paths, 0)
 ZEND_END_ARG_INFO();
@@ -3789,7 +3743,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkIconView __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, model, GtkTreeModel, 0)
 ZEND_END_ARG_INFO();
@@ -3846,7 +3799,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkIconView selected_foreach
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, callback)
 ZEND_END_ARG_INFO();
@@ -4106,7 +4058,6 @@ PHP_METHOD
 %% {{{ GtkImageMenuItem
 %%
 add-arginfo GtkImageMenuItem __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, stock_id)
     ZEND_ARG_OBJ_INFO(0, accel_group, GtkAccelGroup, 1)
@@ -4152,7 +4103,6 @@ PHP_METHOD
 %% {{{ GtkLabel
 %%
 add-arginfo GtkLabel __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
@@ -4257,7 +4207,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkListItem __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, label)
 ZEND_END_ARG_INFO();
@@ -4298,7 +4247,6 @@ PHP_METHOD(GtkListItem, __construct)
 
 %%
 add-arginfo GtkMenu set_menu_accel_path
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, accel_path)
 ZEND_END_ARG_INFO();
@@ -4322,7 +4270,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkMenu popup
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, parent_menu_shell, GtkWidget, 1)
     ZEND_ARG_OBJ_INFO(0, parent_menu_item, GtkWidget, 1)
@@ -4416,7 +4363,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkMenuItem set_item_accel_path
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, accel_path)
 ZEND_END_ARG_INFO();
@@ -4457,7 +4403,6 @@ PHP_METHOD
 %% {{{ GtkMessageDialog
 %%
 add-arginfo GtkMessageDialog __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, parent, GtkWindow, 1)
     ZEND_ARG_INFO(0, flags)
@@ -4526,7 +4471,6 @@ PHP_METHOD
 %% {{{ GtkMenuItem
 %%
 add-arginfo GtkMenuItem __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
@@ -4609,7 +4553,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkNotebook query_tab_label_packing
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, child, GtkWidget, 1)
 ZEND_END_ARG_INFO();
@@ -4637,7 +4580,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkPlug __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_INFO(0, socket_id)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
@@ -4703,7 +4645,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkProgressBar __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, adjustment, GtkAdjustment, 1)
 ZEND_END_ARG_INFO();
@@ -4789,7 +4730,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkRadioButton __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioButton, 1)
     ZEND_ARG_INFO(0, text)
@@ -4897,7 +4837,6 @@ PHP_METHOD
 %% {{{ GtkRadioMenuItem
 %%
 add-arginfo GtkRadioMenuItem __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioMenuItem, 1)
     ZEND_ARG_INFO(0, text)
@@ -4952,7 +4891,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkRadioMenuItem new_from_widget
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
@@ -4986,7 +4924,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkRadioMenuItem set_group
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioMenuItem, 1)
 ZEND_END_ARG_INFO();
@@ -5040,7 +4977,6 @@ PHP_METHOD
 %% {{{ GtkRadioToolButton
 %%
 add-arginfo GtkRadioToolButton __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioToolButton, 1)
     ZEND_ARG_INFO(0, stock_id)
@@ -5112,7 +5048,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkRadioToolButton set_group
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, group, GtkRadioToolButton, 1)
 ZEND_END_ARG_INFO();
@@ -5234,7 +5169,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkSelectionData set_uris
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, uris)
 ZEND_END_ARG_INFO();
@@ -5313,7 +5247,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkStatusbar remove_message
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, context_id)
     ZEND_ARG_INFO(0, message_id)
@@ -5425,7 +5358,6 @@ PHPG_PROP_READER
 %% {{{ GtkToggleButton
 %%
 add-arginfo GtkToggleButton __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, use_underline)
@@ -5464,7 +5396,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkToolbar append_item
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, tooltip_text)
@@ -5553,7 +5484,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkToolbar prepend_item
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, tooltip_text)
@@ -5615,7 +5545,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkToolbar set_toolbar_style
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
@@ -5645,7 +5574,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkUIManager add_ui_from_string
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
@@ -5675,7 +5603,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkUIManager get_toplevels
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, types)
 ZEND_END_ARG_INFO();
@@ -5821,7 +5748,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkWidget intersect
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, area, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
@@ -5910,7 +5836,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkWidget size_allocate
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, allocation)
 ZEND_END_ARG_INFO();
@@ -5937,7 +5862,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkWidget translate_coordinates
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, dest_widget, GtkWidget, 0)
     ZEND_ARG_INFO(0, src_x)
@@ -5965,7 +5889,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkWidget set_visible
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_INFO(0, visible)
     ZEND_ARG_INFO(0, all)
@@ -6019,7 +5942,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkWidget style_get_property
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, property_name)
 ZEND_END_ARG_INFO();
@@ -6242,7 +6164,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkWindow set_default_icon_list
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, pixbufs)
 ZEND_END_ARG_INFO();
@@ -6281,7 +6202,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkWindow set_geometry_hints
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 0)
     ZEND_ARG_INFO(0, min_width)
@@ -6372,7 +6292,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkWindow set_icon_list
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, pixbufs)
 ZEND_END_ARG_INFO();
@@ -6413,7 +6332,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkWindow window_mnemonic_activate
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, keyval)
     ZEND_ARG_INFO(0, modifier)

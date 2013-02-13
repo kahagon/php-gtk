@@ -1456,129 +1456,108 @@ static PHP_METHOD(GObject, register_type)
 /* }}} */
 
 /* {{{ GObject reflection info */
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_block, 0)
     ZEND_ARG_INFO(0, handler_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gobject_connect, 0, 0, 2)
     ZEND_ARG_INFO(0, signal)
     ZEND_ARG_INFO(0, callback)
     ZEND_ARG_INFO(0, userparam)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gobject_connect_after, 0, 0, 2)
     ZEND_ARG_INFO(0, signal)
     ZEND_ARG_INFO(0, callback)
     ZEND_ARG_INFO(0, userparam)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gobject_connect_simple, 0, 0, 2)
     ZEND_ARG_INFO(0, signal)
     ZEND_ARG_INFO(0, callback)
     ZEND_ARG_INFO(0, userparam)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gobject_connect_simple_after, 0, 0, 2)
     ZEND_ARG_INFO(0, signal)
     ZEND_ARG_INFO(0, callback)
     ZEND_ARG_INFO(0, userparam)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gobject_connect_object, 0, 0, 2)
     ZEND_ARG_INFO(0, signal)
     ZEND_ARG_INFO(0, callback)
     ZEND_ARG_INFO(0, userparam)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gobject_connect_object_after, 0, 0, 2)
     ZEND_ARG_INFO(0, signal)
     ZEND_ARG_INFO(0, callback)
     ZEND_ARG_INFO(0, userparam)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_disconnect, 0)
     ZEND_ARG_INFO(0, handler_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_notify, 0)
     ZEND_ARG_INFO(0, property_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_get_property, 0)
     ZEND_ARG_INFO(0, property_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_set_property, 0)
     ZEND_ARG_INFO(0, property_name)
     ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_get_data, 0)
     ZEND_ARG_INFO(0, key)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_is_connected, 0)
     ZEND_ARG_INFO(0, handler_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_set_data, 0)
     ZEND_ARG_INFO(0, key)
     ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_signal_list_ids, 0)
     ZEND_ARG_INFO(0, gtype)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_signal_list_names, 0)
     ZEND_ARG_INFO(0, gtype)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_signal_query, 0)
     ZEND_ARG_INFO(0, signal)
     ZEND_ARG_INFO(0, gtype)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_unblock, 0)
     ZEND_ARG_INFO(0, handler_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_list_properties, 0)
     ZEND_ARG_INFO(0, gtype)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_stop_emission, 0)
     ZEND_ARG_INFO(0, signal)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gobject_register_type, 0)
     ZEND_ARG_INFO(0, class)
 ZEND_END_ARG_INFO();
 
 /* }}} */
 
-static zend_function_entry gobject_methods[] = {
+static zend_zend_function_entry gobject_methods[] = {
     PHP_ME(GObject, __construct,          NULL                                  , ZEND_ACC_PUBLIC)
     PHP_ME(GObject, __tostring,           NULL                                  , ZEND_ACC_PUBLIC)
     PHP_ME(GObject, connect,              arginfo_gobject_connect               , ZEND_ACC_PUBLIC)

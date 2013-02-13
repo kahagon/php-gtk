@@ -39,7 +39,7 @@ PHPG_PROP_READER(GType, type);
 PHPG_PROP_READER(GType, name);
 
 /* XXX possibly make constructor public */
-static zend_function_entry gtype_methods[] = {
+static zend_zend_function_entry gtype_methods[] = {
 	ZEND_ME(GType, __construct, NULL, ZEND_ACC_PRIVATE)
 	{NULL, NULL, NULL}
 };

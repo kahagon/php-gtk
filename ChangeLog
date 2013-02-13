@@ -4341,7 +4341,7 @@
       generator/lineoutput.php
       generator/override.php
       win32/buildconf.js:
-      Generator fixes for win32
+      PHPGtkGenerator fixes for win32
 
     * win32/.cvsignore:
       ignore the win32 logging directory
@@ -4525,7 +4525,6 @@
       
       %%
       add-arginfo GdkColor parse
-      static
       ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
           ZEND_ARG_INFO(0, color)
       ZEND_END_ARG_INFO();
@@ -4537,7 +4536,6 @@
       
       %%
       add-arginfo gdk_color_parse
-      static
       ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
           ZEND_ARG_INFO(0, color)
       ZEND_END_ARG_INFO();
@@ -4573,7 +4571,6 @@
       
       %%
       add-arginfo arginfo_gdk_gdkcolor_color_parse
-      static
       ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcolor_color_parse, 0)
           ZEND_ARG_INFO(0, color)
       ZEND_END_ARG_INFO();

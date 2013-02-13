@@ -208,10 +208,10 @@ const non_gtk_object_init = "
 
 const method_entry = "\tPHP_ME(%s, %s, %s, %s)\n";
 const abs_method_entry = "\tZEND_FENTRY(%s, ZEND_MN(%s_%s), %s, %s)\n";
-const function_entry = "#if ZEND_EXTENSION_API_NO > 220051025\n\tPHP_ME_MAPPING(%s, %s, NULL, 0)\n#else\n\tPHP_ME_MAPPING(%s, %s, NULL)\n#endif\n";
+const zend_function_entry = "#if ZEND_EXTENSION_API_NO > 220051025\n\tPHP_ME_MAPPING(%s, %s, NULL, 0)\n#else\n\tPHP_ME_MAPPING(%s, %s, NULL)\n#endif\n";
 const alias_entry = "\tPHP_MALIAS(%s, %s, %s, %s, %s)\n";
 const functions_decl = "
-static function_entry %s_methods[] = {
+static zend_function_entry %s_methods[] = {
 ";
 const functions_decl_end = "\t{ NULL, NULL, NULL }\n};\n";
 
@@ -301,11 +301,9 @@ void phpg_%s_register_constants(const char *strip_prefix)
 const register_enum = "\tphpg_register_%s(%s, strip_prefix, %s);\n";
 
 const reflection_arginfo_begin = "
-static
 ZEND_BEGIN_ARG_INFO(%s, 0)
 ";
 const reflection_arginfoex_begin = "
-static
 ZEND_BEGIN_ARG_INFO_EX(%s, 0, 0, %d)
 ";
 const reflection_arginfo_end = "ZEND_END_ARG_INFO();

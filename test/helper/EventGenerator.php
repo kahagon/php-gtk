@@ -13,34 +13,34 @@
 *
 *   @author Christian Weiske <cweiske@php.net>
 */
-class EventGenerator
+class EventPHPGtkGenerator
 {
-    function createGenerator($type = null)
+    function createPHPGtkGenerator($type = null)
     {
         if ($type == null) {
-            $type = EventGenerator::getDefaultGenerator();
+            $type = EventPHPGtkGenerator::getDefaultPHPGtkGenerator();
         }
-        $class = 'EventGenerator_' . $type;
+        $class = 'EventPHPGtkGenerator_' . $type;
         include_once($class . '.php');
         if (!class_exists($class)) {
             die('Couldn\'t load class "' . $class . '"' . "\r\n");
         }
         return new $class();
-    }//function createGenerator($type = 'xte')
+    }//function createPHPGtkGenerator($type = 'xte')
 
 
 
-    function getDefaultGenerator()
+    function getDefaultPHPGtkGenerator()
     {
-        if (file_exists('EventGenerator.config.php')) {
-            include_once('EventGenerator.config.php');
+        if (file_exists('EventPHPGtkGenerator.config.php')) {
+            include_once('EventPHPGtkGenerator.config.php');
         }
         if (defined('EVENT_GENERATOR')) {
             return EVENT_GENERATOR;
         }
         //no static class properties in php4
         return 'xte';
-    }//function getDefaultGenerator()
-}//class EventGenerator
+    }//function getDefaultPHPGtkGenerator()
+}//class EventPHPGtkGenerator
 
 ?>

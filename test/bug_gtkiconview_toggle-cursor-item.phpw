@@ -41,8 +41,8 @@ if ($argc > 1 && $argv[1] == 'run')
     while(Gtk::events_pending()) { Gtk::main_iteration(); }
     
     //send the keys
-    require_once('helper/EventGenerator.php');
-    $eg = EventGenerator::createGenerator();
+    require_once('helper/EventPHPGtkGenerator.php');
+    $eg = EventPHPGtkGenerator::createPHPGtkGenerator();
     
     //select the first item
     $eg->sendKey('Right');

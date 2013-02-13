@@ -11,13 +11,13 @@
 require_once('System.php');
 
 
-class EventGenerator_xte
+class EventPHPGtkGenerator_xte
 {
     var $xte = null;
 
 
 
-    function EventGenerator_xte()
+    function EventPHPGtkGenerator_xte()
     {
         $xte = System::which('xte');
         if ($xte !== false) {
@@ -25,7 +25,7 @@ class EventGenerator_xte
         } else {
             echo "Couldn't find xte program!\r\nTests won't run!\r\n";
         }
-    }//function EventGenerator_xte()
+    }//function EventPHPGtkGenerator_xte()
 
 
 
@@ -113,5 +113,5 @@ class EventGenerator_xte
         return $key;
     }//function translateKey($key)
 
-}//class EventGenerator_xte
+}//class EventPHPGtkGenerator_xte
 ?>

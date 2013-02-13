@@ -148,7 +148,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkColor __construct
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, red)
     ZEND_ARG_INFO(0, blue)
@@ -183,7 +182,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkColor parse
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, color)
 ZEND_END_ARG_INFO();
@@ -310,7 +308,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkColormap alloc_color
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, color OR red)
     ZEND_ARG_INFO(0, blue)
@@ -357,7 +354,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkColormap query_color
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, allocated)
 ZEND_END_ARG_INFO();
@@ -423,7 +419,6 @@ PHPG_PROP_READER
 
 %%
 add-arginfo GdkDevice get_state
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, values)
     ZEND_ARG_INFO(0, axis)
@@ -474,7 +469,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkDevice get_history
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 0)
     ZEND_ARG_INFO(0, start)
@@ -523,7 +517,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkDevice get_state
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 0)
 ZEND_END_ARG_INFO();
@@ -1284,7 +1277,6 @@ HashTable* phpg_gdkevent_get_properties_handler(zval *object TSRMLS_DC)
 
 %%
 add-arginfo GdkEvent get_axis
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, axis_type)
 ZEND_END_ARG_INFO();
@@ -1765,7 +1757,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf __construct
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, colorspace)
     ZEND_ARG_INFO(0, has_alpha)
@@ -1800,7 +1791,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf new_from_xpm_data
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, data)
 ZEND_END_ARG_INFO();
@@ -1843,7 +1833,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf new_from_gd
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, gd)
 ZEND_END_ARG_INFO();
@@ -2046,7 +2035,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf render_pixmap_and_mask
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, alpha_threshold)
 ZEND_END_ARG_INFO();
@@ -2085,7 +2073,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf add_alpha
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, red)
     ZEND_ARG_INFO(0, green)
@@ -2150,7 +2137,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf get_pixel
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -2220,7 +2206,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf put_pixel
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 3)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -2350,7 +2335,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf fill
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 1)
     ZEND_ARG_INFO(0, pixel_or_red)
     ZEND_ARG_INFO(0, green)
@@ -2385,7 +2369,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf fill_area
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 5)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -2508,7 +2491,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkPixbuf save
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 2)
     ZEND_ARG_INFO(0, filename)
     ZEND_ARG_INFO(0, type)
@@ -2691,7 +2673,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkRectangle __construct
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -2719,7 +2700,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkRectangle intersect
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, rect, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
@@ -2750,7 +2730,6 @@ PHP_METHOD
 
 %%
 add-arginfo GdkRectangle union
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_OBJ_INFO(0, rect, GdkRectangle, 1)
 ZEND_END_ARG_INFO();

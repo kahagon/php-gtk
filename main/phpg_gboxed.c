@@ -46,7 +46,7 @@ PHP_METHOD(GBoxed, copy)
 }
 /* }}} */
 
-static zend_function_entry gboxed_methods[] = {
+static zend_zend_function_entry gboxed_methods[] = {
     PHP_ME(GBoxed, copy, NULL, ZEND_ACC_PUBLIC)
 	{NULL, NULL, NULL}
 };
@@ -90,7 +90,7 @@ PHP_GTK_API zend_object_value phpg_create_gboxed(zend_class_entry *ce TSRMLS_DC)
 
 /* {{{ PHP_GTK_API phpg_register_boxed() */
 PHP_GTK_API zend_class_entry* phpg_register_boxed(const char *class_name,
-                                                  function_entry *class_methods,
+                                                  zend_function_entry *class_methods,
                                                   prop_info_t *prop_info,
                                                   create_object_func_t create_obj_func,
                                                   GType gtype TSRMLS_DC)

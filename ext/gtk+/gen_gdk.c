@@ -1070,7 +1070,6 @@ static PHP_METHOD(Gdk, unicode_to_keyval)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_bitmap_create_from_data, 0)
     ZEND_ARG_OBJ_INFO(0, drawable, GdkDrawable, 1)
     ZEND_ARG_INFO(0, data)
@@ -1078,7 +1077,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_bitmap_create_from_data, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_gdk_draw_layout_with_colors, 0)
     ZEND_ARG_OBJ_INFO(0, drawable, GdkDrawable, 1)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
@@ -1089,93 +1087,76 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_gdk_draw_layout_with_colors, 0)
     ZEND_ARG_OBJ_INFO(0, background, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_event_get_graphics_expose, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_font_from_description, 0)
     ZEND_ARG_OBJ_INFO(0, font_desc, PangoFontDescription, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_font_from_description_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_OBJ_INFO(0, font_desc, PangoFontDescription, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_font_load_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, font_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_fontset_load, 0)
     ZEND_ARG_INFO(0, fontset_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_fontset_load_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, fontset_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdk_keyboard_grab, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, owner_events)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdk_keyboard_ungrab, 0, 0, 0)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_keyval_from_name, 0)
     ZEND_ARG_INFO(0, keyval_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_keyval_is_lower, 0)
     ZEND_ARG_INFO(0, keyval)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_keyval_is_upper, 0)
     ZEND_ARG_INFO(0, keyval)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_keyval_name, 0)
     ZEND_ARG_INFO(0, keyval)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_keyval_to_lower, 0)
     ZEND_ARG_INFO(0, keyval)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_keyval_to_unicode, 0)
     ZEND_ARG_INFO(0, keyval)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_keyval_to_upper, 0)
     ZEND_ARG_INFO(0, keyval)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_pixbuf_loader_new_with_mime_type, 0)
     ZEND_ARG_INFO(0, mime_type)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_pixmap_create_from_data, 0)
     ZEND_ARG_OBJ_INFO(0, drawable, GdkDrawable, 1)
     ZEND_ARG_INFO(0, data)
@@ -1186,29 +1167,24 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_pixmap_create_from_data, 0)
     ZEND_ARG_OBJ_INFO(0, bg, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_pixmap_foreign_new, 0)
     ZEND_ARG_INFO(0, anid)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_pixmap_foreign_new_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, anid)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_pixmap_lookup, 0)
     ZEND_ARG_INFO(0, anid)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_pixmap_lookup_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, anid)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdk_pointer_grab, 0, 0, 2)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
     ZEND_ARG_INFO(0, owner_events)
@@ -1218,55 +1194,45 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdk_pointer_grab, 0, 0, 2)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdk_pointer_ungrab, 0, 0, 0)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_rgb_gc_set_background, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_INFO(0, rgb)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_rgb_gc_set_foreground, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_INFO(0, rgb)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_rgb_set_install, 0)
     ZEND_ARG_INFO(0, install)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_rgb_set_min_colors, 0)
     ZEND_ARG_INFO(0, min_colors)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_rgb_set_verbose, 0)
     ZEND_ARG_INFO(0, verbose)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_rgb_xpixel_from_rgb, 0)
     ZEND_ARG_INFO(0, rgb)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_owner_get, 0)
     ZEND_ARG_INFO(0, selection)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_owner_get_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, selection)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_owner_set, 0)
     ZEND_ARG_OBJ_INFO(0, owner, GdkWindow, 1)
     ZEND_ARG_INFO(0, selection)
@@ -1274,7 +1240,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_owner_set, 0)
     ZEND_ARG_INFO(0, send_event)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_owner_set_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_OBJ_INFO(0, owner, GdkWindow, 1)
@@ -1283,7 +1248,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_owner_set_for_display, 0)
     ZEND_ARG_INFO(0, send_event)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_send_notify, 0)
     ZEND_ARG_INFO(0, requestor)
     ZEND_ARG_INFO(0, selection)
@@ -1292,7 +1256,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_send_notify, 0)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_send_notify_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, requestor)
@@ -1302,27 +1265,23 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_selection_send_notify_for_display, 0)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_set_double_click_time, 0)
     ZEND_ARG_INFO(0, msec)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_set_show_events, 0)
     ZEND_ARG_INFO(0, show_events)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_set_sm_client_id, 0)
     ZEND_ARG_INFO(0, sm_client_id)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdk_unicode_to_keyval, 0)
     ZEND_ARG_INFO(0, wc)
 ZEND_END_ARG_INFO();
 
-static function_entry gdk_methods[] = {
+static zend_function_entry gdk_methods[] = {
 	PHP_ME(Gdk, atom_intern,          NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(Gdk, beep,                 NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(Gdk, bitmap_create_from_data, arginfo_gdk_gdk_bitmap_create_from_data, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -1590,40 +1549,34 @@ static PHP_METHOD(GdkColormap, query_color)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcolormap_gdk_colormap_new, 0)
     ZEND_ARG_OBJ_INFO(0, visual, GdkVisual, 1)
     ZEND_ARG_INFO(0, allocate)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcolormap_black, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcolormap_change, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcolormap_white, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkcolormap_alloc_color, 0, 0, 0)
     ZEND_ARG_INFO(0, color OR red)
     ZEND_ARG_INFO(0, blue)
     ZEND_ARG_INFO(0, green)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcolormap_query_color, 0)
     ZEND_ARG_INFO(0, allocated)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gdkcolormap_methods[] = {
+static zend_function_entry gdkcolormap_methods[] = {
 	PHP_ME(GdkColormap, __construct,          arginfo_gdk_gdkcolormap_gdk_colormap_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkColormap, alloc,                NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkColormap, alloc_color,          arginfo_gdk_gdkcolormap_alloc_color, ZEND_ACC_PUBLIC)
@@ -2007,43 +1960,37 @@ static PHP_METHOD(GdkDevice, list_devices)
 #line 2008 "ext/gtk+/gen_gdk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdevice_get_history, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 0)
     ZEND_ARG_INFO(0, start)
     ZEND_ARG_INFO(0, stop)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdevice_get_state, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdevice_set_axis_use, 0)
     ZEND_ARG_INFO(0, index)
     ZEND_ARG_INFO(0, use)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdevice_set_key, 0)
     ZEND_ARG_INFO(0, index)
     ZEND_ARG_INFO(0, keyval)
     ZEND_ARG_INFO(0, modifiers)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdevice_set_mode, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdevice_set_source, 0)
     ZEND_ARG_INFO(0, source)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkdevice_methods[] = {
+static zend_function_entry gdkdevice_methods[] = {
 	PHP_ME(GdkDevice, get_axis,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkDevice, get_core_pointer,     NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GdkDevice, get_history,          arginfo_gdk_gdkdevice_get_history, ZEND_ACC_PUBLIC)
@@ -2533,47 +2480,39 @@ static PHP_METHOD(GdkDisplay, sync)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdisplay_gdk_display_open, 0)
     ZEND_ARG_INFO(0, display_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdisplay_get_screen, 0)
     ZEND_ARG_INFO(0, screen_num)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkdisplay_keyboard_ungrab, 0, 0, 0)
     ZEND_ARG_INFO(0, time_)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkdisplay_pointer_ungrab, 0, 0, 0)
     ZEND_ARG_INFO(0, time_)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdisplay_put_event, 0)
     ZEND_ARG_OBJ_INFO(0, event, GdkEvent, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdisplay_request_selection_notification, 0)
     ZEND_ARG_INFO(0, selection)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdisplay_set_double_click_distance, 0)
     ZEND_ARG_INFO(0, distance)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdisplay_set_double_click_time, 0)
     ZEND_ARG_INFO(0, msec)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkdisplay_methods[] = {
+static zend_function_entry gdkdisplay_methods[] = {
 	PHP_ME(GdkDisplay, __construct,          arginfo_gdk_gdkdisplay_gdk_display_open, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkDisplay, beep,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkDisplay, close,                NULL, ZEND_ACC_PUBLIC)
@@ -2665,12 +2604,11 @@ static PHP_METHOD(GdkDisplayManager, set_default_display)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdisplaymanager_set_default_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkdisplaymanager_methods[] = {
+static zend_function_entry gdkdisplaymanager_methods[] = {
 	PHP_ME(GdkDisplayManager, get,                  NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GdkDisplayManager, get_default_display,  NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkDisplayManager, list_displays,        NULL, ZEND_ACC_PUBLIC)
@@ -3056,17 +2994,14 @@ static PHP_METHOD(GdkDragContext, set_icon_widget)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdragcontext_drag_abort, 0)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdragcontext_drag_drop, 0)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdragcontext_drag_motion, 0)
     ZEND_ARG_OBJ_INFO(0, dest_window, GdkWindow, 1)
     ZEND_ARG_INFO(0, protocol)
@@ -3077,39 +3012,33 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdragcontext_drag_motion, 0)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkdragcontext_drag_status, 0, 0, 1)
     ZEND_ARG_INFO(0, action)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkdragcontext_drop_finish, 0, 0, 1)
     ZEND_ARG_INFO(0, success)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkdragcontext_drop_reply, 0, 0, 1)
     ZEND_ARG_INFO(0, ok)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkdragcontext_finish, 0, 0, 2)
     ZEND_ARG_INFO(0, success)
     ZEND_ARG_INFO(0, del)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdragcontext_set_icon_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
     ZEND_ARG_INFO(0, hot_x)
     ZEND_ARG_INFO(0, hot_y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdragcontext_set_icon_pixmap, 0)
     ZEND_ARG_OBJ_INFO(0, colormap, GdkColormap, 1)
     ZEND_ARG_OBJ_INFO(0, pixmap, GdkPixmap, 1)
@@ -3118,21 +3047,19 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdragcontext_set_icon_pixmap, 0)
     ZEND_ARG_INFO(0, hot_y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdragcontext_set_icon_stock, 0)
     ZEND_ARG_INFO(0, stock_id)
     ZEND_ARG_INFO(0, hot_x)
     ZEND_ARG_INFO(0, hot_y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdragcontext_set_icon_widget, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
     ZEND_ARG_INFO(0, hot_x)
     ZEND_ARG_INFO(0, hot_y)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkdragcontext_methods[] = {
+static zend_function_entry gdkdragcontext_methods[] = {
 	PHP_ME(GdkDragContext, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkDragContext, drag_abort,           arginfo_gdk_gdkdragcontext_drag_abort, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkDragContext, drag_drop,            arginfo_gdk_gdkdragcontext_drag_drop, ZEND_ACC_PUBLIC)
@@ -3649,7 +3576,6 @@ static PHP_METHOD(GdkDrawable, image_get)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_arc, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_INFO(0, filled)
@@ -3661,7 +3587,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_arc, 0)
     ZEND_ARG_INFO(0, angle2)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_drawable, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_OBJ_INFO(0, src, GdkDrawable, 1)
@@ -3673,7 +3598,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_drawable, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_glyphs, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_OBJ_INFO(0, font, PangoFont, 1)
@@ -3682,7 +3606,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_glyphs, 0)
     ZEND_ARG_OBJ_INFO(0, glyphs, PangoGlyphString, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_gray_image, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_INFO(0, x)
@@ -3694,7 +3617,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_gray_image, 0)
     ZEND_ARG_INFO(0, rowstride)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_image, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_OBJ_INFO(0, image, GdkImage, 1)
@@ -3706,7 +3628,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_image, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_layout, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_INFO(0, x)
@@ -3714,7 +3635,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_layout, 0)
     ZEND_ARG_OBJ_INFO(0, layout, PangoLayout, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_line, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_INFO(0, x1)
@@ -3723,7 +3643,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_line, 0)
     ZEND_ARG_INFO(0, y2)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkdrawable_draw_pixbuf, 0, 0, 6)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_OBJ_INFO(0, pixbuf, GdkPixbuf, 1)
@@ -3738,14 +3657,12 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkdrawable_draw_pixbuf, 0, 0, 6)
     ZEND_ARG_INFO(0, y_dither)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_point, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_rectangle, 0)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
     ZEND_ARG_INFO(0, filled)
@@ -3755,7 +3672,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_rectangle, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_string, 0)
     ZEND_ARG_OBJ_INFO(0, font, GdkFont, 1)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
@@ -3764,7 +3680,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_string, 0)
     ZEND_ARG_INFO(0, string)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_text, 0)
     ZEND_ARG_OBJ_INFO(0, font, GdkFont, 1)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
@@ -3774,7 +3689,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_draw_text, 0)
     ZEND_ARG_INFO(0, text_length)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_get_image, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -3782,12 +3696,10 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_get_image, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_set_colormap, 0)
     ZEND_ARG_OBJ_INFO(0, colormap, GdkColormap, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_image_get, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -3795,7 +3707,7 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkdrawable_image_get, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkdrawable_methods[] = {
+static zend_function_entry gdkdrawable_methods[] = {
 	PHP_ME(GdkDrawable, draw_arc,             arginfo_gdk_gdkdrawable_draw_arc, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkDrawable, draw_drawable,        arginfo_gdk_gdkdrawable_draw_drawable, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkDrawable, draw_glyphs,          arginfo_gdk_gdkdrawable_draw_glyphs, ZEND_ACC_PUBLIC)
@@ -5252,13 +5164,11 @@ static PHP_METHOD(GdkWindow, withdraw)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_input_set_extension_events, 0)
     ZEND_ARG_INFO(0, mask)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_property_change, 0)
     ZEND_ARG_INFO(0, property)
     ZEND_ARG_INFO(0, type)
@@ -5268,19 +5178,16 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_property_change, 0)
     ZEND_ARG_INFO(0, nelements)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_property_delete, 0)
     ZEND_ARG_INFO(0, property)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_selection_convert, 0)
     ZEND_ARG_INFO(0, selection)
     ZEND_ARG_INFO(0, target)
     ZEND_ARG_INFO(0, time)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_begin_move_drag, 0)
     ZEND_ARG_INFO(0, button)
     ZEND_ARG_INFO(0, root_x)
@@ -5288,12 +5195,10 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_begin_move_drag, 0)
     ZEND_ARG_INFO(0, timestamp)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_begin_paint_rect, 0)
     ZEND_ARG_OBJ_INFO(0, rectangle, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_begin_resize_drag, 0)
     ZEND_ARG_INFO(0, edge)
     ZEND_ARG_INFO(0, button)
@@ -5302,7 +5207,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_begin_resize_drag, 0)
     ZEND_ARG_INFO(0, timestamp)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_clear_area, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -5310,7 +5214,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_clear_area, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_clear_area_e, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -5318,46 +5221,38 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_clear_area_e, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkwindow_focus, 0, 0, 0)
     ZEND_ARG_INFO(0, timestamp)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_foreign_new, 0)
     ZEND_ARG_INFO(0, anid)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_foreign_new_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, anid)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_invalidate_rect, 0)
     ZEND_ARG_OBJ_INFO(0, rect, GdkRectangle, 1)
     ZEND_ARG_INFO(0, invalidate_children)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_lookup, 0)
     ZEND_ARG_INFO(0, anid)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_lookup_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, anid)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_move, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_move_resize, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -5365,82 +5260,67 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_move_resize, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_process_updates, 0)
     ZEND_ARG_INFO(0, update_children)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_reparent, 0)
     ZEND_ARG_OBJ_INFO(0, new_parent, GdkWindow, 1)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_resize, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_scroll, 0)
     ZEND_ARG_INFO(0, dx)
     ZEND_ARG_INFO(0, dy)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_accept_focus, 0)
     ZEND_ARG_INFO(0, accept_focus)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_back_pixmap, 0)
     ZEND_ARG_OBJ_INFO(0, pixmap, GdkPixmap, 1)
     ZEND_ARG_INFO(0, parent_relative)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_background, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_cursor, 0)
     ZEND_ARG_OBJ_INFO(0, cursor, GdkCursor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_debug_updates, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_decorations, 0)
     ZEND_ARG_INFO(0, decorations)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_events, 0)
     ZEND_ARG_INFO(0, event_mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_focus_on_map, 0)
     ZEND_ARG_INFO(0, focus_on_map)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_functions, 0)
     ZEND_ARG_INFO(0, functions)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_group, 0)
     ZEND_ARG_OBJ_INFO(0, leader, GdkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_hints, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -5451,81 +5331,67 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_hints, 0)
     ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_icon, 0)
     ZEND_ARG_OBJ_INFO(0, icon_window, GdkWindow, 1)
     ZEND_ARG_OBJ_INFO(0, pixmap, GdkPixmap, 1)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_icon_name, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_keep_above, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_keep_below, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_modal_hint, 0)
     ZEND_ARG_INFO(0, modal)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_override_redirect, 0)
     ZEND_ARG_INFO(0, override_redirect)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_role, 0)
     ZEND_ARG_INFO(0, role)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_skip_pager_hint, 0)
     ZEND_ARG_INFO(0, modal)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_skip_taskbar_hint, 0)
     ZEND_ARG_INFO(0, modal)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_static_gravities, 0)
     ZEND_ARG_INFO(0, use_static)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_title, 0)
     ZEND_ARG_INFO(0, title)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_transient_for, 0)
     ZEND_ARG_OBJ_INFO(0, leader, GdkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_set_type_hint, 0)
     ZEND_ARG_INFO(0, hint)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkwindow_shape_combine_mask, 0)
     ZEND_ARG_INFO(0, shape_mask)
     ZEND_ARG_INFO(0, offset_x)
     ZEND_ARG_INFO(0, offset_y)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkwindow_methods[] = {
+static zend_function_entry gdkwindow_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -5755,7 +5621,6 @@ static PHP_METHOD(GdkPixmap, create_from_xpm_data)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixmap_gdk_pixmap_new, 0, 0, 3)
     ZEND_ARG_OBJ_INFO(0, drawable, GdkDrawable, 1)
     ZEND_ARG_INFO(0, width)
@@ -5763,7 +5628,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixmap_gdk_pixmap_new, 0, 0, 3)
     ZEND_ARG_INFO(0, depth)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkpixmap_methods[] = {
+static zend_function_entry gdkpixmap_methods[] = {
 	PHP_ME(GdkPixmap, __construct,          arginfo_gdk_gdkpixmap_gdk_pixmap_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkPixmap, create_from_xpm,      NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GdkPixmap, create_from_xpm_data, NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -6615,74 +6480,60 @@ static PHP_METHOD(GdkGC, set_values)
 
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_gc_new, 0)
     ZEND_ARG_OBJ_INFO(0, drawable, GdkDrawable, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_copy, 0)
     ZEND_ARG_OBJ_INFO(0, src_gc, GdkGC, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_offset, 0)
     ZEND_ARG_INFO(0, x_offset)
     ZEND_ARG_INFO(0, y_offset)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_background, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_clip_mask, 0)
     ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_clip_origin, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_clip_rectangle, 0)
     ZEND_ARG_OBJ_INFO(0, rectangle, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_colormap, 0)
     ZEND_ARG_OBJ_INFO(0, colormap, GdkColormap, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_exposures, 0)
     ZEND_ARG_INFO(0, exposures)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_fill, 0)
     ZEND_ARG_INFO(0, fill)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_font, 0)
     ZEND_ARG_OBJ_INFO(0, font, GdkFont, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_foreground, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_function, 0)
     ZEND_ARG_INFO(0, function)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_line_attributes, 0)
     ZEND_ARG_INFO(0, line_width)
     ZEND_ARG_INFO(0, line_style)
@@ -6690,38 +6541,32 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_line_attributes, 0)
     ZEND_ARG_INFO(0, join_style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_rgb_bg_color, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_rgb_fg_color, 0)
     ZEND_ARG_OBJ_INFO(0, color, GdkColor, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_stipple, 0)
     ZEND_ARG_OBJ_INFO(0, stipple, GdkPixmap, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_subwindow, 0)
     ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_tile, 0)
     ZEND_ARG_OBJ_INFO(0, tile, GdkPixmap, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkgc_set_ts_origin, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkgc_methods[] = {
+static zend_function_entry gdkgc_methods[] = {
 	PHP_ME(GdkGC, __construct,          arginfo_gdk_gdkgc_gc_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkGC, copy,                 arginfo_gdk_gdkgc_copy, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkGC, get_colormap,         NULL, ZEND_ACC_PUBLIC)
@@ -6830,7 +6675,6 @@ static PHP_METHOD(GdkImage, set_colormap)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkimage_gdk_image_new, 0)
     ZEND_ARG_INFO(0, type)
     ZEND_ARG_OBJ_INFO(0, visual, GdkVisual, 1)
@@ -6838,25 +6682,22 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkimage_gdk_image_new, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkimage_get_pixel, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkimage_put_pixel, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
     ZEND_ARG_INFO(0, pixel)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkimage_set_colormap, 0)
     ZEND_ARG_OBJ_INFO(0, colormap, GdkColormap, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkimage_methods[] = {
+static zend_function_entry gdkimage_methods[] = {
 	PHP_ME(GdkImage, __construct,          arginfo_gdk_gdkimage_gdk_image_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkImage, get_colormap,         NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkImage, get_pixel,            arginfo_gdk_gdkimage_get_pixel, ZEND_ACC_PUBLIC)
@@ -6904,12 +6745,11 @@ static PHP_METHOD(GdkKeymap, get_for_display)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkkeymap_get_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkkeymap_methods[] = {
+static zend_function_entry gdkkeymap_methods[] = {
 	PHP_ME(GdkKeymap, get_default,          NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GdkKeymap, get_direction,        NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkKeymap, get_for_display,      arginfo_gdk_gdkkeymap_get_for_display, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -8096,7 +7936,6 @@ static PHP_METHOD(GdkPixbuf, fill_area)
 #line 8097 "ext/gtk+/gen_gdk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_gdk_pixbuf_new, 0)
     ZEND_ARG_INFO(0, colorspace)
     ZEND_ARG_INFO(0, has_alpha)
@@ -8106,25 +7945,21 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_gdk_pixbuf_new, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_pixbuf_new_from_file, 0)
     ZEND_ARG_INFO(0, filename)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_pixbuf_new_from_file_at_size, 0)
     ZEND_ARG_INFO(0, filename)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_pixbuf_new_from_xpm_data, 0)
     ZEND_ARG_INFO(0, data)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_add_alpha, 0, 0, 0)
     ZEND_ARG_INFO(0, red)
     ZEND_ARG_INFO(0, green)
@@ -8132,7 +7967,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_add_alpha, 0, 0, 0)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_composite, 0)
     ZEND_ARG_OBJ_INFO(0, dest, GdkPixbuf, 1)
     ZEND_ARG_INFO(0, dest_x)
@@ -8147,7 +7981,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_composite, 0)
     ZEND_ARG_INFO(0, overall_alpha)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_composite_color, 0)
     ZEND_ARG_OBJ_INFO(0, dest, GdkPixbuf, 1)
     ZEND_ARG_INFO(0, dest_x)
@@ -8167,7 +8000,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_composite_color, 0)
     ZEND_ARG_INFO(0, color2)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_composite_color_simple, 0)
     ZEND_ARG_INFO(0, dest_width)
     ZEND_ARG_INFO(0, dest_height)
@@ -8178,7 +8010,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_composite_color_simple, 0)
     ZEND_ARG_INFO(0, color2)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_copy_area, 0)
     ZEND_ARG_INFO(0, src_x)
     ZEND_ARG_INFO(0, src_y)
@@ -8188,7 +8019,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_copy_area, 0)
     ZEND_ARG_INFO(0, dest_x)
     ZEND_ARG_INFO(0, dest_y)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_fill, 0, 0, 1)
     ZEND_ARG_INFO(0, pixel_or_red)
     ZEND_ARG_INFO(0, green)
@@ -8197,7 +8027,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_fill, 0, 0, 1)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_get_from_drawable, 0)
     ZEND_ARG_OBJ_INFO(0, src, GdkDrawable, 1)
     ZEND_ARG_OBJ_INFO(0, cmap, GdkColormap, 1)
@@ -8209,7 +8038,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_get_from_drawable, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_get_from_image, 0)
     ZEND_ARG_OBJ_INFO(0, src, GdkImage, 1)
     ZEND_ARG_OBJ_INFO(0, cmap, GdkColormap, 1)
@@ -8221,25 +8049,21 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_get_from_image, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_get_option, 0)
     ZEND_ARG_INFO(0, key)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_subpixbuf, 0)
     ZEND_ARG_INFO(0, src_x)
     ZEND_ARG_INFO(0, src_y)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_render_pixmap_and_mask, 0, 0, 0)
     ZEND_ARG_INFO(0, alpha_threshold)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_render_to_drawable, 0, 0, 8)
     ZEND_ARG_OBJ_INFO(0, drawable, GdkDrawable, 1)
     ZEND_ARG_OBJ_INFO(0, gc, GdkGC, 1)
@@ -8254,7 +8078,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_render_to_drawable, 0, 0, 8)
     ZEND_ARG_INFO(0, y_dither)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_render_to_drawable_alpha, 0, 0, 9)
     ZEND_ARG_OBJ_INFO(0, drawable, GdkDrawable, 1)
     ZEND_ARG_INFO(0, src_x)
@@ -8270,13 +8093,11 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_render_to_drawable_alpha, 0, 0, 9)
     ZEND_ARG_INFO(0, y_dither)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_saturate_and_pixelate, 0)
     ZEND_ARG_OBJ_INFO(0, dest, GdkPixbuf, 1)
     ZEND_ARG_INFO(0, saturation)
     ZEND_ARG_INFO(0, pixelate)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_save, 0, 0, 2)
     ZEND_ARG_INFO(0, filename)
     ZEND_ARG_INFO(0, type)
@@ -8284,7 +8105,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_save, 0, 0, 2)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_scale, 0)
     ZEND_ARG_OBJ_INFO(0, dest, GdkPixbuf, 1)
     ZEND_ARG_INFO(0, dest_x)
@@ -8298,24 +8118,20 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_scale, 0)
     ZEND_ARG_INFO(0, interp_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_scale_simple, 0)
     ZEND_ARG_INFO(0, dest_width)
     ZEND_ARG_INFO(0, dest_height)
     ZEND_ARG_INFO(0, interp_type)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_new_from_gd, 0)
     ZEND_ARG_INFO(0, gd)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbuf_get_pixel, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_put_pixel, 0, 0, 3)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -8325,7 +8141,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_put_pixel, 0, 0, 3)
     ZEND_ARG_INFO(0, alpha)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_fill_area, 0, 0, 5)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -8338,7 +8153,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkpixbuf_fill_area, 0, 0, 5)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gdkpixbuf_methods[] = {
+static zend_function_entry gdkpixbuf_methods[] = {
 	PHP_ME(GdkPixbuf, __construct,          arginfo_gdk_gdkpixbuf_gdk_pixbuf_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkPixbuf, new_from_file,        arginfo_gdk_gdkpixbuf_pixbuf_new_from_file, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GdkPixbuf, new_from_file_at_size, arginfo_gdk_gdkpixbuf_pixbuf_new_from_file_at_size, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -8458,13 +8273,12 @@ static PHP_METHOD(GdkPixbufAnimation, is_static_image)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbufanimation_gdk_pixbuf_animation_new_from_file, 0)
     ZEND_ARG_INFO(0, filename)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkpixbufanimation_methods[] = {
+static zend_function_entry gdkpixbufanimation_methods[] = {
 	PHP_ME(GdkPixbufAnimation, __construct,          arginfo_gdk_gdkpixbufanimation_gdk_pixbuf_animation_new_from_file, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkPixbufAnimation, get_height,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkPixbufAnimation, get_static_image,     NULL, ZEND_ACC_PUBLIC)
@@ -8515,7 +8329,7 @@ static PHP_METHOD(GdkPixbufAnimationIter, on_currently_loading_frame)
 }
 
 
-static function_entry gdkpixbufanimationiter_methods[] = {
+static zend_function_entry gdkpixbufanimationiter_methods[] = {
 	PHP_ME(GdkPixbufAnimationIter, get_delay_time,       NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkPixbufAnimationIter, get_pixbuf,           NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkPixbufAnimationIter, on_currently_loading_frame, NULL, ZEND_ACC_PUBLIC)
@@ -8607,24 +8421,21 @@ static PHP_METHOD(GdkPixbufLoader, set_size)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbufloader_gdk_pixbuf_loader_new_with_type, 0)
     ZEND_ARG_INFO(0, image_type)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbufloader_close, 0)
     ZEND_ARG_INFO(0, error)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkpixbufloader_set_size, 0)
     ZEND_ARG_INFO(0, width)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkpixbufloader_methods[] = {
+static zend_function_entry gdkpixbufloader_methods[] = {
 	PHP_ME(GdkPixbufLoader, __construct,          arginfo_gdk_gdkpixbufloader_gdk_pixbuf_loader_new_with_type, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkPixbufLoader, close,                arginfo_gdk_gdkpixbufloader_close, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkPixbufLoader, get_animation,        NULL, ZEND_ACC_PUBLIC)
@@ -9038,34 +8849,29 @@ static PHP_METHOD(GdkScreen, width_mm)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkscreen_broadcast_client_message, 0)
     ZEND_ARG_OBJ_INFO(0, event, GdkEvent, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkscreen_get_monitor_at_point, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkscreen_get_monitor_at_window, 0)
     ZEND_ARG_OBJ_INFO(0, window, GdkWindow, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkscreen_get_monitor_geometry, 0)
     ZEND_ARG_INFO(0, monitor_num)
     ZEND_ARG_OBJ_INFO(0, dest, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkscreen_set_default_colormap, 0)
     ZEND_ARG_OBJ_INFO(0, colormap, GdkColormap, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkscreen_methods[] = {
+static zend_function_entry gdkscreen_methods[] = {
 	PHP_ME(GdkScreen, broadcast_client_message, arginfo_gdk_gdkscreen_broadcast_client_message, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkScreen, get_default,          NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GdkScreen, get_default_colormap, NULL, ZEND_ACC_PUBLIC)
@@ -9389,23 +9195,20 @@ static PHP_METHOD(GdkVisual, get_system)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkvisual_get_best_with_both, 0)
     ZEND_ARG_INFO(0, depth)
     ZEND_ARG_INFO(0, visual_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkvisual_get_best_with_depth, 0)
     ZEND_ARG_INFO(0, depth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkvisual_get_best_with_type, 0)
     ZEND_ARG_INFO(0, visual_type)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkvisual_methods[] = {
+static zend_function_entry gdkvisual_methods[] = {
 	PHP_ME(GdkVisual, get_best,             NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GdkVisual, get_best_depth,       NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GdkVisual, get_best_type,        NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -10154,22 +9957,19 @@ static PHP_METHOD(GdkEvent, set_screen)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkevent_event_new, 0)
     ZEND_ARG_INFO(0, type)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkevent_get_axis, 0)
     ZEND_ARG_INFO(0, axis_type)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkevent_set_screen, 0)
     ZEND_ARG_OBJ_INFO(0, screen, GdkScreen, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkevent_methods[] = {
+static zend_function_entry gdkevent_methods[] = {
 	PHP_ME(GdkEvent, __construct,          arginfo_gdk_gdkevent_event_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkEvent, copy,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkEvent, free,                 NULL, ZEND_ACC_PUBLIC)
@@ -10438,60 +10238,50 @@ static PHP_METHOD(GdkFont, width)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkfont_font_load, 0)
     ZEND_ARG_INFO(0, font_name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkfont_char_height, 0)
     ZEND_ARG_INFO(0, character)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkfont_char_measure, 0)
     ZEND_ARG_INFO(0, character)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkfont_char_width, 0)
     ZEND_ARG_INFO(0, character)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkfont_string_height, 0)
     ZEND_ARG_INFO(0, string)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkfont_string_measure, 0)
     ZEND_ARG_INFO(0, string)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkfont_string_width, 0)
     ZEND_ARG_INFO(0, string)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkfont_height, 0, 0, 1)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, text_length)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkfont_measure, 0, 0, 1)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, text_length)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkfont_width, 0, 0, 1)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, text_length)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkfont_methods[] = {
+static zend_function_entry gdkfont_methods[] = {
 	PHP_ME(GdkFont, __construct,          arginfo_gdk_gdkfont_font_load, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkFont, char_height,          arginfo_gdk_gdkfont_char_height, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkFont, char_measure,         arginfo_gdk_gdkfont_char_measure, ZEND_ACC_PUBLIC)
@@ -10673,7 +10463,6 @@ static PHP_METHOD(GdkColor, parse)
 #line 10674 "ext/gtk+/gen_gdk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkcolor_gdk_color_new, 0, 0, 0)
     ZEND_ARG_INFO(0, red)
     ZEND_ARG_INFO(0, blue)
@@ -10681,14 +10470,13 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_gdk_gdkcolor_gdk_color_new, 0, 0, 0)
     ZEND_ARG_INFO(0, allocated)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcolor_color_parse, 0)
     ZEND_ARG_INFO(0, color)
 ZEND_END_ARG_INFO();
 
 
 
-static function_entry gdkcolor_methods[] = {
+static zend_function_entry gdkcolor_methods[] = {
 	PHP_ME(GdkColor, __construct,          arginfo_gdk_gdkcolor_gdk_color_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkColor, parse,          arginfo_gdk_gdkcolor_color_parse, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	{ NULL, NULL, NULL }
@@ -10828,18 +10616,15 @@ static PHP_METHOD(GdkCursor, get_display)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcursor_cursor_new, 0)
     ZEND_ARG_INFO(0, cursor_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcursor_cursor_new_for_display, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_INFO(0, cursor_type)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcursor_cursor_new_from_pixbuf, 0)
     ZEND_ARG_OBJ_INFO(0, display, GdkDisplay, 1)
     ZEND_ARG_OBJ_INFO(0, source, GdkPixbuf, 1)
@@ -10847,7 +10632,6 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcursor_cursor_new_from_pixbuf, 0)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcursor_cursor_new_from_pixmap, 0)
     ZEND_ARG_OBJ_INFO(0, source, GdkPixmap, 1)
     ZEND_ARG_OBJ_INFO(0, mask, GdkPixmap, 1)
@@ -10857,7 +10641,7 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkcursor_cursor_new_from_pixmap, 0)
     ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static function_entry gdkcursor_methods[] = {
+static zend_function_entry gdkcursor_methods[] = {
 	PHP_ME(GdkCursor, __construct,          arginfo_gdk_gdkcursor_cursor_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkCursor, new_for_display,      arginfo_gdk_gdkcursor_cursor_new_for_display, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GdkCursor, new_from_pixbuf,      arginfo_gdk_gdkcursor_cursor_new_from_pixbuf, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
@@ -10983,7 +10767,6 @@ static PHP_METHOD(GdkRectangle, union)
 #line 10984 "ext/gtk+/gen_gdk.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkrectangle_gdk_rectangle_new, 0)
     ZEND_ARG_INFO(0, x)
     ZEND_ARG_INFO(0, y)
@@ -10991,18 +10774,16 @@ ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkrectangle_gdk_rectangle_new, 0)
     ZEND_ARG_INFO(0, height)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkrectangle_intersect, 0)
     ZEND_ARG_OBJ_INFO(0, rect, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_gdk_gdkrectangle_union, 0)
     ZEND_ARG_OBJ_INFO(0, rect, GdkRectangle, 1)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gdkrectangle_methods[] = {
+static zend_function_entry gdkrectangle_methods[] = {
 	PHP_ME(GdkRectangle, __construct,          arginfo_gdk_gdkrectangle_gdk_rectangle_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkRectangle, intersect,            arginfo_gdk_gdkrectangle_intersect, ZEND_ACC_PUBLIC)
 	PHP_ME(GdkRectangle, union,                arginfo_gdk_gdkrectangle_union, ZEND_ACC_PUBLIC)

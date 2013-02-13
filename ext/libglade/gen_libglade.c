@@ -57,17 +57,15 @@ static PHP_METHOD(Glade, get_widget_tree)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_glade_glade_get_widget_name, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_glade_glade_get_widget_tree, 0)
     ZEND_ARG_OBJ_INFO(0, widget, GtkWidget, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry glade_methods[] = {
+static zend_function_entry glade_methods[] = {
 	PHP_ME(Glade, get_widget_name,      arginfo_glade_glade_get_widget_name, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(Glade, get_widget_tree,      arginfo_glade_glade_get_widget_tree, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	{ NULL, NULL, NULL }
@@ -454,14 +452,12 @@ static PHP_METHOD(GladeXML, signal_autoconnect_instance)
 #line 455 "ext/libglade/gen_libglade.c"
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_glade_gladexml_glade_xml_new, 0, 0, 1)
     ZEND_ARG_INFO(0, filename)
     ZEND_ARG_INFO(0, root)
     ZEND_ARG_INFO(0, domain)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_glade_gladexml_glade_xml_new_from_buffer, 0, 0, 1)
     ZEND_ARG_INFO(0, buffer)
     ZEND_ARG_INFO(0, root)
@@ -469,27 +465,23 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_glade_gladexml_glade_xml_new_from_buffer, 0, 0, 1
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_glade_gladexml_get_widget, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_glade_gladexml_get_widget_prefix, 0)
     ZEND_ARG_INFO(0, prefix)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_glade_gladexml_relative_file, 0)
     ZEND_ARG_INFO(0, filename)
 ZEND_END_ARG_INFO();
-static
 ZEND_BEGIN_ARG_INFO(arginfo_glade_gladexml_signal_autoconnect_instance, 0)
     ZEND_ARG_INFO(0, object)
 ZEND_END_ARG_INFO();
 
 
-static function_entry gladexml_methods[] = {
+static zend_function_entry gladexml_methods[] = {
 	PHP_ME(GladeXML, __construct,          arginfo_glade_gladexml_glade_xml_new, ZEND_ACC_PUBLIC)
 	PHP_ME(GladeXML, new_from_buffer,      arginfo_glade_gladexml_glade_xml_new_from_buffer, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(GladeXML, get_widget,           arginfo_glade_gladexml_get_widget, ZEND_ACC_PUBLIC)

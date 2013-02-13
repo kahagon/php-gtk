@@ -63,7 +63,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkSourceBuffer set_escape_char
-static
 ZEND_BEGIN_ARG_INFO(ARGINFO_NAME, 0)
     ZEND_ARG_INFO(0, char)
 ZEND_END_ARG_INFO();
@@ -114,7 +113,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkSourceLanguagesManager get_lang_files_dirs
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
@@ -243,7 +241,6 @@ PHP_METHOD
 
 %%
 add-arginfo GtkSourceStyleScheme get_style_names
-static
 ZEND_BEGIN_ARG_INFO_EX(ARGINFO_NAME, 0, 0, 0)
     ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();

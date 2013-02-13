@@ -488,14 +488,14 @@ if($sfp = new LineOutput(fopen($savefile, 'w'), $savefile)){
 				break;
 			}
 			if(isset($arginfo[$fname]['vars']) && count($arginfo[$fname]['vars'])>0){
-				$function_entry[$fname] = "PHP_ME(Scintilla, $fname,";
+				$zend_function_entry[$fname] = "PHP_ME(Scintilla, $fname,";
 				for($x=strlen($fname);$x<30;$x++){
-					$functions[$fname]['function_entry'] .= ' ';
+					$functions[$fname]['zend_function_entry'] .= ' ';
 				}
-				$function_entry[$fname] .= "arginfo_scintilla_$fname, ZEND_ACC_PUBLIC)";
+				$zend_function_entry[$fname] .= "arginfo_scintilla_$fname, ZEND_ACC_PUBLIC)";
 				
 			}else{
-				$function_entry[$fname] = "PHP_ME(Scintilla, $fname, NULL, ZEND_ACC_PUBLIC)";
+				$zend_function_entry[$fname] = "PHP_ME(Scintilla, $fname, NULL, ZEND_ACC_PUBLIC)";
 			}
 			$sfp->write("static\nPHP_METHOD(Scintilla, $fname)\n{\n");
 			foreach($functions[$fname]['decl'] as $decl){
@@ -542,8 +542,8 @@ if($sfp = new LineOutput(fopen($savefile, 'w'), $savefile)){
 				$sfp->write("ZEND_END_ARG_INFO();\n");
 			}
 		}
-		$sfp->write("\nstatic function_entry scintilla_methods[] = {\n\tPHP_ME(Scintilla, __construct, NULL, ZEND_ACC_PUBLIC)\n");
-		foreach($function_entry as $entry){
+		$sfp->write("\nstatic zend_function_entry scintilla_methods[] = {\n\tPHP_ME(Scintilla, __construct, NULL, ZEND_ACC_PUBLIC)\n");
+		foreach($zend_function_entry as $entry){
 			$sfp->write("\t$entry\n");
 		}
 		$sfp->write("\t{ NULL, NULL, NULL }\n};\n");
@@ -558,7 +558,7 @@ if($sfp = new LineOutput(fopen($savefile, 'w'), $savefile)){
 		$sfp->write("\n#endif /* HAVE_SCINTILLA */\n");
 		//print_r($const);
 		print_r($typelist);  //missing types
-		//print_r($function_entry);
+		//print_r($zend_function_entry);
 		//print_r($arginfo);
 	}
 }

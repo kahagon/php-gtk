@@ -6864,656 +6864,535 @@ PHP_METHOD(Scintilla, get_style_bits_needed)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_add_text, 0)
 	ZEND_ARG_INFO(0, text)
 	ZEND_ARG_INFO(0, length)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_add_styled_text, 0)
 	ZEND_ARG_INFO(0, length)
 	ZEND_ARG_INFO(0, c)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_insert_text, 0)
 	ZEND_ARG_INFO(0, pos)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_char_at, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_style_at, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_undo_collection, 0)
 	ZEND_ARG_INFO(0, collectUndo)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_styled_text, 0)
 	ZEND_ARG_INFO(0, start)
 	ZEND_ARG_INFO(0, end)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_line_from_handle, 0)
 	ZEND_ARG_INFO(0, handle)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_delete_handle, 0)
 	ZEND_ARG_INFO(0, handle)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_view_ws, 0)
 	ZEND_ARG_INFO(0, viewWS)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_position_from_point, 0)
 	ZEND_ARG_INFO(0, x)
 	ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_position_from_point_close, 0)
 	ZEND_ARG_INFO(0, x)
 	ZEND_ARG_INFO(0, y)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_goto_line, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_goto_pos, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_anchor, 0)
 	ZEND_ARG_INFO(0, posAnchor)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_convert_eols, 0)
 	ZEND_ARG_INFO(0, eolMode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_eol_mode, 0)
 	ZEND_ARG_INFO(0, eolMode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_start_styling, 0)
 	ZEND_ARG_INFO(0, pos)
 	ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_styling, 0)
 	ZEND_ARG_INFO(0, length)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_buffered_draw, 0)
 	ZEND_ARG_INFO(0, buffered)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_tab_width, 0)
 	ZEND_ARG_INFO(0, tabWidth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_code_page, 0)
 	ZEND_ARG_INFO(0, codePage)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_use_palette, 0)
 	ZEND_ARG_INFO(0, usePalette)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_define, 0)
 	ZEND_ARG_INFO(0, markerNumber)
 	ZEND_ARG_INFO(0, markerSymbol)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_set_fore, 0)
 	ZEND_ARG_INFO(0, markerNumber)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_set_back, 0)
 	ZEND_ARG_INFO(0, markerNumber)
 	ZEND_ARG_INFO(0, back)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_add, 0)
 	ZEND_ARG_INFO(0, line)
 	ZEND_ARG_INFO(0, markerNumber)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_delete, 0)
 	ZEND_ARG_INFO(0, line)
 	ZEND_ARG_INFO(0, markerNumber)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_delete_all, 0)
 	ZEND_ARG_INFO(0, markerNumber)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_get, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_next, 0)
 	ZEND_ARG_INFO(0, lineStart)
 	ZEND_ARG_INFO(0, markerMask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_previous, 0)
 	ZEND_ARG_INFO(0, lineStart)
 	ZEND_ARG_INFO(0, markerMask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_define_pixmap, 0)
 	ZEND_ARG_INFO(0, markerNumber)
 	ZEND_ARG_INFO(0, pixmap)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_add_set, 0)
 	ZEND_ARG_INFO(0, line)
 	ZEND_ARG_INFO(0, set)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_marker_set_alpha, 0)
 	ZEND_ARG_INFO(0, markerNumber)
 	ZEND_ARG_INFO(0, alpha)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_margin_type_n, 0)
 	ZEND_ARG_INFO(0, margin)
 	ZEND_ARG_INFO(0, marginType)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_margin_type_n, 0)
 	ZEND_ARG_INFO(0, margin)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_margin_width_n, 0)
 	ZEND_ARG_INFO(0, margin)
 	ZEND_ARG_INFO(0, pixelWidth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_margin_width_n, 0)
 	ZEND_ARG_INFO(0, margin)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_margin_mask_n, 0)
 	ZEND_ARG_INFO(0, margin)
 	ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_margin_mask_n, 0)
 	ZEND_ARG_INFO(0, margin)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_margin_sensitive_n, 0)
 	ZEND_ARG_INFO(0, margin)
 	ZEND_ARG_INFO(0, sensitive)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_margin_sensitive_n, 0)
 	ZEND_ARG_INFO(0, margin)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_fore, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_back, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, back)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_bold, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, bold)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_italic, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, italic)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_size, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, sizePoints)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_font, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, fontName)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_eol_filled, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, filled)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_underline, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, underline)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_fore, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_back, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_bold, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_italic, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_size, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_font, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, fontName)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_eol_filled, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_underline, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_case, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_character_set, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_visible, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_changeable, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_get_hot_spot, 0)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_case, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, caseForce)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_character_set, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, characterSet)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_hot_spot, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, hotspot)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_sel_fore, 0)
 	ZEND_ARG_INFO(0, useSetting)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_sel_back, 0)
 	ZEND_ARG_INFO(0, useSetting)
 	ZEND_ARG_INFO(0, back)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_sel_alpha, 0)
 	ZEND_ARG_INFO(0, alpha)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_sel_eol_filled, 0)
 	ZEND_ARG_INFO(0, filled)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_caret_fore, 0)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_assign_cmd_key, 0)
 	ZEND_ARG_INFO(0, km)
 	ZEND_ARG_INFO(0, msg)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_clear_cmd_key, 0)
 	ZEND_ARG_INFO(0, km)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_styling_ex, 0)
 	ZEND_ARG_INFO(0, length)
 	ZEND_ARG_INFO(0, styles)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_visible, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, visible)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_caret_period, 0)
 	ZEND_ARG_INFO(0, periodMilliseconds)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_word_chars, 0)
 	ZEND_ARG_INFO(0, characters)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_indic_set_style, 0)
 	ZEND_ARG_INFO(0, indic)
 	ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_indic_get_style, 0)
 	ZEND_ARG_INFO(0, indic)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_indic_set_fore, 0)
 	ZEND_ARG_INFO(0, indic)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_indic_get_fore, 0)
 	ZEND_ARG_INFO(0, indic)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_whitespace_fore, 0)
 	ZEND_ARG_INFO(0, useSetting)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_whitespace_back, 0)
 	ZEND_ARG_INFO(0, useSetting)
 	ZEND_ARG_INFO(0, back)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_style_bits, 0)
 	ZEND_ARG_INFO(0, bits)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_line_state, 0)
 	ZEND_ARG_INFO(0, line)
 	ZEND_ARG_INFO(0, state)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_line_state, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_caret_line_visible, 0)
 	ZEND_ARG_INFO(0, show)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_caret_line_back, 0)
 	ZEND_ARG_INFO(0, back)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_style_set_changeable, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, changeable)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cshow, 0)
 	ZEND_ARG_INFO(0, lenEntered)
 	ZEND_ARG_INFO(0, itemList)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cstops, 0)
 	ZEND_ARG_INFO(0, characterSet)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_separator, 0)
 	ZEND_ARG_INFO(0, separatorCharacter)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cselect, 0)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_cancel_at_start, 0)
 	ZEND_ARG_INFO(0, cancel)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_fill_ups, 0)
 	ZEND_ARG_INFO(0, characterSet)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_choose_single, 0)
 	ZEND_ARG_INFO(0, chooseSingle)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_ignore_case, 0)
 	ZEND_ARG_INFO(0, ignoreCase)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_user_list_show, 0)
 	ZEND_ARG_INFO(0, listType)
 	ZEND_ARG_INFO(0, itemList)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_auto_hide, 0)
 	ZEND_ARG_INFO(0, autoHide)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_drop_rest_of_word, 0)
 	ZEND_ARG_INFO(0, dropRestOfWord)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_register_image, 0)
 	ZEND_ARG_INFO(0, type)
 	ZEND_ARG_INFO(0, xpmData)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_type_separator, 0)
 	ZEND_ARG_INFO(0, separatorCharacter)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_max_width, 0)
 	ZEND_ARG_INFO(0, characterCount)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_auto_cset_max_height, 0)
 	ZEND_ARG_INFO(0, rowCount)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_indent, 0)
 	ZEND_ARG_INFO(0, indentSize)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_use_tabs, 0)
 	ZEND_ARG_INFO(0, useTabs)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_line_indentation, 0)
 	ZEND_ARG_INFO(0, line)
 	ZEND_ARG_INFO(0, indentSize)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_line_indentation, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_line_indent_position, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_column, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_hscroll_bar, 0)
 	ZEND_ARG_INFO(0, show)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_indentation_guides, 0)
 	ZEND_ARG_INFO(0, show)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_highlight_guide, 0)
 	ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_line_end_position, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_current_pos, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_selection_start, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_selection_end, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_print_magnification, 0)
 	ZEND_ARG_INFO(0, magnification)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_print_colour_mode, 0)
 	ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_find_text, 0)
 	ZEND_ARG_INFO(0, flags)
 	ZEND_ARG_INFO(0, text)
@@ -7521,630 +7400,512 @@ ZEND_BEGIN_ARG_INFO(arginfo_scintilla_find_text, 0)
 	ZEND_ARG_INFO(0, chrg_max)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_line, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_margin_left, 0)
 	ZEND_ARG_INFO(0, pixelWidth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_margin_right, 0)
 	ZEND_ARG_INFO(0, pixelWidth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_sel, 0)
 	ZEND_ARG_INFO(0, start)
 	ZEND_ARG_INFO(0, end)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_text_range, 0)
 	ZEND_ARG_INFO(0, start)
 	ZEND_ARG_INFO(0, end)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_hide_selection, 0)
 	ZEND_ARG_INFO(0, normal)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_point_xfrom_position, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_point_yfrom_position, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_line_from_position, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_position_from_line, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_line_scroll, 0)
 	ZEND_ARG_INFO(0, columns)
 	ZEND_ARG_INFO(0, lines)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_replace_sel, 0)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_read_only, 0)
 	ZEND_ARG_INFO(0, readOnly)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_text, 0)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_text, 0)
 	ZEND_ARG_INFO(0, length)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_overtype, 0)
 	ZEND_ARG_INFO(0, overtype)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_caret_width, 0)
 	ZEND_ARG_INFO(0, pixelWidth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_target_start, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_target_end, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_replace_target, 0)
 	ZEND_ARG_INFO(0, length)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_replace_target_re, 0)
 	ZEND_ARG_INFO(0, length)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_search_in_target, 0)
 	ZEND_ARG_INFO(0, length)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_search_flags, 0)
 	ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_call_tip_show, 0)
 	ZEND_ARG_INFO(0, pos)
 	ZEND_ARG_INFO(0, definition)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_call_tip_set_hlt, 0)
 	ZEND_ARG_INFO(0, start)
 	ZEND_ARG_INFO(0, end)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_call_tip_set_back, 0)
 	ZEND_ARG_INFO(0, back)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_call_tip_set_fore, 0)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_call_tip_set_fore_hlt, 0)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_call_tip_use_style, 0)
 	ZEND_ARG_INFO(0, tabSize)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_visible_from_doc_line, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_doc_line_from_visible, 0)
 	ZEND_ARG_INFO(0, lineDisplay)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_wrap_count, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_fold_level, 0)
 	ZEND_ARG_INFO(0, line)
 	ZEND_ARG_INFO(0, level)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_fold_level, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_last_child, 0)
 	ZEND_ARG_INFO(0, line)
 	ZEND_ARG_INFO(0, level)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_fold_parent, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_show_lines, 0)
 	ZEND_ARG_INFO(0, lineStart)
 	ZEND_ARG_INFO(0, lineEnd)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_hide_lines, 0)
 	ZEND_ARG_INFO(0, lineStart)
 	ZEND_ARG_INFO(0, lineEnd)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_line_visible, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_fold_expanded, 0)
 	ZEND_ARG_INFO(0, line)
 	ZEND_ARG_INFO(0, expanded)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_fold_expanded, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_toggle_fold, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_ensure_visible, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_fold_flags, 0)
 	ZEND_ARG_INFO(0, flags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_ensure_visible_enforce_policy, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_tab_indents, 0)
 	ZEND_ARG_INFO(0, tabIndents)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_backspace_unindents, 0)
 	ZEND_ARG_INFO(0, bsUnIndents)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_mouse_dwell_time, 0)
 	ZEND_ARG_INFO(0, periodMilliseconds)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_word_start_position, 0)
 	ZEND_ARG_INFO(0, pos)
 	ZEND_ARG_INFO(0, onlyWordCharacters)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_word_end_position, 0)
 	ZEND_ARG_INFO(0, pos)
 	ZEND_ARG_INFO(0, onlyWordCharacters)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_wrap_mode, 0)
 	ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_wrap_visual_flags, 0)
 	ZEND_ARG_INFO(0, wrapVisualFlags)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_wrap_visual_flags_location, 0)
 	ZEND_ARG_INFO(0, wrapVisualFlagsLocation)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_wrap_start_indent, 0)
 	ZEND_ARG_INFO(0, indent)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_layout_cache, 0)
 	ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_scroll_width, 0)
 	ZEND_ARG_INFO(0, pixelWidth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_text_width, 0)
 	ZEND_ARG_INFO(0, style)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_end_at_last_line, 0)
 	ZEND_ARG_INFO(0, endAtLastLine)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_text_height, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_vscroll_bar, 0)
 	ZEND_ARG_INFO(0, show)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_append_text, 0)
 	ZEND_ARG_INFO(0, length)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_two_phase_draw, 0)
 	ZEND_ARG_INFO(0, twoPhase)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_lines_split, 0)
 	ZEND_ARG_INFO(0, pixelWidth)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_fold_margin_colour, 0)
 	ZEND_ARG_INFO(0, useSetting)
 	ZEND_ARG_INFO(0, back)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_fold_margin_hi_colour, 0)
 	ZEND_ARG_INFO(0, useSetting)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_line_length, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_brace_highlight, 0)
 	ZEND_ARG_INFO(0, pos1)
 	ZEND_ARG_INFO(0, pos2)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_brace_bad_light, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_brace_match, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_view_eol, 0)
 	ZEND_ARG_INFO(0, visible)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_doc_pointer, 0)
 	ZEND_ARG_INFO(0, pointer)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_mod_event_mask, 0)
 	ZEND_ARG_INFO(0, mask)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_edge_column, 0)
 	ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_edge_mode, 0)
 	ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_edge_colour, 0)
 	ZEND_ARG_INFO(0, edgeColour)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_search_next, 0)
 	ZEND_ARG_INFO(0, flags)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_search_prev, 0)
 	ZEND_ARG_INFO(0, flags)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_use_pop_up, 0)
 	ZEND_ARG_INFO(0, allowPopUp)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_zoom, 0)
 	ZEND_ARG_INFO(0, zoom)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_add_ref_document, 0)
 	ZEND_ARG_INFO(0, doc)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_release_document, 0)
 	ZEND_ARG_INFO(0, doc)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_focus, 0)
 	ZEND_ARG_INFO(0, focus)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_status, 0)
 	ZEND_ARG_INFO(0, statusCode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_mouse_down_captures, 0)
 	ZEND_ARG_INFO(0, captures)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_cursor, 0)
 	ZEND_ARG_INFO(0, cursorType)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_control_char_symbol, 0)
 	ZEND_ARG_INFO(0, symbol)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_visible_policy, 0)
 	ZEND_ARG_INFO(0, visiblePolicy)
 	ZEND_ARG_INFO(0, visibleSlop)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_xoffset, 0)
 	ZEND_ARG_INFO(0, newOffset)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_xcaret_policy, 0)
 	ZEND_ARG_INFO(0, caretPolicy)
 	ZEND_ARG_INFO(0, caretSlop)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_ycaret_policy, 0)
 	ZEND_ARG_INFO(0, caretPolicy)
 	ZEND_ARG_INFO(0, caretSlop)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_print_wrap_mode, 0)
 	ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_hotspot_active_fore, 0)
 	ZEND_ARG_INFO(0, useSetting)
 	ZEND_ARG_INFO(0, fore)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_hotspot_active_back, 0)
 	ZEND_ARG_INFO(0, useSetting)
 	ZEND_ARG_INFO(0, back)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_hotspot_active_underline, 0)
 	ZEND_ARG_INFO(0, underline)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_hotspot_single_line, 0)
 	ZEND_ARG_INFO(0, singleLine)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_position_before, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_position_after, 0)
 	ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_copy_range, 0)
 	ZEND_ARG_INFO(0, start)
 	ZEND_ARG_INFO(0, end)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_copy_text, 0)
 	ZEND_ARG_INFO(0, length)
 	ZEND_ARG_INFO(0, text)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_selection_mode, 0)
 	ZEND_ARG_INFO(0, mode)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_line_sel_start_position, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_line_sel_end_position, 0)
 	ZEND_ARG_INFO(0, line)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_whitespace_chars, 0)
 	ZEND_ARG_INFO(0, characters)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_allocate, 0)
 	ZEND_ARG_INFO(0, bytes)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_length_for_encode, 0)
 	ZEND_ARG_INFO(0, bytes)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_encoded_from_utf8, 0)
 	ZEND_ARG_INFO(0, text_in)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_find_column, 0)
 	ZEND_ARG_INFO(0, line)
 	ZEND_ARG_INFO(0, column)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_caret_sticky, 0)
 	ZEND_ARG_INFO(0, useCaretStickyBehaviour)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_paste_convert_endings, 0)
 	ZEND_ARG_INFO(0, convert)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_caret_line_back_alpha, 0)
 	ZEND_ARG_INFO(0, alpha)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_lexer, 0)
 	ZEND_ARG_INFO(0, lexer)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_colourise, 0)
 	ZEND_ARG_INFO(0, start)
 	ZEND_ARG_INFO(0, end)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_property, 0)
 	ZEND_ARG_INFO(0, key)
 	ZEND_ARG_INFO(0, value)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_keywords, 0)
 	ZEND_ARG_INFO(0, keywordSet)
 	ZEND_ARG_INFO(0, keyWords)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_set_lexer_language, 0)
 	ZEND_ARG_INFO(0, language)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_load_lexer_library, 0)
 	ZEND_ARG_INFO(0, path)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_property, 0)
 	ZEND_ARG_INFO(0, key)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_scintilla_get_property_expanded, 0)
 	ZEND_ARG_INFO(0, key)
 ZEND_END_ARG_INFO();
 
-static function_entry scintilla_methods[] = {
+static zend_function_entry scintilla_methods[] = {
 	PHP_ME(Scintilla, __construct, NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(Scintilla, add_text,arginfo_scintilla_add_text, ZEND_ACC_PUBLIC)
 	PHP_ME(Scintilla, add_styled_text,arginfo_scintilla_add_styled_text, ZEND_ACC_PUBLIC)

@@ -203,7 +203,7 @@ PHPG_PROP_READER(GParamSpec, default_value)
 }
 /* }}} */
 
-static zend_function_entry gparamspec_methods[] = {
+static zend_zend_function_entry gparamspec_methods[] = {
     PHP_ME(GParamSpec, __construct, NULL, ZEND_ACC_PRIVATE)
     PHP_ME(GParamSpec, __tostring,  NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }

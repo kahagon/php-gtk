@@ -278,7 +278,7 @@ PHP_GTK_API void phpg_init_object(void *object, zend_class_entry *ce)
 
 /* {{{ phpg_register_class() */
 PHP_GTK_API zend_class_entry* phpg_register_class(const char *class_name,
-                                                  function_entry *class_methods,
+                                                  zend_function_entry *class_methods,
                                                   zend_class_entry *parent,
                                                   zend_uint ce_flags,
                                                   prop_info_t *prop_info,
@@ -340,7 +340,7 @@ PHP_GTK_API zend_class_entry* phpg_register_class(const char *class_name,
 
 /* {{{ phpg_register_interface() */
 PHP_GTK_API zend_class_entry* phpg_register_interface(const char *iface_name,
-                                                      function_entry *iface_methods,
+                                                      zend_function_entry *iface_methods,
                                                       GType gtype TSRMLS_DC)
 {
 	zend_class_entry ce, *real_ce;

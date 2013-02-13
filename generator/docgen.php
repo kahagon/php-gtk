@@ -40,9 +40,9 @@ require 'docmerger2.php';
 require 'doc_templates.php';
 
 /**
- * DocGenerator class. It generates docs.
+ * DocPHPGtkGenerator class. It generates docs.
  */
-class DocGenerator {
+class DocPHPGtkGenerator {
     protected $parser     = null;
     protected $overrides  = null;
     protected $prefix     = null;
@@ -61,7 +61,7 @@ class DocGenerator {
      * @param  string    $output_dir The directory to write to.
      * @return void
      */
-    function DocGenerator(&$parser, &$overrides, &$docmerger, $prefix, $output_dir)
+    function DocPHPGtkGenerator(&$parser, &$overrides, &$docmerger, $prefix, $output_dir)
     {
         $this->parser       = &$parser;
         $this->overrides    = &$overrides;
@@ -974,7 +974,7 @@ foreach ($opts as $opt) {
     } else if ($opt_spec == 'r') {
         $type_parser = new Defs_Parser($opt_arg);
         $type_parser->start_parsing();
-        DocGenerator::register_types($type_parser);
+        DocPHPGtkGenerator::register_types($type_parser);
     } else if ($opt_spec == 'd') {
         $output_dir = $opt_arg;
     } else if ($opt_spec == 's') {
@@ -995,7 +995,7 @@ $parser = new Defs_Parser($argv[1]);
 //}
 
 // Create the generator.
-$generator = new DocGenerator($parser, $overrides, $docmerger, $prefix, $output_dir);
+$generator = new DocPHPGtkGenerator($parser, $overrides, $docmerger, $prefix, $output_dir);
 
 // Get to work.
 $parser->start_parsing();

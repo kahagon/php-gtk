@@ -48,7 +48,7 @@ require "templates.php";
 require "array_printf.php";
 require "lineoutput.php";
 
-class Generator {
+class PHPGtkGenerator {
     var $parser             = null;
     var $overrides          = null;
     var $prefix             = null;
@@ -75,7 +75,7 @@ class Generator {
                                     'unset_dimension', 'count_elements');
     var $cover              = array();
 
-    function Generator(&$parser, &$overrides, $prefix, $function_class)
+    function PHPGtkGenerator(&$parser, &$overrides, $prefix, $function_class)
     {
         $this->parser    = &$parser;
         $this->overrides = &$overrides;
@@ -450,7 +450,7 @@ class Generator {
                     // mark class as non-instantiable directly if we were trying
                     // to generate default constructor
                     if ($ctor_fe_name == '__construct') {
-                        $ctor_defs[] = sprintf(Templates::function_entry, $ctor_fe_name, 'no_direct_constructor', $ctor_fe_name, 'no_direct_constructor');
+                        $ctor_defs[] = sprintf(Templates::zend_function_entry, $ctor_fe_name, 'no_direct_constructor', $ctor_fe_name, 'no_direct_constructor');
                     }
                 }
                 $first = 0;
@@ -474,7 +474,7 @@ class Generator {
                 // GObject. For GObject's we let it chain up to GObject
                 // constructor
                 if ($object->def_type != 'object') {
-                    $ctor_defs[] = sprintf(Templates::function_entry, '__construct', 'no_direct_constructor', '__construct', 'no_direct_constructor');
+                    $ctor_defs[] = sprintf(Templates::zend_function_entry, '__construct', 'no_direct_constructor', '__construct', 'no_direct_constructor');
                 }
             }
         }
@@ -1081,7 +1081,7 @@ class Generator {
             }
 
             if ($this->overrides->has_extra_arginfo($class_name, $method_name)) {
-                $reflection_funcname = Generator::getReflectionFuncName($method, $class, $det_method_name);
+                $reflection_funcname = PHPGtkGenerator::getReflectionFuncName($method, $class, $det_method_name);
                 $reflection_func = str_repeat(' ', $len) . $reflection_funcname;
 
                 $arginfo = str_replace('ARGINFO_NAME', $reflection_funcname, $this->overrides->get_extra_arginfo($class_name, $method_name));
@@ -1096,7 +1096,7 @@ class Generator {
             $reflection_func = str_repeat(' ', $len) . 'NULL';
             $arginfo = null;
         } else {
-            $reflection_funcname = Generator::getReflectionFuncName($method, $class);
+            $reflection_funcname = PHPGtkGenerator::getReflectionFuncName($method, $class);
             $reflection_func = str_repeat(' ', $len) . $reflection_funcname;
 
             $param_count = 0;
@@ -1110,7 +1110,7 @@ class Generator {
                 }
 
                 $paramtype = str_replace('const-', '', str_replace('*', '', $paraminfo[0]));
-                if (Generator::is_php_type($paramtype)) {
+                if (PHPGtkGenerator::is_php_type($paramtype)) {
                     $argparams .= sprintf(Templates::reflection_arg, $paraminfo[1]);
                 } else {
                     $argparams .= sprintf(Templates::reflection_objarg, $paraminfo[1], $paramtype);
@@ -1509,7 +1509,7 @@ if (file_exists(dirname($argv[1]) . '/arg_types.php')) {
 
 $overrides = new Overrides($overrides, $gtkversion);
 $parser = new Defs_Parser($argv[1], $gtkversion);
-$generator = new Generator($parser, $overrides, $prefix, $function_class);
+$generator = new PHPGtkGenerator($parser, $overrides, $prefix, $function_class);
 $generator->set_logfile($logfile);
 foreach ($register_defs as $defs) {
     $type_parser = new Defs_Parser($defs, $gtkversion);

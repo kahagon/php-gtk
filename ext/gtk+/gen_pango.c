@@ -51,17 +51,15 @@ static PHP_METHOD(Pango, PIXELS)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pango_pango_attr_type_register, 0)
     ZEND_ARG_INFO(0, name)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pango_PIXELS, 0)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static function_entry pango_methods[] = {
+static zend_function_entry pango_methods[] = {
 	PHP_ME(Pango, PIXELS,               arginfo_pango_pango_PIXELS, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(Pango, attr_type_register, arginfo_pango_pango_pango_attr_type_register, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	{ NULL, NULL, NULL }
@@ -305,44 +303,37 @@ static PHP_METHOD(PangoContext, get_base_dir)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangocontext_add_font_map, 0)
     ZEND_ARG_OBJ_INFO(0, font_map, PangoFontMap, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangocontext_load_font, 0)
     ZEND_ARG_OBJ_INFO(0, desc, PangoFontDescription, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangocontext_load_fontset, 0)
     ZEND_ARG_OBJ_INFO(0, desc, PangoFontDescription, 1)
     ZEND_ARG_OBJ_INFO(0, language, PangoLanguage, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_pango_pangocontext_get_metrics, 0, 0, 1)
     ZEND_ARG_OBJ_INFO(0, desc, PangoFontDescription, 1)
     ZEND_ARG_OBJ_INFO(0, language, PangoLanguage, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangocontext_set_font_description, 0)
     ZEND_ARG_OBJ_INFO(0, desc, PangoFontDescription, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangocontext_set_language, 0)
     ZEND_ARG_OBJ_INFO(0, language, PangoLanguage, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangocontext_set_base_dir, 0)
     ZEND_ARG_INFO(0, direction)
 ZEND_END_ARG_INFO();
 
-static function_entry pangocontext_methods[] = {
+static zend_function_entry pangocontext_methods[] = {
 	PHP_ME(PangoContext, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoContext, add_font_map,         arginfo_pango_pangocontext_add_font_map, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoContext, get_base_dir,         NULL, ZEND_ACC_PUBLIC)
@@ -402,12 +393,11 @@ static PHP_METHOD(PangoFont, get_metrics)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_pango_pangofont_get_metrics, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, language, PangoLanguage, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry pangofont_methods[] = {
+static zend_function_entry pangofont_methods[] = {
 	PHP_ME(PangoFont, describe,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFont, get_metrics,          arginfo_pango_pangofont_get_metrics, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -479,7 +469,7 @@ static PHP_METHOD(PangoFontFace, list_sizes)
 
 
 
-static function_entry pangofontface_methods[] = {
+static zend_function_entry pangofontface_methods[] = {
 	PHP_ME(PangoFontFace, describe,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFontFace, get_face_name,        NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFontFace, list_sizes,           NULL, ZEND_ACC_PUBLIC)
@@ -528,7 +518,7 @@ static PHP_METHOD(PangoFontFamily, is_monospace)
 }
 
 
-static function_entry pangofontfamily_methods[] = {
+static zend_function_entry pangofontfamily_methods[] = {
 	PHP_ME(PangoFontFamily, get_name,             NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFontFamily, is_monospace,         NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -619,20 +609,18 @@ static PHP_METHOD(PangoFontMap, get_shape_engine_type)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontmap_load_font, 0)
     ZEND_ARG_OBJ_INFO(0, context, PangoContext, 1)
     ZEND_ARG_OBJ_INFO(0, desc, PangoFontDescription, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontmap_load_fontset, 0)
     ZEND_ARG_OBJ_INFO(0, context, PangoContext, 1)
     ZEND_ARG_OBJ_INFO(0, desc, PangoFontDescription, 1)
     ZEND_ARG_OBJ_INFO(0, language, PangoLanguage, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry pangofontmap_methods[] = {
+static zend_function_entry pangofontmap_methods[] = {
 	PHP_ME(PangoFontMap, get_shape_engine_type, NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFontMap, load_font,            arginfo_pango_pangofontmap_load_font, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFontMap, load_fontset,         arginfo_pango_pangofontmap_load_fontset, ZEND_ACC_PUBLIC)
@@ -669,12 +657,11 @@ static PHP_METHOD(PangoFontset, get_metrics)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontset_get_font, 0)
     ZEND_ARG_INFO(0, wc)
 ZEND_END_ARG_INFO();
 
-static function_entry pangofontset_methods[] = {
+static zend_function_entry pangofontset_methods[] = {
 	PHP_ME(PangoFontset, get_font,             arginfo_pango_pangofontset_get_font, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFontset, get_metrics,          NULL, ZEND_ACC_PUBLIC)
 	{ NULL, NULL, NULL }
@@ -736,17 +723,15 @@ static PHP_METHOD(PangoFontsetSimple, size)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontsetsimple_pango_fontset_simple_new, 0)
     ZEND_ARG_OBJ_INFO(0, language, PangoLanguage, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontsetsimple_append, 0)
     ZEND_ARG_OBJ_INFO(0, font, PangoFont, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry pangofontsetsimple_methods[] = {
+static zend_function_entry pangofontsetsimple_methods[] = {
 	PHP_ME(PangoFontsetSimple, __construct,          arginfo_pango_pangofontsetsimple_pango_fontset_simple_new, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFontsetSimple, append,               arginfo_pango_pangofontsetsimple_append, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFontsetSimple, size,                 NULL, ZEND_ACC_PUBLIC)
@@ -1434,98 +1419,81 @@ static PHP_METHOD(PangoLayout, get_iter)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_pango_layout_new, 0)
     ZEND_ARG_OBJ_INFO(0, context, PangoContext, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_attributes, 0)
     ZEND_ARG_OBJ_INFO(0, attrs, PangoAttrList, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_text, 0)
     ZEND_ARG_INFO(0, text)
     ZEND_ARG_INFO(0, length)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_markup, 0)
     ZEND_ARG_INFO(0, markup)
     ZEND_ARG_INFO(0, length)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_font_description, 0)
     ZEND_ARG_OBJ_INFO(0, desc, PangoFontDescription, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_width, 0)
     ZEND_ARG_INFO(0, width)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_wrap, 0)
     ZEND_ARG_INFO(0, wrap)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_indent, 0)
     ZEND_ARG_INFO(0, indent)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_spacing, 0)
     ZEND_ARG_INFO(0, spacing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_justify, 0)
     ZEND_ARG_INFO(0, justify)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_auto_dir, 0)
     ZEND_ARG_INFO(0, auto_dir)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_alignment, 0)
     ZEND_ARG_INFO(0, alignment)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_tabs, 0)
     ZEND_ARG_OBJ_INFO(0, tabs, PangoTabArray, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_set_single_paragraph_mode, 0)
     ZEND_ARG_INFO(0, setting)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_index_to_pos, 0)
     ZEND_ARG_INFO(0, index)
     ZEND_ARG_INFO(0, pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_get_cursor_pos, 0)
     ZEND_ARG_INFO(0, index)
     ZEND_ARG_INFO(0, strong_pos)
     ZEND_ARG_INFO(0, weak_pos)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayout_get_extents, 0)
     ZEND_ARG_INFO(0, ink_rect)
     ZEND_ARG_INFO(0, logical_rect)
 ZEND_END_ARG_INFO();
 
-static function_entry pangolayout_methods[] = {
+static zend_function_entry pangolayout_methods[] = {
 	PHP_ME(PangoLayout, __construct,          arginfo_pango_pangolayout_pango_layout_new, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoLayout, context_changed,      NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoLayout, copy,                 NULL, ZEND_ACC_PUBLIC)
@@ -1653,14 +1621,13 @@ static PHP_METHOD(PangoAttrList, splice)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangoattrlist_splice, 0)
     ZEND_ARG_OBJ_INFO(0, other, PangoAttrList, 1)
     ZEND_ARG_INFO(0, pos)
     ZEND_ARG_INFO(0, len)
 ZEND_END_ARG_INFO();
 
-static function_entry pangoattrlist_methods[] = {
+static zend_function_entry pangoattrlist_methods[] = {
 	PHP_ME(PangoAttrList, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoAttrList, copy,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoAttrList, ref,                  NULL, ZEND_ACC_PUBLIC)
@@ -1744,7 +1711,7 @@ static PHP_METHOD(PangoColor, free)
 }
 
 
-static function_entry pangocolor_methods[] = {
+static zend_function_entry pangocolor_methods[] = {
 	PHP_ME(PangoColor, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoColor, copy,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoColor, free,                 NULL, ZEND_ACC_PUBLIC)
@@ -2264,81 +2231,67 @@ static PHP_METHOD(PangoFontDescription, to_filename)
         RETVAL_NULL();
 }
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_pango_pangofontdescription_pango_font_description_new, 0, 0, 0)
     ZEND_ARG_INFO(0, str)
 ZEND_END_ARG_INFO();
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_pango_font_description_from_string, 0)
     ZEND_ARG_INFO(0, str)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_equal, 0)
     ZEND_ARG_OBJ_INFO(0, desc2, PangoFontDescription, 1)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_set_family, 0)
     ZEND_ARG_INFO(0, family)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_set_family_static, 0)
     ZEND_ARG_INFO(0, family)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_set_style, 0)
     ZEND_ARG_INFO(0, style)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_set_variant, 0)
     ZEND_ARG_INFO(0, variant)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_set_weight, 0)
     ZEND_ARG_INFO(0, weight)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_set_stretch, 0)
     ZEND_ARG_INFO(0, stretch)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_set_size, 0)
     ZEND_ARG_INFO(0, size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_unset_fields, 0)
     ZEND_ARG_INFO(0, to_unset)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_merge, 0)
     ZEND_ARG_OBJ_INFO(0, desc_to_merge, PangoFontDescription, 1)
     ZEND_ARG_INFO(0, replace_existing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangofontdescription_merge_static, 0)
     ZEND_ARG_OBJ_INFO(0, desc_to_merge, PangoFontDescription, 1)
     ZEND_ARG_INFO(0, replace_existing)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO_EX(arginfo_pango_pangofontdescription_better_match, 0, 0, 0)
     ZEND_ARG_OBJ_INFO(0, old_match, PangoFontDescription, 1)
     ZEND_ARG_OBJ_INFO(0, new_match, PangoFontDescription, 1)
 ZEND_END_ARG_INFO();
 
-static function_entry pangofontdescription_methods[] = {
+static zend_function_entry pangofontdescription_methods[] = {
 	PHP_ME(PangoFontDescription, __construct,          arginfo_pango_pangofontdescription_pango_font_description_new, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoFontDescription, from_string,          arginfo_pango_pangofontdescription_pango_font_description_from_string, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(PangoFontDescription, better_match,         arginfo_pango_pangofontdescription_better_match, ZEND_ACC_PUBLIC)
@@ -2452,7 +2405,7 @@ static PHP_METHOD(PangoFontMetrics, get_approximate_digit_width)
 }
 
 
-static function_entry pangofontmetrics_methods[] = {
+static zend_function_entry pangofontmetrics_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -2592,19 +2545,16 @@ static PHP_METHOD(PangoGlyphString, extents_range)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangoglyphstring_set_size, 0)
     ZEND_ARG_INFO(0, new_len)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangoglyphstring_extents, 0)
     ZEND_ARG_OBJ_INFO(0, font, PangoFont, 1)
     ZEND_ARG_INFO(0, ink_rect)
     ZEND_ARG_INFO(0, logical_rect)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangoglyphstring_extents_range, 0)
     ZEND_ARG_INFO(0, start)
     ZEND_ARG_INFO(0, end)
@@ -2613,7 +2563,7 @@ ZEND_BEGIN_ARG_INFO(arginfo_pango_pangoglyphstring_extents_range, 0)
     ZEND_ARG_INFO(0, logical_rect)
 ZEND_END_ARG_INFO();
 
-static function_entry pangoglyphstring_methods[] = {
+static zend_function_entry pangoglyphstring_methods[] = {
 	PHP_ME(PangoGlyphString, __construct,          NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoGlyphString, copy,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoGlyphString, extents,              arginfo_pango_pangoglyphstring_extents, ZEND_ACC_PUBLIC)
@@ -2691,17 +2641,15 @@ static PHP_METHOD(PangoLanguage, to_string)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolanguage_pango_language_from_string, 0)
     ZEND_ARG_INFO(0, language)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolanguage_matches, 0)
     ZEND_ARG_INFO(0, range_list)
 ZEND_END_ARG_INFO();
 
-static function_entry pangolanguage_methods[] = {
+static zend_function_entry pangolanguage_methods[] = {
 	PHP_ME(PangoLanguage, __construct,          arginfo_pango_pangolanguage_pango_language_from_string, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoLanguage, matches,              arginfo_pango_pangolanguage_matches, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoLanguage, to_string,            NULL, ZEND_ACC_PUBLIC)
@@ -2930,36 +2878,31 @@ static PHP_METHOD(PangoLayoutIter, get_baseline)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayoutiter_get_char_extents, 0)
     ZEND_ARG_INFO(0, logical_rect)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayoutiter_get_cluster_extents, 0)
     ZEND_ARG_INFO(0, ink_rect)
     ZEND_ARG_INFO(0, logical_rect)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayoutiter_get_run_extents, 0)
     ZEND_ARG_INFO(0, ink_rect)
     ZEND_ARG_INFO(0, logical_rect)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayoutiter_get_line_extents, 0)
     ZEND_ARG_INFO(0, ink_rect)
     ZEND_ARG_INFO(0, logical_rect)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangolayoutiter_get_layout_extents, 0)
     ZEND_ARG_INFO(0, ink_rect)
     ZEND_ARG_INFO(0, logical_rect)
 ZEND_END_ARG_INFO();
 
-static function_entry pangolayoutiter_methods[] = {
+static zend_function_entry pangolayoutiter_methods[] = {
 #if ZEND_EXTENSION_API_NO > 220051025
 	PHP_ME_MAPPING(__construct, no_direct_constructor, NULL, 0)
 #else
@@ -3093,25 +3036,22 @@ static PHP_METHOD(PangoTabArray, get_positions_in_pixels)
 }
 
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangotabarray_pango_tab_array_new, 0)
     ZEND_ARG_INFO(0, initial_size)
     ZEND_ARG_INFO(0, positions_in_pixels)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangotabarray_resize, 0)
     ZEND_ARG_INFO(0, new_size)
 ZEND_END_ARG_INFO();
 
-static
 ZEND_BEGIN_ARG_INFO(arginfo_pango_pangotabarray_set_tab, 0)
     ZEND_ARG_INFO(0, tab_index)
     ZEND_ARG_INFO(0, alignment)
     ZEND_ARG_INFO(0, location)
 ZEND_END_ARG_INFO();
 
-static function_entry pangotabarray_methods[] = {
+static zend_function_entry pangotabarray_methods[] = {
 	PHP_ME(PangoTabArray, __construct,          arginfo_pango_pangotabarray_pango_tab_array_new, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoTabArray, copy,                 NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(PangoTabArray, free,                 NULL, ZEND_ACC_PUBLIC)

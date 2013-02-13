@@ -83,7 +83,7 @@ static PHP_METHOD(GtkSpell, set_language)
     RETVAL_BOOL(gtkspell_set_language((GtkSpell*)(PHPG_GOBJECT(this_ptr)), (const gchar*) lang, NULL));
 }
 
-static function_entry gtkspell_methods[] = {
+static zend_function_entry gtkspell_methods[] = {
 	PHP_ME(GtkSpell, __construct,  NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(GtkSpell, detach,       NULL, ZEND_ACC_PUBLIC)
     PHP_ME(GtkSpell, recheck_all,  NULL, ZEND_ACC_PUBLIC)
